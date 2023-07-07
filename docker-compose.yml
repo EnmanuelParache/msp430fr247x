@@ -1,6 +1,6 @@
 services:
   devenv:
     image: "enmanuelparache/msp430_rs_env:latest"
-    container_name: 'msp430fr2476'
+    container_name: 'msp430fr247x'
     volumes:
-      - .:/home/developer/msp430fr2476:w
+      - .:/home/developer/msp430fr247x:w

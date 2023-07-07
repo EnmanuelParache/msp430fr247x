@@ -1,11 +1,11 @@
 [package]
-name = "msp430fr2476"
+name = "msp430fr247x"
 version = "0.1.0"
 edition = "2021"
 authors = ["Enmanuel Parache <enmanuelparache@gmail.com"]
-description = "Peripheral access crate for TI MSP430FR2476 microcontroller"
+description = "Peripheral access crate for TI MSP430FR247x microcontroller"
 keywords = ["no-std", "msp430", "svd2rust", "embedded", "ti"]
-repository = "https://github.com/EnmanuelParache/msp430fr2476"
+repository = "https://github.com/EnmanuelParache/msp430fr247x"
 license = "MIT OR Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
