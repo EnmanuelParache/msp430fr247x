@@ -1,0 +1,20 @@
+[package]
+name = "msp430fr2476"
+version = "0.1.0"
+edition = "2021"
+authors = ["Enmanuel Parache <enmanuelparache@gmail.com"]
+description = "Peripheral access crate for TI MSP430FR2476 microcontroller"
+keywords = ["no-std", "msp430", "svd2rust", "embedded", "ti"]
+repository = "https://github.com/EnmanuelParache/msp430fr2476"
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+critical-section = { version = "1.0", optional = true }
+msp430 = "0.4.0"
+msp430-rt = { version = "0.4.0", optional = true }
+vcell = "0.1.0"
+
+[features]
+rt = ["msp430-rt/device"]
