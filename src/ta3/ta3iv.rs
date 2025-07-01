@@ -1,156 +1,115 @@
 #[doc = "Register `TA3IV` reader"]
-pub struct R(crate::R<TA3IV_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<TA3IV_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl From<crate::R<TA3IV_SPEC>> for R {
-    #[inline(always)]
-    fn from(reader: crate::R<TA3IV_SPEC>) -> Self {
-        R(reader)
-    }
-}
+pub type R = crate::R<Ta3ivSpec>;
 #[doc = "Register `TA3IV` writer"]
-pub struct W(crate::W<TA3IV_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<TA3IV_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl From<crate::W<TA3IV_SPEC>> for W {
-    #[inline(always)]
-    fn from(writer: crate::W<TA3IV_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `TAIV` reader - TimerA interrupt vector value"]
-pub type TAIV_R = crate::FieldReader<u16, TAIV_A>;
+pub type W = crate::W<Ta3ivSpec>;
 #[doc = "TimerA interrupt vector value\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u16)]
-pub enum TAIV_A {
+pub enum Taiv {
     #[doc = "0: No interrupt pending"]
-    NONE = 0,
+    None = 0,
     #[doc = "2: Interrupt Source: Capture/compare 1; Interrupt Flag: TAxCCR1 CCIFG; Interrupt Priority: Highest"]
-    TACCR1 = 2,
+    Taccr1 = 2,
     #[doc = "4: Interrupt Source: Capture/compare 2; Interrupt Flag: TAxCCR2 CCIFG"]
-    TACCR2 = 4,
+    Taccr2 = 4,
     #[doc = "6: Interrupt Source: Capture/compare 3; Interrupt Flag: TAxCCR3 CCIFG"]
-    TACCR3 = 6,
+    Taccr3 = 6,
     #[doc = "8: Interrupt Source: Capture/compare 4; Interrupt Flag: TAxCCR4 CCIFG"]
-    TACCR4 = 8,
+    Taccr4 = 8,
     #[doc = "10: Interrupt Source: Capture/compare 5; Interrupt Flag: TAxCCR5 CCIFG"]
-    TACCR5 = 10,
+    Taccr5 = 10,
     #[doc = "12: Interrupt Source: Capture/compare 6; Interrupt Flag: TAxCCR6 CCIFG"]
-    TACCR6 = 12,
+    Taccr6 = 12,
     #[doc = "14: Interrupt Source: Timer overflow; Interrupt Flag: TAxCTL TAIFG; Interrupt Priority: Lowest"]
-    TAIFG = 14,
+    Taifg = 14,
 }
-impl From<TAIV_A> for u16 {
+impl From<Taiv> for u16 {
     #[inline(always)]
-    fn from(variant: TAIV_A) -> Self {
+    fn from(variant: Taiv) -> Self {
         variant as _
     }
 }
-impl TAIV_R {
+impl crate::FieldSpec for Taiv {
+    type Ux = u16;
+}
+impl crate::IsEnum for Taiv {}
+#[doc = "Field `TAIV` reader - TimerA interrupt vector value"]
+pub type TaivR = crate::FieldReader<Taiv>;
+impl TaivR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub fn variant(&self) -> Option<TAIV_A> {
+    pub const fn variant(&self) -> Option<Taiv> {
         match self.bits {
-            0 => Some(TAIV_A::NONE),
-            2 => Some(TAIV_A::TACCR1),
-            4 => Some(TAIV_A::TACCR2),
-            6 => Some(TAIV_A::TACCR3),
-            8 => Some(TAIV_A::TACCR4),
-            10 => Some(TAIV_A::TACCR5),
-            12 => Some(TAIV_A::TACCR6),
-            14 => Some(TAIV_A::TAIFG),
+            0 => Some(Taiv::None),
+            2 => Some(Taiv::Taccr1),
+            4 => Some(Taiv::Taccr2),
+            6 => Some(Taiv::Taccr3),
+            8 => Some(Taiv::Taccr4),
+            10 => Some(Taiv::Taccr5),
+            12 => Some(Taiv::Taccr6),
+            14 => Some(Taiv::Taifg),
             _ => None,
         }
     }
-    #[doc = "Checks if the value of the field is `NONE`"]
+    #[doc = "No interrupt pending"]
     #[inline(always)]
     pub fn is_none(&self) -> bool {
-        *self == TAIV_A::NONE
+        *self == Taiv::None
     }
-    #[doc = "Checks if the value of the field is `TACCR1`"]
+    #[doc = "Interrupt Source: Capture/compare 1; Interrupt Flag: TAxCCR1 CCIFG; Interrupt Priority: Highest"]
     #[inline(always)]
     pub fn is_taccr1(&self) -> bool {
-        *self == TAIV_A::TACCR1
+        *self == Taiv::Taccr1
     }
-    #[doc = "Checks if the value of the field is `TACCR2`"]
+    #[doc = "Interrupt Source: Capture/compare 2; Interrupt Flag: TAxCCR2 CCIFG"]
     #[inline(always)]
     pub fn is_taccr2(&self) -> bool {
-        *self == TAIV_A::TACCR2
+        *self == Taiv::Taccr2
     }
-    #[doc = "Checks if the value of the field is `TACCR3`"]
+    #[doc = "Interrupt Source: Capture/compare 3; Interrupt Flag: TAxCCR3 CCIFG"]
     #[inline(always)]
     pub fn is_taccr3(&self) -> bool {
-        *self == TAIV_A::TACCR3
+        *self == Taiv::Taccr3
     }
-    #[doc = "Checks if the value of the field is `TACCR4`"]
+    #[doc = "Interrupt Source: Capture/compare 4; Interrupt Flag: TAxCCR4 CCIFG"]
     #[inline(always)]
     pub fn is_taccr4(&self) -> bool {
-        *self == TAIV_A::TACCR4
+        *self == Taiv::Taccr4
     }
-    #[doc = "Checks if the value of the field is `TACCR5`"]
+    #[doc = "Interrupt Source: Capture/compare 5; Interrupt Flag: TAxCCR5 CCIFG"]
     #[inline(always)]
     pub fn is_taccr5(&self) -> bool {
-        *self == TAIV_A::TACCR5
+        *self == Taiv::Taccr5
     }
-    #[doc = "Checks if the value of the field is `TACCR6`"]
+    #[doc = "Interrupt Source: Capture/compare 6; Interrupt Flag: TAxCCR6 CCIFG"]
     #[inline(always)]
     pub fn is_taccr6(&self) -> bool {
-        *self == TAIV_A::TACCR6
+        *self == Taiv::Taccr6
     }
-    #[doc = "Checks if the value of the field is `TAIFG`"]
+    #[doc = "Interrupt Source: Timer overflow; Interrupt Flag: TAxCTL TAIFG; Interrupt Priority: Lowest"]
     #[inline(always)]
     pub fn is_taifg(&self) -> bool {
-        *self == TAIV_A::TAIFG
+        *self == Taiv::Taifg
     }
 }
 impl R {
     #[doc = "Bits 0:15 - TimerA interrupt vector value"]
     #[inline(always)]
-    pub fn taiv(&self) -> TAIV_R {
-        TAIV_R::new(self.bits)
+    pub fn taiv(&self) -> TaivR {
+        TaivR::new(self.bits)
     }
 }
-impl W {
-    #[doc = "Writes raw bits to the register."]
-    #[inline(always)]
-    pub unsafe fn bits(&mut self, bits: u16) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "TimerAx Interrupt Vector Register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ta3iv](index.html) module"]
-pub struct TA3IV_SPEC;
-impl crate::RegisterSpec for TA3IV_SPEC {
+impl W {}
+#[doc = "TimerAx Interrupt Vector Register\n\nYou can [`read`](crate::Reg::read) this register and get [`ta3iv::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`ta3iv::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct Ta3ivSpec;
+impl crate::RegisterSpec for Ta3ivSpec {
     type Ux = u16;
 }
-#[doc = "`read()` method returns [ta3iv::R](R) reader structure"]
-impl crate::Readable for TA3IV_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [ta3iv::W](W) writer structure"]
-impl crate::Writable for TA3IV_SPEC {
-    type Writer = W;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+#[doc = "`read()` method returns [`ta3iv::R`](R) reader structure"]
+impl crate::Readable for Ta3ivSpec {}
+#[doc = "`write(|w| ..)` method takes [`ta3iv::W`](W) writer structure"]
+impl crate::Writable for Ta3ivSpec {
+    type Safety = crate::Unsafe;
 }
 #[doc = "`reset()` method sets TA3IV to value 0"]
-impl crate::Resettable for TA3IV_SPEC {
-    const RESET_VALUE: Self::Ux = 0;
-}
+impl crate::Resettable for Ta3ivSpec {}

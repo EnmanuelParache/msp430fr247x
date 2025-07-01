@@ -18,3 +18,8 @@ vcell = "0.1.0"
 
 [features]
 rt = ["msp430-rt/device"]
+
+[lib]
+name = "msp430fr247x"
+test = false
+bench = false

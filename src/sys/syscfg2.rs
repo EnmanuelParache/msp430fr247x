@@ -1,248 +1,210 @@
 #[doc = "Register `SYSCFG2` reader"]
-pub struct R(crate::R<SYSCFG2_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<SYSCFG2_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl From<crate::R<SYSCFG2_SPEC>> for R {
-    #[inline(always)]
-    fn from(reader: crate::R<SYSCFG2_SPEC>) -> Self {
-        R(reader)
-    }
-}
+pub type R = crate::R<Syscfg2Spec>;
 #[doc = "Register `SYSCFG2` writer"]
-pub struct W(crate::W<SYSCFG2_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<SYSCFG2_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
+pub type W = crate::W<Syscfg2Spec>;
+#[doc = "RTC clock selection\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Rtccksel {
+    #[doc = "0: SMCLK is selected"]
+    Rtccksel0 = 0,
+    #[doc = "1: ACLK is selected"]
+    Rtccksel1 = 1,
 }
-impl core::ops::DerefMut for W {
+impl From<Rtccksel> for bool {
     #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl From<crate::W<SYSCFG2_SPEC>> for W {
-    #[inline(always)]
-    fn from(writer: crate::W<SYSCFG2_SPEC>) -> Self {
-        W(writer)
+    fn from(variant: Rtccksel) -> Self {
+        variant as u8 != 0
     }
 }
 #[doc = "Field `RTCCKSEL` reader - RTC clock selection"]
-pub type RTCCKSEL_R = crate::BitReader<RTCCKSEL_A>;
-#[doc = "RTC clock selection\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum RTCCKSEL_A {
-    #[doc = "0: SMCLK is selected"]
-    RTCCKSEL_0 = 0,
-    #[doc = "1: ACLK is selected"]
-    RTCCKSEL_1 = 1,
-}
-impl From<RTCCKSEL_A> for bool {
-    #[inline(always)]
-    fn from(variant: RTCCKSEL_A) -> Self {
-        variant as u8 != 0
-    }
-}
-impl RTCCKSEL_R {
+pub type RtcckselR = crate::BitReader<Rtccksel>;
+impl RtcckselR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub fn variant(&self) -> RTCCKSEL_A {
+    pub const fn variant(&self) -> Rtccksel {
         match self.bits {
-            false => RTCCKSEL_A::RTCCKSEL_0,
-            true => RTCCKSEL_A::RTCCKSEL_1,
+            false => Rtccksel::Rtccksel0,
+            true => Rtccksel::Rtccksel1,
         }
     }
-    #[doc = "Checks if the value of the field is `RTCCKSEL_0`"]
-    #[inline(always)]
-    pub fn is_rtccksel_0(&self) -> bool {
-        *self == RTCCKSEL_A::RTCCKSEL_0
-    }
-    #[doc = "Checks if the value of the field is `RTCCKSEL_1`"]
-    #[inline(always)]
-    pub fn is_rtccksel_1(&self) -> bool {
-        *self == RTCCKSEL_A::RTCCKSEL_1
-    }
-}
-#[doc = "Field `RTCCKSEL` writer - RTC clock selection"]
-pub type RTCCKSEL_W<'a, const O: u8> = crate::BitWriter<'a, u16, SYSCFG2_SPEC, RTCCKSEL_A, O>;
-impl<'a, const O: u8> RTCCKSEL_W<'a, O> {
     #[doc = "SMCLK is selected"]
     #[inline(always)]
-    pub fn rtccksel_0(self) -> &'a mut W {
-        self.variant(RTCCKSEL_A::RTCCKSEL_0)
+    pub fn is_rtccksel_0(&self) -> bool {
+        *self == Rtccksel::Rtccksel0
     }
     #[doc = "ACLK is selected"]
     #[inline(always)]
-    pub fn rtccksel_1(self) -> &'a mut W {
-        self.variant(RTCCKSEL_A::RTCCKSEL_1)
+    pub fn is_rtccksel_1(&self) -> bool {
+        *self == Rtccksel::Rtccksel1
+    }
+}
+#[doc = "Field `RTCCKSEL` writer - RTC clock selection"]
+pub type RtcckselW<'a, REG> = crate::BitWriter<'a, REG, Rtccksel>;
+impl<'a, REG> RtcckselW<'a, REG>
+where
+    REG: crate::Writable + crate::RegisterSpec,
+{
+    #[doc = "SMCLK is selected"]
+    #[inline(always)]
+    pub fn rtccksel_0(self) -> &'a mut crate::W<REG> {
+        self.variant(Rtccksel::Rtccksel0)
+    }
+    #[doc = "ACLK is selected"]
+    #[inline(always)]
+    pub fn rtccksel_1(self) -> &'a mut crate::W<REG> {
+        self.variant(Rtccksel::Rtccksel1)
+    }
+}
+#[doc = "eUSCI_B0 remapping source selection\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Uscib0rmp {
+    #[doc = "0: Default function. See the device-specific data sheet for details."]
+    Uscib0rmp0 = 0,
+    #[doc = "1: Remapped function. See the device-specific data sheet for details."]
+    Uscib0rmp1 = 1,
+}
+impl From<Uscib0rmp> for bool {
+    #[inline(always)]
+    fn from(variant: Uscib0rmp) -> Self {
+        variant as u8 != 0
     }
 }
 #[doc = "Field `USCIB0RMP` reader - eUSCI_B0 remapping source selection"]
-pub type USCIB0RMP_R = crate::BitReader<USCIB0RMP_A>;
-#[doc = "eUSCI_B0 remapping source selection\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum USCIB0RMP_A {
-    #[doc = "0: Default function. See the device-specific data sheet for details."]
-    USCIB0RMP_0 = 0,
-    #[doc = "1: Remapped function. See the device-specific data sheet for details."]
-    USCIB0RMP_1 = 1,
-}
-impl From<USCIB0RMP_A> for bool {
-    #[inline(always)]
-    fn from(variant: USCIB0RMP_A) -> Self {
-        variant as u8 != 0
-    }
-}
-impl USCIB0RMP_R {
+pub type Uscib0rmpR = crate::BitReader<Uscib0rmp>;
+impl Uscib0rmpR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub fn variant(&self) -> USCIB0RMP_A {
+    pub const fn variant(&self) -> Uscib0rmp {
         match self.bits {
-            false => USCIB0RMP_A::USCIB0RMP_0,
-            true => USCIB0RMP_A::USCIB0RMP_1,
+            false => Uscib0rmp::Uscib0rmp0,
+            true => Uscib0rmp::Uscib0rmp1,
         }
     }
-    #[doc = "Checks if the value of the field is `USCIB0RMP_0`"]
-    #[inline(always)]
-    pub fn is_uscib0rmp_0(&self) -> bool {
-        *self == USCIB0RMP_A::USCIB0RMP_0
-    }
-    #[doc = "Checks if the value of the field is `USCIB0RMP_1`"]
-    #[inline(always)]
-    pub fn is_uscib0rmp_1(&self) -> bool {
-        *self == USCIB0RMP_A::USCIB0RMP_1
-    }
-}
-#[doc = "Field `USCIB0RMP` writer - eUSCI_B0 remapping source selection"]
-pub type USCIB0RMP_W<'a, const O: u8> = crate::BitWriter<'a, u16, SYSCFG2_SPEC, USCIB0RMP_A, O>;
-impl<'a, const O: u8> USCIB0RMP_W<'a, O> {
     #[doc = "Default function. See the device-specific data sheet for details."]
     #[inline(always)]
-    pub fn uscib0rmp_0(self) -> &'a mut W {
-        self.variant(USCIB0RMP_A::USCIB0RMP_0)
+    pub fn is_uscib0rmp_0(&self) -> bool {
+        *self == Uscib0rmp::Uscib0rmp0
     }
     #[doc = "Remapped function. See the device-specific data sheet for details."]
     #[inline(always)]
-    pub fn uscib0rmp_1(self) -> &'a mut W {
-        self.variant(USCIB0RMP_A::USCIB0RMP_1)
+    pub fn is_uscib0rmp_1(&self) -> bool {
+        *self == Uscib0rmp::Uscib0rmp1
     }
 }
-#[doc = "Field `TB0TRGSEL` reader - TB0OUTH trigger source selection"]
-pub type TB0TRGSEL_R = crate::BitReader<TB0TRGSEL_A>;
+#[doc = "Field `USCIB0RMP` writer - eUSCI_B0 remapping source selection"]
+pub type Uscib0rmpW<'a, REG> = crate::BitWriter<'a, REG, Uscib0rmp>;
+impl<'a, REG> Uscib0rmpW<'a, REG>
+where
+    REG: crate::Writable + crate::RegisterSpec,
+{
+    #[doc = "Default function. See the device-specific data sheet for details."]
+    #[inline(always)]
+    pub fn uscib0rmp_0(self) -> &'a mut crate::W<REG> {
+        self.variant(Uscib0rmp::Uscib0rmp0)
+    }
+    #[doc = "Remapped function. See the device-specific data sheet for details."]
+    #[inline(always)]
+    pub fn uscib0rmp_1(self) -> &'a mut crate::W<REG> {
+        self.variant(Uscib0rmp::Uscib0rmp1)
+    }
+}
 #[doc = "TB0OUTH trigger source selection\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-pub enum TB0TRGSEL_A {
+pub enum Tb0trgsel {
     #[doc = "0: Internal source is selected"]
-    TB0TRGSEL_0 = 0,
+    Tb0trgsel0 = 0,
     #[doc = "1: External source is selected"]
-    TB0TRGSEL_1 = 1,
+    Tb0trgsel1 = 1,
 }
-impl From<TB0TRGSEL_A> for bool {
+impl From<Tb0trgsel> for bool {
     #[inline(always)]
-    fn from(variant: TB0TRGSEL_A) -> Self {
+    fn from(variant: Tb0trgsel) -> Self {
         variant as u8 != 0
     }
 }
-impl TB0TRGSEL_R {
+#[doc = "Field `TB0TRGSEL` reader - TB0OUTH trigger source selection"]
+pub type Tb0trgselR = crate::BitReader<Tb0trgsel>;
+impl Tb0trgselR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub fn variant(&self) -> TB0TRGSEL_A {
+    pub const fn variant(&self) -> Tb0trgsel {
         match self.bits {
-            false => TB0TRGSEL_A::TB0TRGSEL_0,
-            true => TB0TRGSEL_A::TB0TRGSEL_1,
+            false => Tb0trgsel::Tb0trgsel0,
+            true => Tb0trgsel::Tb0trgsel1,
         }
     }
-    #[doc = "Checks if the value of the field is `TB0TRGSEL_0`"]
-    #[inline(always)]
-    pub fn is_tb0trgsel_0(&self) -> bool {
-        *self == TB0TRGSEL_A::TB0TRGSEL_0
-    }
-    #[doc = "Checks if the value of the field is `TB0TRGSEL_1`"]
-    #[inline(always)]
-    pub fn is_tb0trgsel_1(&self) -> bool {
-        *self == TB0TRGSEL_A::TB0TRGSEL_1
-    }
-}
-#[doc = "Field `TB0TRGSEL` writer - TB0OUTH trigger source selection"]
-pub type TB0TRGSEL_W<'a, const O: u8> = crate::BitWriter<'a, u16, SYSCFG2_SPEC, TB0TRGSEL_A, O>;
-impl<'a, const O: u8> TB0TRGSEL_W<'a, O> {
     #[doc = "Internal source is selected"]
     #[inline(always)]
-    pub fn tb0trgsel_0(self) -> &'a mut W {
-        self.variant(TB0TRGSEL_A::TB0TRGSEL_0)
+    pub fn is_tb0trgsel_0(&self) -> bool {
+        *self == Tb0trgsel::Tb0trgsel0
     }
     #[doc = "External source is selected"]
     #[inline(always)]
-    pub fn tb0trgsel_1(self) -> &'a mut W {
-        self.variant(TB0TRGSEL_A::TB0TRGSEL_1)
+    pub fn is_tb0trgsel_1(&self) -> bool {
+        *self == Tb0trgsel::Tb0trgsel1
+    }
+}
+#[doc = "Field `TB0TRGSEL` writer - TB0OUTH trigger source selection"]
+pub type Tb0trgselW<'a, REG> = crate::BitWriter<'a, REG, Tb0trgsel>;
+impl<'a, REG> Tb0trgselW<'a, REG>
+where
+    REG: crate::Writable + crate::RegisterSpec,
+{
+    #[doc = "Internal source is selected"]
+    #[inline(always)]
+    pub fn tb0trgsel_0(self) -> &'a mut crate::W<REG> {
+        self.variant(Tb0trgsel::Tb0trgsel0)
+    }
+    #[doc = "External source is selected"]
+    #[inline(always)]
+    pub fn tb0trgsel_1(self) -> &'a mut crate::W<REG> {
+        self.variant(Tb0trgsel::Tb0trgsel1)
     }
 }
 impl R {
     #[doc = "Bit 10 - RTC clock selection"]
     #[inline(always)]
-    pub fn rtccksel(&self) -> RTCCKSEL_R {
-        RTCCKSEL_R::new(((self.bits >> 10) & 1) != 0)
+    pub fn rtccksel(&self) -> RtcckselR {
+        RtcckselR::new(((self.bits >> 10) & 1) != 0)
     }
     #[doc = "Bit 11 - eUSCI_B0 remapping source selection"]
     #[inline(always)]
-    pub fn uscib0rmp(&self) -> USCIB0RMP_R {
-        USCIB0RMP_R::new(((self.bits >> 11) & 1) != 0)
+    pub fn uscib0rmp(&self) -> Uscib0rmpR {
+        Uscib0rmpR::new(((self.bits >> 11) & 1) != 0)
     }
     #[doc = "Bit 15 - TB0OUTH trigger source selection"]
     #[inline(always)]
-    pub fn tb0trgsel(&self) -> TB0TRGSEL_R {
-        TB0TRGSEL_R::new(((self.bits >> 15) & 1) != 0)
+    pub fn tb0trgsel(&self) -> Tb0trgselR {
+        Tb0trgselR::new(((self.bits >> 15) & 1) != 0)
     }
 }
 impl W {
     #[doc = "Bit 10 - RTC clock selection"]
     #[inline(always)]
-    #[must_use]
-    pub fn rtccksel(&mut self) -> RTCCKSEL_W<10> {
-        RTCCKSEL_W::new(self)
+    pub fn rtccksel(&mut self) -> RtcckselW<Syscfg2Spec> {
+        RtcckselW::new(self, 10)
     }
     #[doc = "Bit 11 - eUSCI_B0 remapping source selection"]
     #[inline(always)]
-    #[must_use]
-    pub fn uscib0rmp(&mut self) -> USCIB0RMP_W<11> {
-        USCIB0RMP_W::new(self)
+    pub fn uscib0rmp(&mut self) -> Uscib0rmpW<Syscfg2Spec> {
+        Uscib0rmpW::new(self, 11)
     }
     #[doc = "Bit 15 - TB0OUTH trigger source selection"]
     #[inline(always)]
-    #[must_use]
-    pub fn tb0trgsel(&mut self) -> TB0TRGSEL_W<15> {
-        TB0TRGSEL_W::new(self)
-    }
-    #[doc = "Writes raw bits to the register."]
-    #[inline(always)]
-    pub unsafe fn bits(&mut self, bits: u16) -> &mut Self {
-        self.0.bits(bits);
-        self
+    pub fn tb0trgsel(&mut self) -> Tb0trgselW<Syscfg2Spec> {
+        Tb0trgselW::new(self, 15)
     }
 }
-#[doc = "System Configuration 2\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [syscfg2](index.html) module"]
-pub struct SYSCFG2_SPEC;
-impl crate::RegisterSpec for SYSCFG2_SPEC {
+#[doc = "System Configuration 2\n\nYou can [`read`](crate::Reg::read) this register and get [`syscfg2::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`syscfg2::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct Syscfg2Spec;
+impl crate::RegisterSpec for Syscfg2Spec {
     type Ux = u16;
 }
-#[doc = "`read()` method returns [syscfg2::R](R) reader structure"]
-impl crate::Readable for SYSCFG2_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [syscfg2::W](W) writer structure"]
-impl crate::Writable for SYSCFG2_SPEC {
-    type Writer = W;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+#[doc = "`read()` method returns [`syscfg2::R`](R) reader structure"]
+impl crate::Readable for Syscfg2Spec {}
+#[doc = "`write(|w| ..)` method takes [`syscfg2::W`](W) writer structure"]
+impl crate::Writable for Syscfg2Spec {
+    type Safety = crate::Unsafe;
 }
 #[doc = "`reset()` method sets SYSCFG2 to value 0"]
-impl crate::Resettable for SYSCFG2_SPEC {
-    const RESET_VALUE: Self::Ux = 0;
-}
+impl crate::Resettable for Syscfg2Spec {}
