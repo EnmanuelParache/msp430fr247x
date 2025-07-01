@@ -5,7 +5,11 @@
 #![no_std]
 #![cfg_attr(docsrs, feature(doc_auto_cfg))]
 #[allow(unused_imports)]
+#[cfg(feature = "rt")]
+pub use self::Interrupt as interrupt;
 use generic::*;
+#[cfg(feature = "rt")]
+pub use msp430_rt::interrupt;
 #[doc = "Common register and bit access and modify traits"]
 pub mod generic;
 #[cfg(feature = "rt")]
