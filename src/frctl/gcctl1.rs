@@ -181,17 +181,17 @@ impl R {
 impl W {
     #[doc = "Bit 1 - FRAM correctable bit error detection flag"]
     #[inline(always)]
-    pub fn cbdifg(&mut self) -> CbdifgW<Gcctl1Spec> {
+    pub fn cbdifg(&mut self) -> CbdifgW<'_, Gcctl1Spec> {
         CbdifgW::new(self, 1)
     }
     #[doc = "Bit 2 - FRAM uncorrectable bit error detection flag"]
     #[inline(always)]
-    pub fn ubdifg(&mut self) -> UbdifgW<Gcctl1Spec> {
+    pub fn ubdifg(&mut self) -> UbdifgW<'_, Gcctl1Spec> {
         UbdifgW::new(self, 2)
     }
     #[doc = "Bit 3 - Access time error flag"]
     #[inline(always)]
-    pub fn accteifg(&mut self) -> AccteifgW<Gcctl1Spec> {
+    pub fn accteifg(&mut self) -> AccteifgW<'_, Gcctl1Spec> {
         AccteifgW::new(self, 3)
     }
 }

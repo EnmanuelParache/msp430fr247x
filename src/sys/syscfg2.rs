@@ -181,17 +181,17 @@ impl R {
 impl W {
     #[doc = "Bit 10 - RTC clock selection"]
     #[inline(always)]
-    pub fn rtccksel(&mut self) -> RtcckselW<Syscfg2Spec> {
+    pub fn rtccksel(&mut self) -> RtcckselW<'_, Syscfg2Spec> {
         RtcckselW::new(self, 10)
     }
     #[doc = "Bit 11 - eUSCI_B0 remapping source selection"]
     #[inline(always)]
-    pub fn uscib0rmp(&mut self) -> Uscib0rmpW<Syscfg2Spec> {
+    pub fn uscib0rmp(&mut self) -> Uscib0rmpW<'_, Syscfg2Spec> {
         Uscib0rmpW::new(self, 11)
     }
     #[doc = "Bit 15 - TB0OUTH trigger source selection"]
     #[inline(always)]
-    pub fn tb0trgsel(&mut self) -> Tb0trgselW<Syscfg2Spec> {
+    pub fn tb0trgsel(&mut self) -> Tb0trgselW<'_, Syscfg2Spec> {
         Tb0trgselW::new(self, 15)
     }
 }

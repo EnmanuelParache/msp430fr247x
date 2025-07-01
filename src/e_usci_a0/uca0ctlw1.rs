@@ -98,7 +98,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:1 - Deglitch time"]
     #[inline(always)]
-    pub fn ucglit(&mut self) -> UcglitW<Uca0ctlw1Spec> {
+    pub fn ucglit(&mut self) -> UcglitW<'_, Uca0ctlw1Spec> {
         UcglitW::new(self, 0)
     }
 }

@@ -239,22 +239,22 @@ impl R {
 impl W {
     #[doc = "Bit 0 - eUSCI_A0 remapping source selection"]
     #[inline(always)]
-    pub fn uscia0rmp(&mut self) -> Uscia0rmpW<Syscfg3Spec> {
+    pub fn uscia0rmp(&mut self) -> Uscia0rmpW<'_, Syscfg3Spec> {
         Uscia0rmpW::new(self, 0)
     }
     #[doc = "Bit 2 - Timer2_A3 remapping source selection"]
     #[inline(always)]
-    pub fn ta2rmp(&mut self) -> Ta2rmpW<Syscfg3Spec> {
+    pub fn ta2rmp(&mut self) -> Ta2rmpW<'_, Syscfg3Spec> {
         Ta2rmpW::new(self, 2)
     }
     #[doc = "Bit 3 - Timer3_A3 remapping source selection"]
     #[inline(always)]
-    pub fn ta3rmp(&mut self) -> Ta3rmpW<Syscfg3Spec> {
+    pub fn ta3rmp(&mut self) -> Ta3rmpW<'_, Syscfg3Spec> {
         Ta3rmpW::new(self, 3)
     }
     #[doc = "Bit 4 - eUSCI_B1 remapping source selection"]
     #[inline(always)]
-    pub fn uscib1rmp(&mut self) -> Uscib1rmpW<Syscfg3Spec> {
+    pub fn uscib1rmp(&mut self) -> Uscib1rmpW<'_, Syscfg3Spec> {
         Uscib1rmpW::new(self, 4)
     }
 }

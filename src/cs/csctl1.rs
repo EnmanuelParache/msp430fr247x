@@ -275,22 +275,22 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Modulation. This bit enables/disables the modulation."]
     #[inline(always)]
-    pub fn dismod(&mut self) -> DismodW<Csctl1Spec> {
+    pub fn dismod(&mut self) -> DismodW<'_, Csctl1Spec> {
         DismodW::new(self, 0)
     }
     #[doc = "Bits 1:3 - DCO Range Select"]
     #[inline(always)]
-    pub fn dcorsel(&mut self) -> DcorselW<Csctl1Spec> {
+    pub fn dcorsel(&mut self) -> DcorselW<'_, Csctl1Spec> {
         DcorselW::new(self, 1)
     }
     #[doc = "Bits 4:6 - DCO frequency trim. These bits trims the DCO frequency. By default, it is chipspecific trimmed. These bits can also be trimmed by user code."]
     #[inline(always)]
-    pub fn dcoftrim(&mut self) -> DcoftrimW<Csctl1Spec> {
+    pub fn dcoftrim(&mut self) -> DcoftrimW<'_, Csctl1Spec> {
         DcoftrimW::new(self, 4)
     }
     #[doc = "Bit 7 - DCO Frequency Trim Enable. When this bit is set, DCOFTRIM value is selected to set DCO frequency. Otherwise, DCOFTRIM value is bypassed and DCO applies default settings in manufacture."]
     #[inline(always)]
-    pub fn dcoftrimen(&mut self) -> DcoftrimenW<Csctl1Spec> {
+    pub fn dcoftrimen(&mut self) -> DcoftrimenW<'_, Csctl1Spec> {
         DcoftrimenW::new(self, 7)
     }
 }

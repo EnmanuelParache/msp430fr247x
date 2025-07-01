@@ -726,42 +726,42 @@ impl R {
 impl W {
     #[doc = "Bit 0 - XT1 automatic off enable. This bit allows XT1 turned turns off when it is not used"]
     #[inline(always)]
-    pub fn xt1autooff(&mut self) -> Xt1autooffW<Csctl6Spec> {
+    pub fn xt1autooff(&mut self) -> Xt1autooffW<'_, Csctl6Spec> {
         Xt1autooffW::new(self, 0)
     }
     #[doc = "Bit 1 - Automatic Gain Control (AGC) disable."]
     #[inline(always)]
-    pub fn xt1agcoff(&mut self) -> Xt1agcoffW<Csctl6Spec> {
+    pub fn xt1agcoff(&mut self) -> Xt1agcoffW<'_, Csctl6Spec> {
         Xt1agcoffW::new(self, 1)
     }
     #[doc = "Bits 2:3 - The XT1 High-frequency selection. These bits must be set to appropriate frequency for crystal or bypass modes of operation."]
     #[inline(always)]
-    pub fn xt1hffreq(&mut self) -> Xt1hffreqW<Csctl6Spec> {
+    pub fn xt1hffreq(&mut self) -> Xt1hffreqW<'_, Csctl6Spec> {
         Xt1hffreqW::new(self, 2)
     }
     #[doc = "Bit 4 - XT1 bypass select"]
     #[inline(always)]
-    pub fn xt1bypass(&mut self) -> Xt1bypassW<Csctl6Spec> {
+    pub fn xt1bypass(&mut self) -> Xt1bypassW<'_, Csctl6Spec> {
         Xt1bypassW::new(self, 4)
     }
     #[doc = "Bit 5 - XT1 mode select"]
     #[inline(always)]
-    pub fn xts(&mut self) -> XtsW<Csctl6Spec> {
+    pub fn xts(&mut self) -> XtsW<'_, Csctl6Spec> {
         XtsW::new(self, 5)
     }
     #[doc = "Bits 6:7 - The XT1 oscillator current can be adjusted to its drive needs. Initially, it starts with the highest supply current for reliable and quick startup. If needed, user software can reduce the drive strength. The configuration of these bits is retained during LPM3.5 until LOCKLPM5 is cleared, but not the register bits itself; therefore, reconfiguration after wake-up from LPM3.5 before clearing LOCKLPM5 is required."]
     #[inline(always)]
-    pub fn xt1drive(&mut self) -> Xt1driveW<Csctl6Spec> {
+    pub fn xt1drive(&mut self) -> Xt1driveW<'_, Csctl6Spec> {
         Xt1driveW::new(self, 6)
     }
     #[doc = "Bits 8:11 - ACLK source divider."]
     #[inline(always)]
-    pub fn diva(&mut self) -> DivaW<Csctl6Spec> {
+    pub fn diva(&mut self) -> DivaW<'_, Csctl6Spec> {
         DivaW::new(self, 8)
     }
     #[doc = "Bit 13 - The XT1 oscillator fault detection off"]
     #[inline(always)]
-    pub fn xt1faultoff(&mut self) -> Xt1faultoffW<Csctl6Spec> {
+    pub fn xt1faultoff(&mut self) -> Xt1faultoffW<'_, Csctl6Spec> {
         Xt1faultoffW::new(self, 13)
     }
 }

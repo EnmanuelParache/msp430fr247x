@@ -297,27 +297,27 @@ impl R {
 impl W {
     #[doc = "Bit 0 - NMI select"]
     #[inline(always)]
-    pub fn sysnmi(&mut self) -> SysnmiW<SfrrpcrSpec> {
+    pub fn sysnmi(&mut self) -> SysnmiW<'_, SfrrpcrSpec> {
         SysnmiW::new(self, 0)
     }
     #[doc = "Bit 1 - NMI edge select"]
     #[inline(always)]
-    pub fn sysnmiies(&mut self) -> SysnmiiesW<SfrrpcrSpec> {
+    pub fn sysnmiies(&mut self) -> SysnmiiesW<'_, SfrrpcrSpec> {
         SysnmiiesW::new(self, 1)
     }
     #[doc = "Bit 2 - Reset resistor pin pullup or pulldown"]
     #[inline(always)]
-    pub fn sysrstup(&mut self) -> SysrstupW<SfrrpcrSpec> {
+    pub fn sysrstup(&mut self) -> SysrstupW<'_, SfrrpcrSpec> {
         SysrstupW::new(self, 2)
     }
     #[doc = "Bit 3 - Reset pin resistor enable"]
     #[inline(always)]
-    pub fn sysrstre(&mut self) -> SysrstreW<SfrrpcrSpec> {
+    pub fn sysrstre(&mut self) -> SysrstreW<'_, SfrrpcrSpec> {
         SysrstreW::new(self, 3)
     }
     #[doc = "Bit 4 - Reset pin filter enable"]
     #[inline(always)]
-    pub fn sysflte(&mut self) -> SysflteW<SfrrpcrSpec> {
+    pub fn sysflte(&mut self) -> SysflteW<'_, SfrrpcrSpec> {
         SysflteW::new(self, 4)
     }
 }

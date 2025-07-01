@@ -16,7 +16,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - Transmit data buffer"]
     #[inline(always)]
-    pub fn uctxbuf(&mut self) -> UctxbufW<Ucb0txbufSpiSpec> {
+    pub fn uctxbuf(&mut self) -> UctxbufW<'_, Ucb0txbufSpiSpec> {
         UctxbufW::new(self, 0)
     }
 }

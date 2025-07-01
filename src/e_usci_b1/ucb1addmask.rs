@@ -16,7 +16,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:9 - Address Mask Register. By clearing the corresponding bit of the own address, this bit is a don't care when comparing the address on the bus to the own address. Using this method, it is possible to react on more than one slave address. When all bits of ADDMASKx are set, the address mask feature is deactivated. Modify only when UCSWRST = 1."]
     #[inline(always)]
-    pub fn addmask(&mut self) -> AddmaskW<Ucb1addmaskSpec> {
+    pub fn addmask(&mut self) -> AddmaskW<'_, Ucb1addmaskSpec> {
         AddmaskW::new(self, 0)
     }
 }

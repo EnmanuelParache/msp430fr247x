@@ -455,17 +455,17 @@ impl R {
 impl W {
     #[doc = "Bits 0:3 - Input channel select"]
     #[inline(always)]
-    pub fn adcinch(&mut self) -> AdcinchW<Adcmctl0Spec> {
+    pub fn adcinch(&mut self) -> AdcinchW<'_, Adcmctl0Spec> {
         AdcinchW::new(self, 0)
     }
     #[doc = "Bits 4:6 - Select reference. It is not recommended to change this setting while a conversion is ongoing. Can be modified only when ADCENC = 0. Resetting ADCENC = 0 by software and changing these fields immediately shows an effect when a conversion is active."]
     #[inline(always)]
-    pub fn adcsref(&mut self) -> AdcsrefW<Adcmctl0Spec> {
+    pub fn adcsref(&mut self) -> AdcsrefW<'_, Adcmctl0Spec> {
         AdcsrefW::new(self, 4)
     }
     #[doc = "Bit 8 - ADC input channels expanded"]
     #[inline(always)]
-    pub fn expchen(&mut self) -> ExpchenW<Adcmctl0Spec> {
+    pub fn expchen(&mut self) -> ExpchenW<'_, Adcmctl0Spec> {
         ExpchenW::new(self, 8)
     }
 }

@@ -16,7 +16,7 @@ impl R {
 impl W {
     #[doc = "Bits 8:15 - 32-bit operand 1 signed multiply accumulate high word"]
     #[inline(always)]
-    pub fn macs32h(&mut self) -> Macs32hW<Macs32hSpec> {
+    pub fn macs32h(&mut self) -> Macs32hW<'_, Macs32hSpec> {
         Macs32hW::new(self, 8)
     }
 }

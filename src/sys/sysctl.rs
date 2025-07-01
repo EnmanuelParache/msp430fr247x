@@ -239,22 +239,22 @@ impl R {
 impl W {
     #[doc = "Bit 0 - RAM-based interrupt vectors"]
     #[inline(always)]
-    pub fn sysrivect(&mut self) -> SysrivectW<SysctlSpec> {
+    pub fn sysrivect(&mut self) -> SysrivectW<'_, SysctlSpec> {
         SysrivectW::new(self, 0)
     }
     #[doc = "Bit 2 - PMM access protect"]
     #[inline(always)]
-    pub fn syspmmpe(&mut self) -> SyspmmpeW<SysctlSpec> {
+    pub fn syspmmpe(&mut self) -> SyspmmpeW<'_, SysctlSpec> {
         SyspmmpeW::new(self, 2)
     }
     #[doc = "Bit 4 - BSL entry indication"]
     #[inline(always)]
-    pub fn sysbslind(&mut self) -> SysbslindW<SysctlSpec> {
+    pub fn sysbslind(&mut self) -> SysbslindW<'_, SysctlSpec> {
         SysbslindW::new(self, 4)
     }
     #[doc = "Bit 5 - Dedicated JTAG pins enable"]
     #[inline(always)]
-    pub fn sysjtagpin(&mut self) -> SysjtagpinW<SysctlSpec> {
+    pub fn sysjtagpin(&mut self) -> SysjtagpinW<'_, SysctlSpec> {
         SysjtagpinW::new(self, 5)
     }
 }

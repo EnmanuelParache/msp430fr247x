@@ -653,52 +653,52 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Internal reference enable"]
     #[inline(always)]
-    pub fn intrefen(&mut self) -> IntrefenW<Pmmctl2Spec> {
+    pub fn intrefen(&mut self) -> IntrefenW<'_, Pmmctl2Spec> {
         IntrefenW::new(self, 0)
     }
     #[doc = "Bit 1 - External reference output enable"]
     #[inline(always)]
-    pub fn extrefen(&mut self) -> ExtrefenW<Pmmctl2Spec> {
+    pub fn extrefen(&mut self) -> ExtrefenW<'_, Pmmctl2Spec> {
         ExtrefenW::new(self, 1)
     }
     #[doc = "Bit 3 - Temperature sensor enable"]
     #[inline(always)]
-    pub fn tsensoren(&mut self) -> TsensorenW<Pmmctl2Spec> {
+    pub fn tsensoren(&mut self) -> TsensorenW<'_, Pmmctl2Spec> {
         TsensorenW::new(self, 3)
     }
     #[doc = "Bits 4:5 - Reference voltage level select. Can be modified only when REFGENBUSY = 0."]
     #[inline(always)]
-    pub fn refvsel(&mut self) -> RefvselW<Pmmctl2Spec> {
+    pub fn refvsel(&mut self) -> RefvselW<'_, Pmmctl2Spec> {
         RefvselW::new(self, 4)
     }
     #[doc = "Bit 6 - Reference generator one-time trigger. If written with a 1, the generation of the variable reference voltage is started. When the reference voltage request is set, this bit is cleared by hardware."]
     #[inline(always)]
-    pub fn refgen(&mut self) -> RefgenW<Pmmctl2Spec> {
+    pub fn refgen(&mut self) -> RefgenW<'_, Pmmctl2Spec> {
         RefgenW::new(self, 6)
     }
     #[doc = "Bit 7 - Bandgap and bandgap buffer one-time trigger. If written with a 1, the generation of the buffered bandgap voltage is started. When the bandgap buffer voltage request is set, this bit is cleared by hardware."]
     #[inline(always)]
-    pub fn refbgen(&mut self) -> RefbgenW<Pmmctl2Spec> {
+    pub fn refbgen(&mut self) -> RefbgenW<'_, Pmmctl2Spec> {
         RefbgenW::new(self, 7)
     }
     #[doc = "Bit 11 - Bandgap mode. Ready only."]
     #[inline(always)]
-    pub fn bgmode(&mut self) -> BgmodeW<Pmmctl2Spec> {
+    pub fn bgmode(&mut self) -> BgmodeW<'_, Pmmctl2Spec> {
         BgmodeW::new(self, 11)
     }
     #[doc = "Bit 12 - Variable reference voltage ready status."]
     #[inline(always)]
-    pub fn refgenrdy(&mut self) -> RefgenrdyW<Pmmctl2Spec> {
+    pub fn refgenrdy(&mut self) -> RefgenrdyW<'_, Pmmctl2Spec> {
         RefgenrdyW::new(self, 12)
     }
     #[doc = "Bit 13 - Buffered bandgap voltage ready status."]
     #[inline(always)]
-    pub fn refbgrdy(&mut self) -> RefbgrdyW<Pmmctl2Spec> {
+    pub fn refbgrdy(&mut self) -> RefbgrdyW<'_, Pmmctl2Spec> {
         RefbgrdyW::new(self, 13)
     }
     #[doc = "Bits 14:15 - Power Mode Selection. The two bits are used to select the power supply in multi power supply systems. A single power supply system is not affected by the bits. Reserved for future use."]
     #[inline(always)]
-    pub fn pwrmode(&mut self) -> PwrmodeW<Pmmctl2Spec> {
+    pub fn pwrmode(&mut self) -> PwrmodeW<'_, Pmmctl2Spec> {
         PwrmodeW::new(self, 14)
     }
 }

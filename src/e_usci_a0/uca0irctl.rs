@@ -257,32 +257,32 @@ impl R {
 impl W {
     #[doc = "Bit 0 - IrDA encoder/decoder enable"]
     #[inline(always)]
-    pub fn uciren(&mut self) -> UcirenW<Uca0irctlSpec> {
+    pub fn uciren(&mut self) -> UcirenW<'_, Uca0irctlSpec> {
         UcirenW::new(self, 0)
     }
     #[doc = "Bit 1 - IrDA transmit pulse clock select"]
     #[inline(always)]
-    pub fn ucirtxclk(&mut self) -> UcirtxclkW<Uca0irctlSpec> {
+    pub fn ucirtxclk(&mut self) -> UcirtxclkW<'_, Uca0irctlSpec> {
         UcirtxclkW::new(self, 1)
     }
     #[doc = "Bits 2:7 - Transmit pulse length"]
     #[inline(always)]
-    pub fn ucirtxpl(&mut self) -> UcirtxplW<Uca0irctlSpec> {
+    pub fn ucirtxpl(&mut self) -> UcirtxplW<'_, Uca0irctlSpec> {
         UcirtxplW::new(self, 2)
     }
     #[doc = "Bit 8 - IrDA receive filter enabled"]
     #[inline(always)]
-    pub fn ucirrxfe(&mut self) -> UcirrxfeW<Uca0irctlSpec> {
+    pub fn ucirrxfe(&mut self) -> UcirrxfeW<'_, Uca0irctlSpec> {
         UcirrxfeW::new(self, 8)
     }
     #[doc = "Bit 9 - IrDA receive input UCAxRXD polarity"]
     #[inline(always)]
-    pub fn ucirrxpl(&mut self) -> UcirrxplW<Uca0irctlSpec> {
+    pub fn ucirrxpl(&mut self) -> UcirrxplW<'_, Uca0irctlSpec> {
         UcirrxplW::new(self, 9)
     }
     #[doc = "Bits 10:15 - Receive filter length"]
     #[inline(always)]
-    pub fn ucirrxfl(&mut self) -> UcirrxflW<Uca0irctlSpec> {
+    pub fn ucirrxfl(&mut self) -> UcirrxflW<'_, Uca0irctlSpec> {
         UcirrxflW::new(self, 10)
     }
 }

@@ -827,67 +827,67 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Software reset enable"]
     #[inline(always)]
-    pub fn ucswrst(&mut self) -> UcswrstW<Ucb0ctlw0Spec> {
+    pub fn ucswrst(&mut self) -> UcswrstW<'_, Ucb0ctlw0Spec> {
         UcswrstW::new(self, 0)
     }
     #[doc = "Bit 1 - Transmit START condition in master mode"]
     #[inline(always)]
-    pub fn uctxstt(&mut self) -> UctxsttW<Ucb0ctlw0Spec> {
+    pub fn uctxstt(&mut self) -> UctxsttW<'_, Ucb0ctlw0Spec> {
         UctxsttW::new(self, 1)
     }
     #[doc = "Bit 2 - Transmit STOP condition in master mode"]
     #[inline(always)]
-    pub fn uctxstp(&mut self) -> UctxstpW<Ucb0ctlw0Spec> {
+    pub fn uctxstp(&mut self) -> UctxstpW<'_, Ucb0ctlw0Spec> {
         UctxstpW::new(self, 2)
     }
     #[doc = "Bit 3 - Transmit a NACK"]
     #[inline(always)]
-    pub fn uctxnack(&mut self) -> UctxnackW<Ucb0ctlw0Spec> {
+    pub fn uctxnack(&mut self) -> UctxnackW<'_, Ucb0ctlw0Spec> {
         UctxnackW::new(self, 3)
     }
     #[doc = "Bit 4 - Transmitter/receiver"]
     #[inline(always)]
-    pub fn uctr(&mut self) -> UctrW<Ucb0ctlw0Spec> {
+    pub fn uctr(&mut self) -> UctrW<'_, Ucb0ctlw0Spec> {
         UctrW::new(self, 4)
     }
     #[doc = "Bit 5 - Transmit ACK condition in slave mode"]
     #[inline(always)]
-    pub fn uctxack(&mut self) -> UctxackW<Ucb0ctlw0Spec> {
+    pub fn uctxack(&mut self) -> UctxackW<'_, Ucb0ctlw0Spec> {
         UctxackW::new(self, 5)
     }
     #[doc = "Bits 6:7 - eUSCI_B clock source select"]
     #[inline(always)]
-    pub fn ucssel(&mut self) -> UcsselW<Ucb0ctlw0Spec> {
+    pub fn ucssel(&mut self) -> UcsselW<'_, Ucb0ctlw0Spec> {
         UcsselW::new(self, 6)
     }
     #[doc = "Bit 8 - Synchronous mode enable"]
     #[inline(always)]
-    pub fn ucsync(&mut self) -> UcsyncW<Ucb0ctlw0Spec> {
+    pub fn ucsync(&mut self) -> UcsyncW<'_, Ucb0ctlw0Spec> {
         UcsyncW::new(self, 8)
     }
     #[doc = "Bits 9:10 - eUSCI_B mode"]
     #[inline(always)]
-    pub fn ucmode(&mut self) -> UcmodeW<Ucb0ctlw0Spec> {
+    pub fn ucmode(&mut self) -> UcmodeW<'_, Ucb0ctlw0Spec> {
         UcmodeW::new(self, 9)
     }
     #[doc = "Bit 11 - Master mode select"]
     #[inline(always)]
-    pub fn ucmst(&mut self) -> UcmstW<Ucb0ctlw0Spec> {
+    pub fn ucmst(&mut self) -> UcmstW<'_, Ucb0ctlw0Spec> {
         UcmstW::new(self, 11)
     }
     #[doc = "Bit 13 - Multi-master environment select"]
     #[inline(always)]
-    pub fn ucmm(&mut self) -> UcmmW<Ucb0ctlw0Spec> {
+    pub fn ucmm(&mut self) -> UcmmW<'_, Ucb0ctlw0Spec> {
         UcmmW::new(self, 13)
     }
     #[doc = "Bit 14 - Slave addressing mode select"]
     #[inline(always)]
-    pub fn ucsla10(&mut self) -> Ucsla10W<Ucb0ctlw0Spec> {
+    pub fn ucsla10(&mut self) -> Ucsla10W<'_, Ucb0ctlw0Spec> {
         Ucsla10W::new(self, 14)
     }
     #[doc = "Bit 15 - Own addressing mode select"]
     #[inline(always)]
-    pub fn uca10(&mut self) -> Uca10W<Ucb0ctlw0Spec> {
+    pub fn uca10(&mut self) -> Uca10W<'_, Ucb0ctlw0Spec> {
         Uca10W::new(self, 15)
     }
 }

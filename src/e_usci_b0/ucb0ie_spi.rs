@@ -123,12 +123,12 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Receive interrupt enable"]
     #[inline(always)]
-    pub fn ucrxie(&mut self) -> UcrxieW<Ucb0ieSpiSpec> {
+    pub fn ucrxie(&mut self) -> UcrxieW<'_, Ucb0ieSpiSpec> {
         UcrxieW::new(self, 0)
     }
     #[doc = "Bit 1 - Transmit interrupt enable"]
     #[inline(always)]
-    pub fn uctxie(&mut self) -> UctxieW<Ucb0ieSpiSpec> {
+    pub fn uctxie(&mut self) -> UctxieW<'_, Ucb0ieSpiSpec> {
         UctxieW::new(self, 1)
     }
 }

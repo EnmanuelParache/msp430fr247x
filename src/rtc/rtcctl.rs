@@ -398,22 +398,22 @@ impl R {
 impl W {
     #[doc = "Bit 1 - Real-time interrupt enable"]
     #[inline(always)]
-    pub fn rtcie(&mut self) -> RtcieW<RtcctlSpec> {
+    pub fn rtcie(&mut self) -> RtcieW<'_, RtcctlSpec> {
         RtcieW::new(self, 1)
     }
     #[doc = "Bit 6 - Real-time software reset. This is a write only bit and is always read with logic 0. 0b = Write 0 has no effect"]
     #[inline(always)]
-    pub fn rtcsr(&mut self) -> RtcsrW<RtcctlSpec> {
+    pub fn rtcsr(&mut self) -> RtcsrW<'_, RtcctlSpec> {
         RtcsrW::new(self, 6)
     }
     #[doc = "Bits 8:10 - Real-time clock pre-divider select"]
     #[inline(always)]
-    pub fn rtcps(&mut self) -> RtcpsW<RtcctlSpec> {
+    pub fn rtcps(&mut self) -> RtcpsW<'_, RtcctlSpec> {
         RtcpsW::new(self, 8)
     }
     #[doc = "Bits 12:13 - Real-time clock source select"]
     #[inline(always)]
-    pub fn rtcss(&mut self) -> RtcssW<RtcctlSpec> {
+    pub fn rtcss(&mut self) -> RtcssW<'_, RtcctlSpec> {
         RtcssW::new(self, 12)
     }
 }

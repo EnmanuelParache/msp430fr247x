@@ -587,42 +587,42 @@ impl R {
 impl W {
     #[doc = "Bit 0 - TimerB interrupt flag"]
     #[inline(always)]
-    pub fn tbifg(&mut self) -> TbifgW<Tb0ctlSpec> {
+    pub fn tbifg(&mut self) -> TbifgW<'_, Tb0ctlSpec> {
         TbifgW::new(self, 0)
     }
     #[doc = "Bit 1 - TimerB interrupt enable"]
     #[inline(always)]
-    pub fn tbie(&mut self) -> TbieW<Tb0ctlSpec> {
+    pub fn tbie(&mut self) -> TbieW<'_, Tb0ctlSpec> {
         TbieW::new(self, 1)
     }
     #[doc = "Bit 2 - TimerB clear"]
     #[inline(always)]
-    pub fn tbclr(&mut self) -> TbclrW<Tb0ctlSpec> {
+    pub fn tbclr(&mut self) -> TbclrW<'_, Tb0ctlSpec> {
         TbclrW::new(self, 2)
     }
     #[doc = "Bits 4:5 - Mode control"]
     #[inline(always)]
-    pub fn mc(&mut self) -> McW<Tb0ctlSpec> {
+    pub fn mc(&mut self) -> McW<'_, Tb0ctlSpec> {
         McW::new(self, 4)
     }
     #[doc = "Bits 6:7 - Input divider"]
     #[inline(always)]
-    pub fn id(&mut self) -> IdW<Tb0ctlSpec> {
+    pub fn id(&mut self) -> IdW<'_, Tb0ctlSpec> {
         IdW::new(self, 6)
     }
     #[doc = "Bits 8:9 - TimerB clock source select"]
     #[inline(always)]
-    pub fn tbssel(&mut self) -> TbsselW<Tb0ctlSpec> {
+    pub fn tbssel(&mut self) -> TbsselW<'_, Tb0ctlSpec> {
         TbsselW::new(self, 8)
     }
     #[doc = "Bits 11:12 - Counter length"]
     #[inline(always)]
-    pub fn cntl(&mut self) -> CntlW<Tb0ctlSpec> {
+    pub fn cntl(&mut self) -> CntlW<'_, Tb0ctlSpec> {
         CntlW::new(self, 11)
     }
     #[doc = "Bits 13:14 - TBxCLn group"]
     #[inline(always)]
-    pub fn tbclgrp(&mut self) -> TbclgrpW<Tb0ctlSpec> {
+    pub fn tbclgrp(&mut self) -> TbclgrpW<'_, Tb0ctlSpec> {
         TbclgrpW::new(self, 13)
     }
 }

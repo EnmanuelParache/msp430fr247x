@@ -602,47 +602,47 @@ impl R {
 impl W {
     #[doc = "Bit 1 - Comparator output polarity"]
     #[inline(always)]
-    pub fn cpinv(&mut self) -> CpinvW<Cp0ctl1Spec> {
+    pub fn cpinv(&mut self) -> CpinvW<'_, Cp0ctl1Spec> {
         CpinvW::new(self, 1)
     }
     #[doc = "Bit 4 - Interrupt edge select for CEIIFG and CEIFG"]
     #[inline(always)]
-    pub fn cpies(&mut self) -> CpiesW<Cp0ctl1Spec> {
+    pub fn cpies(&mut self) -> CpiesW<'_, Cp0ctl1Spec> {
         CpiesW::new(self, 4)
     }
     #[doc = "Bit 5 - Analog Output Low Pass filter Selection. Changing CPFLT might set interrupt flag."]
     #[inline(always)]
-    pub fn cpflt(&mut self) -> CpfltW<Cp0ctl1Spec> {
+    pub fn cpflt(&mut self) -> CpfltW<'_, Cp0ctl1Spec> {
         CpfltW::new(self, 5)
     }
     #[doc = "Bits 6:7 - Analog Filter Delay selection. These bits are used to select the analog filter delay"]
     #[inline(always)]
-    pub fn cpfltdly(&mut self) -> CpfltdlyW<Cp0ctl1Spec> {
+    pub fn cpfltdly(&mut self) -> CpfltdlyW<'_, Cp0ctl1Spec> {
         CpfltdlyW::new(self, 6)
     }
     #[doc = "Bit 8 - Power mode selection."]
     #[inline(always)]
-    pub fn cpmsel(&mut self) -> CpmselW<Cp0ctl1Spec> {
+    pub fn cpmsel(&mut self) -> CpmselW<'_, Cp0ctl1Spec> {
         CpmselW::new(self, 8)
     }
     #[doc = "Bit 9 - Comparator enable/disable. This bit is used to disable/enable the comparator. When the comparator is disabled, the Comparator consumes no power."]
     #[inline(always)]
-    pub fn cpen(&mut self) -> CpenW<Cp0ctl1Spec> {
+    pub fn cpen(&mut self) -> CpenW<'_, Cp0ctl1Spec> {
         CpenW::new(self, 9)
     }
     #[doc = "Bits 10:11 - Programable Hysteresis mode. These bits are used to select the Hysteresis mode."]
     #[inline(always)]
-    pub fn cphsel(&mut self) -> CphselW<Cp0ctl1Spec> {
+    pub fn cphsel(&mut self) -> CphselW<'_, Cp0ctl1Spec> {
         CphselW::new(self, 10)
     }
     #[doc = "Bit 14 - Comparator interrupt output enable bit"]
     #[inline(always)]
-    pub fn cpie(&mut self) -> CpieW<Cp0ctl1Spec> {
+    pub fn cpie(&mut self) -> CpieW<'_, Cp0ctl1Spec> {
         CpieW::new(self, 14)
     }
     #[doc = "Bit 15 - Comparator inverted interrupt output enable bit"]
     #[inline(always)]
-    pub fn cpiie(&mut self) -> CpiieW<Cp0ctl1Spec> {
+    pub fn cpiie(&mut self) -> CpiieW<'_, Cp0ctl1Spec> {
         CpiieW::new(self, 15)
     }
 }

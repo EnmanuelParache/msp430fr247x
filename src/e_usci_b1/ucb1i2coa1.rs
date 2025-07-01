@@ -74,12 +74,12 @@ impl R {
 impl W {
     #[doc = "Bits 0:9 - I2C own address"]
     #[inline(always)]
-    pub fn i2coa1(&mut self) -> I2coa1W<Ucb1i2coa1Spec> {
+    pub fn i2coa1(&mut self) -> I2coa1W<'_, Ucb1i2coa1Spec> {
         I2coa1W::new(self, 0)
     }
     #[doc = "Bit 10 - Own Address enable register"]
     #[inline(always)]
-    pub fn ucoaen(&mut self) -> UcoaenW<Ucb1i2coa1Spec> {
+    pub fn ucoaen(&mut self) -> UcoaenW<'_, Ucb1i2coa1Spec> {
         UcoaenW::new(self, 10)
     }
 }

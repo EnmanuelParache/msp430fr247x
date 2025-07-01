@@ -424,32 +424,32 @@ impl R {
 impl W {
     #[doc = "Bits 0:2 - Watchdog timer interval select"]
     #[inline(always)]
-    pub fn wdtis(&mut self) -> WdtisW<WdtctlSpec> {
+    pub fn wdtis(&mut self) -> WdtisW<'_, WdtctlSpec> {
         WdtisW::new(self, 0)
     }
     #[doc = "Bit 3 - Watchdog timer counter clear"]
     #[inline(always)]
-    pub fn wdtcntcl(&mut self) -> WdtcntclW<WdtctlSpec> {
+    pub fn wdtcntcl(&mut self) -> WdtcntclW<'_, WdtctlSpec> {
         WdtcntclW::new(self, 3)
     }
     #[doc = "Bit 4 - Watchdog timer mode select"]
     #[inline(always)]
-    pub fn wdttmsel(&mut self) -> WdttmselW<WdtctlSpec> {
+    pub fn wdttmsel(&mut self) -> WdttmselW<'_, WdtctlSpec> {
         WdttmselW::new(self, 4)
     }
     #[doc = "Bits 5:6 - Watchdog timer clock source select"]
     #[inline(always)]
-    pub fn wdtssel(&mut self) -> WdtsselW<WdtctlSpec> {
+    pub fn wdtssel(&mut self) -> WdtsselW<'_, WdtctlSpec> {
         WdtsselW::new(self, 5)
     }
     #[doc = "Bit 7 - Watchdog timer hold"]
     #[inline(always)]
-    pub fn wdthold(&mut self) -> WdtholdW<WdtctlSpec> {
+    pub fn wdthold(&mut self) -> WdtholdW<'_, WdtctlSpec> {
         WdtholdW::new(self, 7)
     }
     #[doc = "Bits 8:15 - Watchdog timer password"]
     #[inline(always)]
-    pub fn wdtpw(&mut self) -> WdtpwW<WdtctlSpec> {
+    pub fn wdtpw(&mut self) -> WdtpwW<'_, WdtctlSpec> {
         WdtpwW::new(self, 8)
     }
 }

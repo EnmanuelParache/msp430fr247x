@@ -123,12 +123,12 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Comparator output interrupt flag"]
     #[inline(always)]
-    pub fn cpifg(&mut self) -> CpifgW<Cp0intSpec> {
+    pub fn cpifg(&mut self) -> CpifgW<'_, Cp0intSpec> {
         CpifgW::new(self, 0)
     }
     #[doc = "Bit 1 - Comparator output inverted interrupt flag"]
     #[inline(always)]
-    pub fn cpiifg(&mut self) -> CpiifgW<Cp0intSpec> {
+    pub fn cpiifg(&mut self) -> CpiifgW<'_, Cp0intSpec> {
         CpiifgW::new(self, 1)
     }
 }

@@ -159,12 +159,12 @@ impl R {
 impl W {
     #[doc = "Bits 4:6 - Wait state numbers"]
     #[inline(always)]
-    pub fn nwaits(&mut self) -> NwaitsW<Frctl0Spec> {
+    pub fn nwaits(&mut self) -> NwaitsW<'_, Frctl0Spec> {
         NwaitsW::new(self, 4)
     }
     #[doc = "Bits 8:15 - FRCTLPW password"]
     #[inline(always)]
-    pub fn frctlpw(&mut self) -> FrctlpwW<Frctl0Spec> {
+    pub fn frctlpw(&mut self) -> FrctlpwW<'_, Frctl0Spec> {
         FrctlpwW::new(self, 8)
     }
 }

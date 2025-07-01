@@ -379,27 +379,27 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Incoming JTAG Mailbox 0 flag"]
     #[inline(always)]
-    pub fn jmbin0fg(&mut self) -> Jmbin0fgW<SysjmbcSpec> {
+    pub fn jmbin0fg(&mut self) -> Jmbin0fgW<'_, SysjmbcSpec> {
         Jmbin0fgW::new(self, 0)
     }
     #[doc = "Bit 1 - Incoming JTAG Mailbox 1 flag"]
     #[inline(always)]
-    pub fn jmbin1fg(&mut self) -> Jmbin1fgW<SysjmbcSpec> {
+    pub fn jmbin1fg(&mut self) -> Jmbin1fgW<'_, SysjmbcSpec> {
         Jmbin1fgW::new(self, 1)
     }
     #[doc = "Bit 4 - Operation mode of JMB"]
     #[inline(always)]
-    pub fn jmbmode(&mut self) -> JmbmodeW<SysjmbcSpec> {
+    pub fn jmbmode(&mut self) -> JmbmodeW<'_, SysjmbcSpec> {
         JmbmodeW::new(self, 4)
     }
     #[doc = "Bit 6 - Incoming JTAG Mailbox 0 flag auto-clear disable"]
     #[inline(always)]
-    pub fn jmbclr0off(&mut self) -> Jmbclr0offW<SysjmbcSpec> {
+    pub fn jmbclr0off(&mut self) -> Jmbclr0offW<'_, SysjmbcSpec> {
         Jmbclr0offW::new(self, 6)
     }
     #[doc = "Bit 7 - Incoming JTAG Mailbox 1 flag auto-clear disable"]
     #[inline(always)]
-    pub fn jmbclr1off(&mut self) -> Jmbclr1offW<SysjmbcSpec> {
+    pub fn jmbclr1off(&mut self) -> Jmbclr1offW<'_, SysjmbcSpec> {
         Jmbclr1offW::new(self, 7)
     }
 }

@@ -355,32 +355,32 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Watchdog timer interrupt enable"]
     #[inline(always)]
-    pub fn wdtie(&mut self) -> WdtieW<Sfrie1Spec> {
+    pub fn wdtie(&mut self) -> WdtieW<'_, Sfrie1Spec> {
         WdtieW::new(self, 0)
     }
     #[doc = "Bit 1 - Oscillator fault interrupt enable"]
     #[inline(always)]
-    pub fn ofie(&mut self) -> OfieW<Sfrie1Spec> {
+    pub fn ofie(&mut self) -> OfieW<'_, Sfrie1Spec> {
         OfieW::new(self, 1)
     }
     #[doc = "Bit 3 - Vacant memory access interrupt enable"]
     #[inline(always)]
-    pub fn vmaie(&mut self) -> VmaieW<Sfrie1Spec> {
+    pub fn vmaie(&mut self) -> VmaieW<'_, Sfrie1Spec> {
         VmaieW::new(self, 3)
     }
     #[doc = "Bit 4 - NMI pin interrupt enable"]
     #[inline(always)]
-    pub fn nmiie(&mut self) -> NmiieW<Sfrie1Spec> {
+    pub fn nmiie(&mut self) -> NmiieW<'_, Sfrie1Spec> {
         NmiieW::new(self, 4)
     }
     #[doc = "Bit 6 - JTAG mailbox input interrupt enable"]
     #[inline(always)]
-    pub fn jmbinie(&mut self) -> JmbinieW<Sfrie1Spec> {
+    pub fn jmbinie(&mut self) -> JmbinieW<'_, Sfrie1Spec> {
         JmbinieW::new(self, 6)
     }
     #[doc = "Bit 7 - JTAG mailbox output interrupt enable"]
     #[inline(always)]
-    pub fn jmboutie(&mut self) -> JmboutieW<Sfrie1Spec> {
+    pub fn jmboutie(&mut self) -> JmboutieW<'_, Sfrie1Spec> {
         JmboutieW::new(self, 7)
     }
 }

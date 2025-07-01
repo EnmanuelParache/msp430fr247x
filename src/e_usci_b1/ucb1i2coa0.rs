@@ -132,17 +132,17 @@ impl R {
 impl W {
     #[doc = "Bits 0:9 - I2C own address"]
     #[inline(always)]
-    pub fn i2coa0(&mut self) -> I2coa0W<Ucb1i2coa0Spec> {
+    pub fn i2coa0(&mut self) -> I2coa0W<'_, Ucb1i2coa0Spec> {
         I2coa0W::new(self, 0)
     }
     #[doc = "Bit 10 - Own Address enable register"]
     #[inline(always)]
-    pub fn ucoaen(&mut self) -> UcoaenW<Ucb1i2coa0Spec> {
+    pub fn ucoaen(&mut self) -> UcoaenW<'_, Ucb1i2coa0Spec> {
         UcoaenW::new(self, 10)
     }
     #[doc = "Bit 15 - General call response enable"]
     #[inline(always)]
-    pub fn ucgcen(&mut self) -> UcgcenW<Ucb1i2coa0Spec> {
+    pub fn ucgcen(&mut self) -> UcgcenW<'_, Ucb1i2coa0Spec> {
         UcgcenW::new(self, 15)
     }
 }

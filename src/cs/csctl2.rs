@@ -159,12 +159,12 @@ impl R {
 impl W {
     #[doc = "Bits 0:9 - Multiplier bits. These bits set the multiplier value N of the DCO. N must be greater than 0. Writing zero to FLLN causes N to be set to 1."]
     #[inline(always)]
-    pub fn flln(&mut self) -> FllnW<Csctl2Spec> {
+    pub fn flln(&mut self) -> FllnW<'_, Csctl2Spec> {
         FllnW::new(self, 0)
     }
     #[doc = "Bits 12:14 - FLL loop divider. These bits divide f(DCOCLK) in the FLL feedback loop. This results in an additional multiplier for the multiplier bits. See also multiplier bits."]
     #[inline(always)]
-    pub fn flld(&mut self) -> FlldW<Csctl2Spec> {
+    pub fn flld(&mut self) -> FlldW<'_, Csctl2Spec> {
         FlldW::new(self, 12)
     }
 }

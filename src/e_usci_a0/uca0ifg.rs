@@ -239,22 +239,22 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Receive interrupt flag"]
     #[inline(always)]
-    pub fn ucrxifg(&mut self) -> UcrxifgW<Uca0ifgSpec> {
+    pub fn ucrxifg(&mut self) -> UcrxifgW<'_, Uca0ifgSpec> {
         UcrxifgW::new(self, 0)
     }
     #[doc = "Bit 1 - Transmit interrupt flag"]
     #[inline(always)]
-    pub fn uctxifg(&mut self) -> UctxifgW<Uca0ifgSpec> {
+    pub fn uctxifg(&mut self) -> UctxifgW<'_, Uca0ifgSpec> {
         UctxifgW::new(self, 1)
     }
     #[doc = "Bit 2 - Start bit interrupt flag"]
     #[inline(always)]
-    pub fn ucsttifg(&mut self) -> UcsttifgW<Uca0ifgSpec> {
+    pub fn ucsttifg(&mut self) -> UcsttifgW<'_, Uca0ifgSpec> {
         UcsttifgW::new(self, 2)
     }
     #[doc = "Bit 3 - Transmit ready interrupt enable"]
     #[inline(always)]
-    pub fn uctxcptifg(&mut self) -> UctxcptifgW<Uca0ifgSpec> {
+    pub fn uctxcptifg(&mut self) -> UctxcptifgW<'_, Uca0ifgSpec> {
         UctxcptifgW::new(self, 3)
     }
 }

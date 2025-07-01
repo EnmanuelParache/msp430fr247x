@@ -25,12 +25,12 @@ impl R {
 impl W {
     #[doc = "Bits 0:8 - DCO tap selection. These bits select the DCO tap and are modified automatically during FLL operation."]
     #[inline(always)]
-    pub fn dco(&mut self) -> DcoW<Csctl0Spec> {
+    pub fn dco(&mut self) -> DcoW<'_, Csctl0Spec> {
         DcoW::new(self, 0)
     }
     #[doc = "Bits 9:13 - Modulation bit counter. These bits select the modulation pattern. All MOD bits are modified automatically during FLL operation. The DCO register value is incremented when the modulation bit counter rolls over from 31 to 0. If the modulation bit counter decrements from 0 to the maximum count, the DCO register value is also decreased."]
     #[inline(always)]
-    pub fn mod_(&mut self) -> ModW<Csctl0Spec> {
+    pub fn mod_(&mut self) -> ModW<'_, Csctl0Spec> {
         ModW::new(self, 9)
     }
 }

@@ -877,77 +877,77 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Receive interrupt enable 0"]
     #[inline(always)]
-    pub fn ucrxie0(&mut self) -> Ucrxie0W<Ucb1ieSpec> {
+    pub fn ucrxie0(&mut self) -> Ucrxie0W<'_, Ucb1ieSpec> {
         Ucrxie0W::new(self, 0)
     }
     #[doc = "Bit 1 - Transmit interrupt enable 0"]
     #[inline(always)]
-    pub fn uctxie0(&mut self) -> Uctxie0W<Ucb1ieSpec> {
+    pub fn uctxie0(&mut self) -> Uctxie0W<'_, Ucb1ieSpec> {
         Uctxie0W::new(self, 1)
     }
     #[doc = "Bit 2 - START condition interrupt enable"]
     #[inline(always)]
-    pub fn ucsttie(&mut self) -> UcsttieW<Ucb1ieSpec> {
+    pub fn ucsttie(&mut self) -> UcsttieW<'_, Ucb1ieSpec> {
         UcsttieW::new(self, 2)
     }
     #[doc = "Bit 3 - STOP condition interrupt enable"]
     #[inline(always)]
-    pub fn ucstpie(&mut self) -> UcstpieW<Ucb1ieSpec> {
+    pub fn ucstpie(&mut self) -> UcstpieW<'_, Ucb1ieSpec> {
         UcstpieW::new(self, 3)
     }
     #[doc = "Bit 4 - Arbitration lost interrupt enable"]
     #[inline(always)]
-    pub fn ucalie(&mut self) -> UcalieW<Ucb1ieSpec> {
+    pub fn ucalie(&mut self) -> UcalieW<'_, Ucb1ieSpec> {
         UcalieW::new(self, 4)
     }
     #[doc = "Bit 5 - Not-acknowledge interrupt enable"]
     #[inline(always)]
-    pub fn ucnackie(&mut self) -> UcnackieW<Ucb1ieSpec> {
+    pub fn ucnackie(&mut self) -> UcnackieW<'_, Ucb1ieSpec> {
         UcnackieW::new(self, 5)
     }
     #[doc = "Bit 6 - Byte counter interrupt enable"]
     #[inline(always)]
-    pub fn ucbcntie(&mut self) -> UcbcntieW<Ucb1ieSpec> {
+    pub fn ucbcntie(&mut self) -> UcbcntieW<'_, Ucb1ieSpec> {
         UcbcntieW::new(self, 6)
     }
     #[doc = "Bit 7 - Clock low timeout interrupt enable"]
     #[inline(always)]
-    pub fn uccltoie(&mut self) -> UccltoieW<Ucb1ieSpec> {
+    pub fn uccltoie(&mut self) -> UccltoieW<'_, Ucb1ieSpec> {
         UccltoieW::new(self, 7)
     }
     #[doc = "Bit 8 - Receive interrupt enable 1"]
     #[inline(always)]
-    pub fn ucrxie1(&mut self) -> Ucrxie1W<Ucb1ieSpec> {
+    pub fn ucrxie1(&mut self) -> Ucrxie1W<'_, Ucb1ieSpec> {
         Ucrxie1W::new(self, 8)
     }
     #[doc = "Bit 9 - Transmit interrupt enable 1"]
     #[inline(always)]
-    pub fn uctxie1(&mut self) -> Uctxie1W<Ucb1ieSpec> {
+    pub fn uctxie1(&mut self) -> Uctxie1W<'_, Ucb1ieSpec> {
         Uctxie1W::new(self, 9)
     }
     #[doc = "Bit 10 - Receive interrupt enable 2"]
     #[inline(always)]
-    pub fn ucrxie2(&mut self) -> Ucrxie2W<Ucb1ieSpec> {
+    pub fn ucrxie2(&mut self) -> Ucrxie2W<'_, Ucb1ieSpec> {
         Ucrxie2W::new(self, 10)
     }
     #[doc = "Bit 11 - Transmit interrupt enable 2"]
     #[inline(always)]
-    pub fn uctxie2(&mut self) -> Uctxie2W<Ucb1ieSpec> {
+    pub fn uctxie2(&mut self) -> Uctxie2W<'_, Ucb1ieSpec> {
         Uctxie2W::new(self, 11)
     }
     #[doc = "Bit 12 - Receive interrupt enable 3"]
     #[inline(always)]
-    pub fn ucrxie3(&mut self) -> Ucrxie3W<Ucb1ieSpec> {
+    pub fn ucrxie3(&mut self) -> Ucrxie3W<'_, Ucb1ieSpec> {
         Ucrxie3W::new(self, 12)
     }
     #[doc = "Bit 13 - Transmit interrupt enable 3"]
     #[inline(always)]
-    pub fn uctxie3(&mut self) -> Uctxie3W<Ucb1ieSpec> {
+    pub fn uctxie3(&mut self) -> Uctxie3W<'_, Ucb1ieSpec> {
         Uctxie3W::new(self, 13)
     }
     #[doc = "Bit 14 - Bit position 9 interrupt enable"]
     #[inline(always)]
-    pub fn ucbit9ie(&mut self) -> Ucbit9ieW<Ucb1ieSpec> {
+    pub fn ucbit9ie(&mut self) -> Ucbit9ieW<'_, Ucb1ieSpec> {
         Ucbit9ieW::new(self, 14)
     }
 }

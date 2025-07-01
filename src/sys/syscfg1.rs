@@ -388,32 +388,32 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Infrared enable"]
     #[inline(always)]
-    pub fn iren(&mut self) -> IrenW<Syscfg1Spec> {
+    pub fn iren(&mut self) -> IrenW<'_, Syscfg1Spec> {
         IrenW::new(self, 0)
     }
     #[doc = "Bit 1 - Infrared polarity select"]
     #[inline(always)]
-    pub fn irpsel(&mut self) -> IrpselW<Syscfg1Spec> {
+    pub fn irpsel(&mut self) -> IrpselW<'_, Syscfg1Spec> {
         IrpselW::new(self, 1)
     }
     #[doc = "Bit 2 - Infrared mode select"]
     #[inline(always)]
-    pub fn irmsel(&mut self) -> IrmselW<Syscfg1Spec> {
+    pub fn irmsel(&mut self) -> IrmselW<'_, Syscfg1Spec> {
         IrmselW::new(self, 2)
     }
     #[doc = "Bit 3 - Infrared data source select"]
     #[inline(always)]
-    pub fn irdssel(&mut self) -> IrdsselW<Syscfg1Spec> {
+    pub fn irdssel(&mut self) -> IrdsselW<'_, Syscfg1Spec> {
         IrdsselW::new(self, 3)
     }
     #[doc = "Bit 4 - Infrared data"]
     #[inline(always)]
-    pub fn irdata(&mut self) -> IrdataW<Syscfg1Spec> {
+    pub fn irdata(&mut self) -> IrdataW<'_, Syscfg1Spec> {
         IrdataW::new(self, 4)
     }
     #[doc = "Bits 6:7 - Captivate Conversion triggered Source Selection"]
     #[inline(always)]
-    pub fn syncsel(&mut self) -> SyncselW<Syscfg1Spec> {
+    pub fn syncsel(&mut self) -> SyncselW<'_, Syscfg1Spec> {
         SyncselW::new(self, 6)
     }
 }

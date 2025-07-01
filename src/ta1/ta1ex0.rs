@@ -150,7 +150,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:2 - Input divider expansion"]
     #[inline(always)]
-    pub fn taidex(&mut self) -> TaidexW<Ta1ex0Spec> {
+    pub fn taidex(&mut self) -> TaidexW<'_, Ta1ex0Spec> {
         TaidexW::new(self, 0)
     }
 }

@@ -239,22 +239,22 @@ impl R {
 impl W {
     #[doc = "Bit 0 - ACLK clock request enable. Setting this enables conditional module requests for ACLK"]
     #[inline(always)]
-    pub fn aclkreqen(&mut self) -> AclkreqenW<Csctl8Spec> {
+    pub fn aclkreqen(&mut self) -> AclkreqenW<'_, Csctl8Spec> {
         AclkreqenW::new(self, 0)
     }
     #[doc = "Bit 1 - MCLK clock request enable. Setting this enables conditional module requests for MCLK"]
     #[inline(always)]
-    pub fn mclkreqen(&mut self) -> MclkreqenW<Csctl8Spec> {
+    pub fn mclkreqen(&mut self) -> MclkreqenW<'_, Csctl8Spec> {
         MclkreqenW::new(self, 1)
     }
     #[doc = "Bit 2 - SMCLK clock request enable. Setting this enables conditional module requests for SMCLK"]
     #[inline(always)]
-    pub fn smclkreqen(&mut self) -> SmclkreqenW<Csctl8Spec> {
+    pub fn smclkreqen(&mut self) -> SmclkreqenW<'_, Csctl8Spec> {
         SmclkreqenW::new(self, 2)
     }
     #[doc = "Bit 3 - MODOSC clock request enable. Setting this enables conditional module requests for MODOSC."]
     #[inline(always)]
-    pub fn modoscreqen(&mut self) -> ModoscreqenW<Csctl8Spec> {
+    pub fn modoscreqen(&mut self) -> ModoscreqenW<'_, Csctl8Spec> {
         ModoscreqenW::new(self, 3)
     }
 }

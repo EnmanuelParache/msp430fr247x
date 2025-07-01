@@ -150,7 +150,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:2 - Input divider expansion"]
     #[inline(always)]
-    pub fn tbidex(&mut self) -> TbidexW<Tb0ex0Spec> {
+    pub fn tbidex(&mut self) -> TbidexW<'_, Tb0ex0Spec> {
         TbidexW::new(self, 0)
     }
 }

@@ -1749,12 +1749,12 @@ impl R {
 impl W {
     #[doc = "Bits 0:5 - 1st 6-bit DAC buffer Data"]
     #[inline(always)]
-    pub fn cpdacbuf1(&mut self) -> Cpdacbuf1W<Cp0dacdataSpec> {
+    pub fn cpdacbuf1(&mut self) -> Cpdacbuf1W<'_, Cp0dacdataSpec> {
         Cpdacbuf1W::new(self, 0)
     }
     #[doc = "Bits 8:13 - 2nd 6-bit DAC buffer Data"]
     #[inline(always)]
-    pub fn cpdacbuf2(&mut self) -> Cpdacbuf2W<Cp0dacdataSpec> {
+    pub fn cpdacbuf2(&mut self) -> Cpdacbuf2W<'_, Cp0dacdataSpec> {
         Cpdacbuf2W::new(self, 8)
     }
 }

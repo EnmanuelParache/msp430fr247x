@@ -405,32 +405,32 @@ impl R {
 impl W {
     #[doc = "Bit 0 - TimerA interrupt flag"]
     #[inline(always)]
-    pub fn taifg(&mut self) -> TaifgW<Ta1ctlSpec> {
+    pub fn taifg(&mut self) -> TaifgW<'_, Ta1ctlSpec> {
         TaifgW::new(self, 0)
     }
     #[doc = "Bit 1 - TimerA interrupt enable"]
     #[inline(always)]
-    pub fn taie(&mut self) -> TaieW<Ta1ctlSpec> {
+    pub fn taie(&mut self) -> TaieW<'_, Ta1ctlSpec> {
         TaieW::new(self, 1)
     }
     #[doc = "Bit 2 - TimerA clear"]
     #[inline(always)]
-    pub fn taclr(&mut self) -> TaclrW<Ta1ctlSpec> {
+    pub fn taclr(&mut self) -> TaclrW<'_, Ta1ctlSpec> {
         TaclrW::new(self, 2)
     }
     #[doc = "Bits 4:5 - Mode control"]
     #[inline(always)]
-    pub fn mc(&mut self) -> McW<Ta1ctlSpec> {
+    pub fn mc(&mut self) -> McW<'_, Ta1ctlSpec> {
         McW::new(self, 4)
     }
     #[doc = "Bits 6:7 - Input divider"]
     #[inline(always)]
-    pub fn id(&mut self) -> IdW<Ta1ctlSpec> {
+    pub fn id(&mut self) -> IdW<'_, Ta1ctlSpec> {
         IdW::new(self, 6)
     }
     #[doc = "Bits 8:9 - TimerA clock source select"]
     #[inline(always)]
-    pub fn tassel(&mut self) -> TasselW<Ta1ctlSpec> {
+    pub fn tassel(&mut self) -> TasselW<'_, Ta1ctlSpec> {
         TasselW::new(self, 8)
     }
 }

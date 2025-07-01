@@ -355,32 +355,32 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Watchdog timer interrupt flag"]
     #[inline(always)]
-    pub fn wdtifg(&mut self) -> WdtifgW<Sfrifg1Spec> {
+    pub fn wdtifg(&mut self) -> WdtifgW<'_, Sfrifg1Spec> {
         WdtifgW::new(self, 0)
     }
     #[doc = "Bit 1 - Oscillator fault interrupt flag"]
     #[inline(always)]
-    pub fn ofifg(&mut self) -> OfifgW<Sfrifg1Spec> {
+    pub fn ofifg(&mut self) -> OfifgW<'_, Sfrifg1Spec> {
         OfifgW::new(self, 1)
     }
     #[doc = "Bit 3 - Vacant memory access interrupt flag"]
     #[inline(always)]
-    pub fn vmaifg(&mut self) -> VmaifgW<Sfrifg1Spec> {
+    pub fn vmaifg(&mut self) -> VmaifgW<'_, Sfrifg1Spec> {
         VmaifgW::new(self, 3)
     }
     #[doc = "Bit 4 - NMI pin interrupt flag"]
     #[inline(always)]
-    pub fn nmiifg(&mut self) -> NmiifgW<Sfrifg1Spec> {
+    pub fn nmiifg(&mut self) -> NmiifgW<'_, Sfrifg1Spec> {
         NmiifgW::new(self, 4)
     }
     #[doc = "Bit 6 - JTAG mailbox input interrupt flag"]
     #[inline(always)]
-    pub fn jmbinifg(&mut self) -> JmbinifgW<Sfrifg1Spec> {
+    pub fn jmbinifg(&mut self) -> JmbinifgW<'_, Sfrifg1Spec> {
         JmbinifgW::new(self, 6)
     }
     #[doc = "Bit 7 - JTAG mailbox output interrupt flag"]
     #[inline(always)]
-    pub fn jmboutifg(&mut self) -> JmboutifgW<Sfrifg1Spec> {
+    pub fn jmboutifg(&mut self) -> JmboutifgW<'_, Sfrifg1Spec> {
         JmboutifgW::new(self, 7)
     }
 }

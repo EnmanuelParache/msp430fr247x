@@ -181,17 +181,17 @@ impl R {
 impl W {
     #[doc = "Bit 2 - RAM assigned to BSL"]
     #[inline(always)]
-    pub fn sysbslr(&mut self) -> SysbslrW<SysbslcSpec> {
+    pub fn sysbslr(&mut self) -> SysbslrW<'_, SysbslcSpec> {
         SysbslrW::new(self, 2)
     }
     #[doc = "Bit 14 - Bootstrap loader memory disable for the size covered in SYSBSLSIZE"]
     #[inline(always)]
-    pub fn sysbsloff(&mut self) -> SysbsloffW<SysbslcSpec> {
+    pub fn sysbsloff(&mut self) -> SysbsloffW<'_, SysbslcSpec> {
         SysbsloffW::new(self, 14)
     }
     #[doc = "Bit 15 - Bootstrap loader memory protection enable for the size covered in SYSBSLSIZE. By default, this bit is cleared by hardware with a BOR event (as indicated above); however, the boot code that checks for an available BSL may set this bit in software to protect the BSL. Because devices normally come with a TI BSL preprogrammed and protected, the boot code sets this bit."]
     #[inline(always)]
-    pub fn sysbslpe(&mut self) -> SysbslpeW<SysbslcSpec> {
+    pub fn sysbslpe(&mut self) -> SysbslpeW<'_, SysbslcSpec> {
         SysbslpeW::new(self, 15)
     }
 }

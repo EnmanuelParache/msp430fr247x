@@ -228,12 +228,12 @@ impl R {
 impl W {
     #[doc = "Bits 0:2 - Selects the MCLK and SMCLK source"]
     #[inline(always)]
-    pub fn selms(&mut self) -> SelmsW<Csctl4Spec> {
+    pub fn selms(&mut self) -> SelmsW<'_, Csctl4Spec> {
         SelmsW::new(self, 0)
     }
     #[doc = "Bits 8:9 - Selects the ACLK source"]
     #[inline(always)]
-    pub fn sela(&mut self) -> SelaW<Csctl4Spec> {
+    pub fn sela(&mut self) -> SelaW<'_, Csctl4Spec> {
         SelaW::new(self, 8)
     }
 }

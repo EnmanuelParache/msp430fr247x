@@ -141,22 +141,22 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Program FRAM write protection"]
     #[inline(always)]
-    pub fn pfwp(&mut self) -> PfwpW<Syscfg0Spec> {
+    pub fn pfwp(&mut self) -> PfwpW<'_, Syscfg0Spec> {
         PfwpW::new(self, 0)
     }
     #[doc = "Bit 1 - Data FRAM write protection"]
     #[inline(always)]
-    pub fn dfwp(&mut self) -> DfwpW<Syscfg0Spec> {
+    pub fn dfwp(&mut self) -> DfwpW<'_, Syscfg0Spec> {
         DfwpW::new(self, 1)
     }
     #[doc = "Bits 2:7 - Program FRAM write protection offset address from the beginning of Program FRAM. The offset increases by 1KB resolution"]
     #[inline(always)]
-    pub fn frwpoa(&mut self) -> FrwpoaW<Syscfg0Spec> {
+    pub fn frwpoa(&mut self) -> FrwpoaW<'_, Syscfg0Spec> {
         FrwpoaW::new(self, 2)
     }
     #[doc = "Bits 8:15 - FRWPPW password."]
     #[inline(always)]
-    pub fn frwppw(&mut self) -> FrwppwW<Syscfg0Spec> {
+    pub fn frwppw(&mut self) -> FrwppwW<'_, Syscfg0Spec> {
         FrwppwW::new(self, 8)
     }
 }

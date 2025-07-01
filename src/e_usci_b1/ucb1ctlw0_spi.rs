@@ -653,52 +653,52 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Software reset enable"]
     #[inline(always)]
-    pub fn ucswrst(&mut self) -> UcswrstW<Ucb1ctlw0SpiSpec> {
+    pub fn ucswrst(&mut self) -> UcswrstW<'_, Ucb1ctlw0SpiSpec> {
         UcswrstW::new(self, 0)
     }
     #[doc = "Bit 1 - STE mode select in master mode."]
     #[inline(always)]
-    pub fn ucstem(&mut self) -> UcstemW<Ucb1ctlw0SpiSpec> {
+    pub fn ucstem(&mut self) -> UcstemW<'_, Ucb1ctlw0SpiSpec> {
         UcstemW::new(self, 1)
     }
     #[doc = "Bits 6:7 - eUSCI_B clock source select"]
     #[inline(always)]
-    pub fn ucssel(&mut self) -> UcsselW<Ucb1ctlw0SpiSpec> {
+    pub fn ucssel(&mut self) -> UcsselW<'_, Ucb1ctlw0SpiSpec> {
         UcsselW::new(self, 6)
     }
     #[doc = "Bit 8 - Synchronous mode enable"]
     #[inline(always)]
-    pub fn ucsync(&mut self) -> UcsyncW<Ucb1ctlw0SpiSpec> {
+    pub fn ucsync(&mut self) -> UcsyncW<'_, Ucb1ctlw0SpiSpec> {
         UcsyncW::new(self, 8)
     }
     #[doc = "Bits 9:10 - eUSCI mode"]
     #[inline(always)]
-    pub fn ucmode(&mut self) -> UcmodeW<Ucb1ctlw0SpiSpec> {
+    pub fn ucmode(&mut self) -> UcmodeW<'_, Ucb1ctlw0SpiSpec> {
         UcmodeW::new(self, 9)
     }
     #[doc = "Bit 11 - Master mode select"]
     #[inline(always)]
-    pub fn ucmst(&mut self) -> UcmstW<Ucb1ctlw0SpiSpec> {
+    pub fn ucmst(&mut self) -> UcmstW<'_, Ucb1ctlw0SpiSpec> {
         UcmstW::new(self, 11)
     }
     #[doc = "Bit 12 - Character length"]
     #[inline(always)]
-    pub fn uc7bit(&mut self) -> Uc7bitW<Ucb1ctlw0SpiSpec> {
+    pub fn uc7bit(&mut self) -> Uc7bitW<'_, Ucb1ctlw0SpiSpec> {
         Uc7bitW::new(self, 12)
     }
     #[doc = "Bit 13 - MSB first select"]
     #[inline(always)]
-    pub fn ucmsb(&mut self) -> UcmsbW<Ucb1ctlw0SpiSpec> {
+    pub fn ucmsb(&mut self) -> UcmsbW<'_, Ucb1ctlw0SpiSpec> {
         UcmsbW::new(self, 13)
     }
     #[doc = "Bit 14 - Clock polarity select"]
     #[inline(always)]
-    pub fn ucckpl(&mut self) -> UcckplW<Ucb1ctlw0SpiSpec> {
+    pub fn ucckpl(&mut self) -> UcckplW<'_, Ucb1ctlw0SpiSpec> {
         UcckplW::new(self, 14)
     }
     #[doc = "Bit 15 - Clock phase select"]
     #[inline(always)]
-    pub fn ucckph(&mut self) -> UcckphW<Ucb1ctlw0SpiSpec> {
+    pub fn ucckph(&mut self) -> UcckphW<'_, Ucb1ctlw0SpiSpec> {
         UcckphW::new(self, 15)
     }
 }

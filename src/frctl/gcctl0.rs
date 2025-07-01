@@ -297,27 +297,27 @@ impl R {
 impl W {
     #[doc = "Bit 1 - Enables FRAM auto power up after LPM"]
     #[inline(always)]
-    pub fn frlpmpwr(&mut self) -> FrlpmpwrW<Gcctl0Spec> {
+    pub fn frlpmpwr(&mut self) -> FrlpmpwrW<'_, Gcctl0Spec> {
         FrlpmpwrW::new(self, 1)
     }
     #[doc = "Bit 2 - FRAM Memory Power Control Request"]
     #[inline(always)]
-    pub fn frpwr(&mut self) -> FrpwrW<Gcctl0Spec> {
+    pub fn frpwr(&mut self) -> FrpwrW<'_, Gcctl0Spec> {
         FrpwrW::new(self, 2)
     }
     #[doc = "Bit 5 - Enable NMI event for the correctable bit error detection flag (CBDIFG)"]
     #[inline(always)]
-    pub fn cbdie(&mut self) -> CbdieW<Gcctl0Spec> {
+    pub fn cbdie(&mut self) -> CbdieW<'_, Gcctl0Spec> {
         CbdieW::new(self, 5)
     }
     #[doc = "Bit 6 - Enable NMI event for the uncorrectable bit error detection flag (UBDIFG)"]
     #[inline(always)]
-    pub fn ubdie(&mut self) -> UbdieW<Gcctl0Spec> {
+    pub fn ubdie(&mut self) -> UbdieW<'_, Gcctl0Spec> {
         UbdieW::new(self, 6)
     }
     #[doc = "Bit 7 - Enable Power Up Clear (PUC) reset for the uncorrectable bit error detection flag (UBDIFG)"]
     #[inline(always)]
-    pub fn ubdrsten(&mut self) -> UbdrstenW<Gcctl0Spec> {
+    pub fn ubdrsten(&mut self) -> UbdrstenW<'_, Gcctl0Spec> {
         UbdrstenW::new(self, 7)
     }
 }

@@ -137,7 +137,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - interrupt vector value"]
     #[inline(always)]
-    pub fn adciv(&mut self) -> AdcivW<AdcivSpec> {
+    pub fn adciv(&mut self) -> AdcivW<'_, AdcivSpec> {
         AdcivW::new(self, 0)
     }
 }

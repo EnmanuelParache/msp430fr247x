@@ -239,22 +239,22 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Receive interrupt enable"]
     #[inline(always)]
-    pub fn ucrxie(&mut self) -> UcrxieW<Uca0ieSpec> {
+    pub fn ucrxie(&mut self) -> UcrxieW<'_, Uca0ieSpec> {
         UcrxieW::new(self, 0)
     }
     #[doc = "Bit 1 - Transmit interrupt enable"]
     #[inline(always)]
-    pub fn uctxie(&mut self) -> UctxieW<Uca0ieSpec> {
+    pub fn uctxie(&mut self) -> UctxieW<'_, Uca0ieSpec> {
         UctxieW::new(self, 1)
     }
     #[doc = "Bit 2 - Start bit interrupt enable"]
     #[inline(always)]
-    pub fn ucsttie(&mut self) -> UcsttieW<Uca0ieSpec> {
+    pub fn ucsttie(&mut self) -> UcsttieW<'_, Uca0ieSpec> {
         UcsttieW::new(self, 2)
     }
     #[doc = "Bit 3 - Transmit complete interrupt enable"]
     #[inline(always)]
-    pub fn uctxcptie(&mut self) -> UctxcptieW<Uca0ieSpec> {
+    pub fn uctxcptie(&mut self) -> UctxcptieW<'_, Uca0ieSpec> {
         UctxcptieW::new(self, 3)
     }
 }

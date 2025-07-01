@@ -409,22 +409,22 @@ impl R {
 impl W {
     #[doc = "Bits 0:2 - Channel input selected for the V+ terminal"]
     #[inline(always)]
-    pub fn cppsel(&mut self) -> CppselW<Cp0ctl0Spec> {
+    pub fn cppsel(&mut self) -> CppselW<'_, Cp0ctl0Spec> {
         CppselW::new(self, 0)
     }
     #[doc = "Bit 4 - Channel input enable for the V+ terminal"]
     #[inline(always)]
-    pub fn cppen(&mut self) -> CppenW<Cp0ctl0Spec> {
+    pub fn cppen(&mut self) -> CppenW<'_, Cp0ctl0Spec> {
         CppenW::new(self, 4)
     }
     #[doc = "Bits 8:10 - Channel input selected for the - terminal"]
     #[inline(always)]
-    pub fn cpnsel(&mut self) -> CpnselW<Cp0ctl0Spec> {
+    pub fn cpnsel(&mut self) -> CpnselW<'_, Cp0ctl0Spec> {
         CpnselW::new(self, 8)
     }
     #[doc = "Bit 12 - Channel input enable for the - terminal"]
     #[inline(always)]
-    pub fn cpnen(&mut self) -> CpnenW<Cp0ctl0Spec> {
+    pub fn cpnen(&mut self) -> CpnenW<'_, Cp0ctl0Spec> {
         CpnenW::new(self, 12)
     }
 }

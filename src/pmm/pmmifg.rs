@@ -318,27 +318,27 @@ impl R {
 impl W {
     #[doc = "Bit 8 - PMM software brownout reset interrupt flag."]
     #[inline(always)]
-    pub fn pmmborifg(&mut self) -> PmmborifgW<PmmifgSpec> {
+    pub fn pmmborifg(&mut self) -> PmmborifgW<'_, PmmifgSpec> {
         PmmborifgW::new(self, 8)
     }
     #[doc = "Bit 9 - PMM reset pin interrupt flag."]
     #[inline(always)]
-    pub fn pmmrstifg(&mut self) -> PmmrstifgW<PmmifgSpec> {
+    pub fn pmmrstifg(&mut self) -> PmmrstifgW<'_, PmmifgSpec> {
         PmmrstifgW::new(self, 9)
     }
     #[doc = "Bit 10 - PMM software POR interrupt flag."]
     #[inline(always)]
-    pub fn pmmporifg(&mut self) -> PmmporifgW<PmmifgSpec> {
+    pub fn pmmporifg(&mut self) -> PmmporifgW<'_, PmmifgSpec> {
         PmmporifgW::new(self, 10)
     }
     #[doc = "Bit 13 - High-side SVS interrupt flag."]
     #[inline(always)]
-    pub fn svshifg(&mut self) -> SvshifgW<PmmifgSpec> {
+    pub fn svshifg(&mut self) -> SvshifgW<'_, PmmifgSpec> {
         SvshifgW::new(self, 13)
     }
     #[doc = "Bit 15 - LPMx.5 flag."]
     #[inline(always)]
-    pub fn pmmlpm5ifg(&mut self) -> Pmmlpm5ifgW<PmmifgSpec> {
+    pub fn pmmlpm5ifg(&mut self) -> Pmmlpm5ifgW<'_, PmmifgSpec> {
         Pmmlpm5ifgW::new(self, 15)
     }
 }

@@ -486,27 +486,27 @@ impl R {
 impl W {
     #[doc = "Bit 0 - start conversion"]
     #[inline(always)]
-    pub fn adcsc(&mut self) -> AdcscW<Adcctl0Spec> {
+    pub fn adcsc(&mut self) -> AdcscW<'_, Adcctl0Spec> {
         AdcscW::new(self, 0)
     }
     #[doc = "Bit 1 - enable conversion"]
     #[inline(always)]
-    pub fn adcenc(&mut self) -> AdcencW<Adcctl0Spec> {
+    pub fn adcenc(&mut self) -> AdcencW<'_, Adcctl0Spec> {
         AdcencW::new(self, 1)
     }
     #[doc = "Bit 4 - ADC on"]
     #[inline(always)]
-    pub fn adcon(&mut self) -> AdconW<Adcctl0Spec> {
+    pub fn adcon(&mut self) -> AdconW<'_, Adcctl0Spec> {
         AdconW::new(self, 4)
     }
     #[doc = "Bit 7 - sample-and-hold time."]
     #[inline(always)]
-    pub fn adcmsc(&mut self) -> AdcmscW<Adcctl0Spec> {
+    pub fn adcmsc(&mut self) -> AdcmscW<'_, Adcctl0Spec> {
         AdcmscW::new(self, 7)
     }
     #[doc = "Bits 8:11 - sample-and-hold time."]
     #[inline(always)]
-    pub fn adcsht(&mut self) -> AdcshtW<Adcctl0Spec> {
+    pub fn adcsht(&mut self) -> AdcshtW<'_, Adcctl0Spec> {
         AdcshtW::new(self, 8)
     }
 }

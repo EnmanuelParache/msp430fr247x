@@ -529,42 +529,42 @@ impl R {
 impl W {
     #[doc = "Bit 0 - DCO fault flag. If this bit is set, the OFIFG flag is also set. The DCOFFG bit is set if DCO = {0} or DCO = {511}. DCOFFG can be cleared by software. If the DCO fault condition still remains, DCOFFG is set. As long as DCOFFG is set, FLLUNLOCK shows the DCOERROR condition."]
     #[inline(always)]
-    pub fn dcoffg(&mut self) -> DcoffgW<Csctl7Spec> {
+    pub fn dcoffg(&mut self) -> DcoffgW<'_, Csctl7Spec> {
         DcoffgW::new(self, 0)
     }
     #[doc = "Bit 1 - T1 oscillator fault flag. If this bit is set, the OFIFG flag is also set. XT1OFFG is set if a XT1 fault condition exists. XT1OFFG can be cleared by software. If the XT1 fault condition still remains, XT1OFFG is set."]
     #[inline(always)]
-    pub fn xt1offg(&mut self) -> Xt1offgW<Csctl7Spec> {
+    pub fn xt1offg(&mut self) -> Xt1offgW<'_, Csctl7Spec> {
         Xt1offgW::new(self, 1)
     }
     #[doc = "Bit 4 - FLL unlock interrupt flag. This flag is set when FLLUNLOCK bits equal 10b (DCO too fast). If FLLULPUC is also set, a PUC is triggered when FLLUIFG is set."]
     #[inline(always)]
-    pub fn fllulifg(&mut self) -> FllulifgW<Csctl7Spec> {
+    pub fn fllulifg(&mut self) -> FllulifgW<'_, Csctl7Spec> {
         FllulifgW::new(self, 4)
     }
     #[doc = "Bit 6 - Enable start counter for XT1."]
     #[inline(always)]
-    pub fn enstfcnt1(&mut self) -> Enstfcnt1W<Csctl7Spec> {
+    pub fn enstfcnt1(&mut self) -> Enstfcnt1W<'_, Csctl7Spec> {
         Enstfcnt1W::new(self, 6)
     }
     #[doc = "Bits 8:9 - Unlock. These bits indicate the current FLL unlock condition. These bits are both set as long as the DCOFFG flag is set."]
     #[inline(always)]
-    pub fn fllunlock(&mut self) -> FllunlockW<Csctl7Spec> {
+    pub fn fllunlock(&mut self) -> FllunlockW<'_, Csctl7Spec> {
         FllunlockW::new(self, 8)
     }
     #[doc = "Bits 10:11 - Unlock history bits. These bits indicate the FLL unlock condition history. As soon as any unlock condition happens, the respective bits are set and remain set until cleared by software by writing 0 to it or by a POR."]
     #[inline(always)]
-    pub fn fllunlockhis(&mut self) -> FllunlockhisW<Csctl7Spec> {
+    pub fn fllunlockhis(&mut self) -> FllunlockhisW<'_, Csctl7Spec> {
         FllunlockhisW::new(self, 10)
     }
     #[doc = "Bit 12 - FLL unlock PUC enable. If the FLLULPUC bit is set, a reset (PUC) is triggered if FLLULIFG is set. FLLULIFG indicates when FLLUNLOCK bits equal 10 (too fast). FLLULPUC is automatically cleared upon servicing the event. If FLLULPUC is cleared (0), no PUC can be triggered by FLLULIFG."]
     #[inline(always)]
-    pub fn fllulpuc(&mut self) -> FllulpucW<Csctl7Spec> {
+    pub fn fllulpuc(&mut self) -> FllulpucW<'_, Csctl7Spec> {
         FllulpucW::new(self, 12)
     }
     #[doc = "Bit 13 - Warning enable. If this bit is set, an interrupt is generated based on the FLLUNLOCKHIS bits. If FLLUNLOCKHIS is not equal to 00, an OFIFG is generated."]
     #[inline(always)]
-    pub fn fllwarnen(&mut self) -> FllwarnenW<Csctl7Spec> {
+    pub fn fllwarnen(&mut self) -> FllwarnenW<'_, Csctl7Spec> {
         FllwarnenW::new(self, 13)
     }
 }

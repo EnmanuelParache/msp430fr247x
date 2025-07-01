@@ -16,7 +16,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:9 - I2C slave address"]
     #[inline(always)]
-    pub fn i2csa(&mut self) -> I2csaW<Ucb1i2csaSpec> {
+    pub fn i2csa(&mut self) -> I2csaW<'_, Ucb1i2csaSpec> {
         I2csaW::new(self, 0)
     }
 }

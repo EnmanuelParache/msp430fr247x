@@ -83,17 +83,17 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Oversampling mode enabled"]
     #[inline(always)]
-    pub fn ucos16(&mut self) -> Ucos16W<Uca0mctlwSpec> {
+    pub fn ucos16(&mut self) -> Ucos16W<'_, Uca0mctlwSpec> {
         Ucos16W::new(self, 0)
     }
     #[doc = "Bits 4:7 - First modulation stage select"]
     #[inline(always)]
-    pub fn ucbrf(&mut self) -> UcbrfW<Uca0mctlwSpec> {
+    pub fn ucbrf(&mut self) -> UcbrfW<'_, Uca0mctlwSpec> {
         UcbrfW::new(self, 4)
     }
     #[doc = "Bits 8:15 - Second modulation stage select"]
     #[inline(always)]
-    pub fn ucbrs(&mut self) -> UcbrsW<Uca0mctlwSpec> {
+    pub fn ucbrs(&mut self) -> UcbrsW<'_, Uca0mctlwSpec> {
         UcbrsW::new(self, 8)
     }
 }

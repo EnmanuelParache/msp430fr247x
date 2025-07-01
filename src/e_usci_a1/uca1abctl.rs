@@ -272,22 +272,22 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Automatic baud-rate detect enable"]
     #[inline(always)]
-    pub fn ucabden(&mut self) -> UcabdenW<Uca1abctlSpec> {
+    pub fn ucabden(&mut self) -> UcabdenW<'_, Uca1abctlSpec> {
         UcabdenW::new(self, 0)
     }
     #[doc = "Bit 2 - Break time out error"]
     #[inline(always)]
-    pub fn ucbtoe(&mut self) -> UcbtoeW<Uca1abctlSpec> {
+    pub fn ucbtoe(&mut self) -> UcbtoeW<'_, Uca1abctlSpec> {
         UcbtoeW::new(self, 2)
     }
     #[doc = "Bit 3 - Synch field time out error"]
     #[inline(always)]
-    pub fn ucstoe(&mut self) -> UcstoeW<Uca1abctlSpec> {
+    pub fn ucstoe(&mut self) -> UcstoeW<'_, Uca1abctlSpec> {
         UcstoeW::new(self, 3)
     }
     #[doc = "Bits 4:5 - Break/synch delimiter length"]
     #[inline(always)]
-    pub fn ucdelim(&mut self) -> UcdelimW<Uca1abctlSpec> {
+    pub fn ucdelim(&mut self) -> UcdelimW<'_, Uca1abctlSpec> {
         UcdelimW::new(self, 4)
     }
 }

@@ -248,27 +248,27 @@ impl R {
 impl W {
     #[doc = "Bit 2 - Software brownout reset."]
     #[inline(always)]
-    pub fn pmmswbor(&mut self) -> PmmswborW<Pmmctl0Spec> {
+    pub fn pmmswbor(&mut self) -> PmmswborW<'_, Pmmctl0Spec> {
         PmmswborW::new(self, 2)
     }
     #[doc = "Bit 3 - Software POR."]
     #[inline(always)]
-    pub fn pmmswpor(&mut self) -> PmmswporW<Pmmctl0Spec> {
+    pub fn pmmswpor(&mut self) -> PmmswporW<'_, Pmmctl0Spec> {
         PmmswporW::new(self, 3)
     }
     #[doc = "Bit 4 - Regulator off"]
     #[inline(always)]
-    pub fn pmmregoff(&mut self) -> PmmregoffW<Pmmctl0Spec> {
+    pub fn pmmregoff(&mut self) -> PmmregoffW<'_, Pmmctl0Spec> {
         PmmregoffW::new(self, 4)
     }
     #[doc = "Bit 6 - High-side SVS enable."]
     #[inline(always)]
-    pub fn svshe(&mut self) -> SvsheW<Pmmctl0Spec> {
+    pub fn svshe(&mut self) -> SvsheW<'_, Pmmctl0Spec> {
         SvsheW::new(self, 6)
     }
     #[doc = "Bits 8:15 - PMM password."]
     #[inline(always)]
-    pub fn pmmpw(&mut self) -> PmmpwW<Pmmctl0Spec> {
+    pub fn pmmpw(&mut self) -> PmmpwW<'_, Pmmctl0Spec> {
         PmmpwW::new(self, 8)
     }
 }

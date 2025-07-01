@@ -25,12 +25,12 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - JTAG mailbox outgoing message low byte"]
     #[inline(always)]
-    pub fn msglo(&mut self) -> MsgloW<Sysjmbo0Spec> {
+    pub fn msglo(&mut self) -> MsgloW<'_, Sysjmbo0Spec> {
         MsgloW::new(self, 0)
     }
     #[doc = "Bits 8:15 - JTAG mailbox outgoing message high byte"]
     #[inline(always)]
-    pub fn msghi(&mut self) -> MsghiW<Sysjmbo0Spec> {
+    pub fn msghi(&mut self) -> MsghiW<'_, Sysjmbo0Spec> {
         MsghiW::new(self, 8)
     }
 }

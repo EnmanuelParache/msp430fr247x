@@ -357,22 +357,22 @@ impl R {
 impl W {
     #[doc = "Bits 0:2 - MCLK source divider"]
     #[inline(always)]
-    pub fn divm(&mut self) -> DivmW<Csctl5Spec> {
+    pub fn divm(&mut self) -> DivmW<'_, Csctl5Spec> {
         DivmW::new(self, 0)
     }
     #[doc = "Bits 4:5 - SMCLK source divider. SMCLK directly derives from MCLK. SMCLK frequency is the combination of DIVM and DIVS out of selected clock source."]
     #[inline(always)]
-    pub fn divs(&mut self) -> DivsW<Csctl5Spec> {
+    pub fn divs(&mut self) -> DivsW<'_, Csctl5Spec> {
         DivsW::new(self, 4)
     }
     #[doc = "Bit 8 - SMCLK off. This bit turns off SMCLK clock"]
     #[inline(always)]
-    pub fn smclkoff(&mut self) -> SmclkoffW<Csctl5Spec> {
+    pub fn smclkoff(&mut self) -> SmclkoffW<'_, Csctl5Spec> {
         SmclkoffW::new(self, 8)
     }
     #[doc = "Bit 12 - VLO automatic off enable. This bit turns off VLO, if VLO is not used."]
     #[inline(always)]
-    pub fn vloautooff(&mut self) -> VloautooffW<Csctl5Spec> {
+    pub fn vloautooff(&mut self) -> VloautooffW<'_, Csctl5Spec> {
         VloautooffW::new(self, 12)
     }
 }

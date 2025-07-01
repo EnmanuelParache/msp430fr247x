@@ -355,32 +355,32 @@ impl R {
 impl W {
     #[doc = "Bit 0 - ADCMEM0 interrupt flag"]
     #[inline(always)]
-    pub fn adcifg0(&mut self) -> Adcifg0W<AdcifgSpec> {
+    pub fn adcifg0(&mut self) -> Adcifg0W<'_, AdcifgSpec> {
         Adcifg0W::new(self, 0)
     }
     #[doc = "Bit 1 - The ADCINIFG is set when the result of the current ADC conversion is within the thresholds defined by the window comparator threshold registers."]
     #[inline(always)]
-    pub fn adcinifg(&mut self) -> AdcinifgW<AdcifgSpec> {
+    pub fn adcinifg(&mut self) -> AdcinifgW<'_, AdcifgSpec> {
         AdcinifgW::new(self, 1)
     }
     #[doc = "Bit 2 - The ADCLOIFG is set when the result of the current ADC conversion is below the lower threshold defined by the window comparator lower threshold register."]
     #[inline(always)]
-    pub fn adcloifg(&mut self) -> AdcloifgW<AdcifgSpec> {
+    pub fn adcloifg(&mut self) -> AdcloifgW<'_, AdcifgSpec> {
         AdcloifgW::new(self, 2)
     }
     #[doc = "Bit 3 - The ADCHIIFG is set when the result of the current ADC conversion is greater than the upper threshold defined by the window comparator upper threshold register."]
     #[inline(always)]
-    pub fn adchiifg(&mut self) -> AdchiifgW<AdcifgSpec> {
+    pub fn adchiifg(&mut self) -> AdchiifgW<'_, AdcifgSpec> {
         AdchiifgW::new(self, 3)
     }
     #[doc = "Bit 4 - The ADCOVIFG is set when the ADCMEM0 register is written before the last conversion result has been read."]
     #[inline(always)]
-    pub fn adcovifg(&mut self) -> AdcovifgW<AdcifgSpec> {
+    pub fn adcovifg(&mut self) -> AdcovifgW<'_, AdcifgSpec> {
         AdcovifgW::new(self, 4)
     }
     #[doc = "Bit 5 - The ADCTOVIFG is set when an ADC conversion is triggered before the actual conversion has completed."]
     #[inline(always)]
-    pub fn adctovifg(&mut self) -> AdctovifgW<AdcifgSpec> {
+    pub fn adctovifg(&mut self) -> AdctovifgW<'_, AdcifgSpec> {
         AdctovifgW::new(self, 5)
     }
 }

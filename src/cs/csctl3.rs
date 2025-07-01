@@ -299,17 +299,17 @@ impl R {
 impl W {
     #[doc = "Bits 0:2 - FLL reference divider. These bits define the divide factor for f(FLLREFCLK). If XT1 supports high frequency input higher than 32 kHz, the divided frequency is used as the FLL reference frequency. If XT1 only supports 32-kHz clock, FLLREFDIV is always read and written as zero, 000b = fFLLREFCLK / 1"]
     #[inline(always)]
-    pub fn fllrefdiv(&mut self) -> FllrefdivW<Csctl3Spec> {
+    pub fn fllrefdiv(&mut self) -> FllrefdivW<'_, Csctl3Spec> {
         FllrefdivW::new(self, 0)
     }
     #[doc = "Bits 4:5 - FLL reference select. These bits select the FLL reference clock source."]
     #[inline(always)]
-    pub fn selref(&mut self) -> SelrefW<Csctl3Spec> {
+    pub fn selref(&mut self) -> SelrefW<'_, Csctl3Spec> {
         SelrefW::new(self, 4)
     }
     #[doc = "Bit 7 - REFO Low Power Enable. This bit turns on REFO low-power mode. During switch, the low-power mode will be invalid until REFOREADY is set."]
     #[inline(always)]
-    pub fn refolp(&mut self) -> RefolpW<Csctl3Spec> {
+    pub fn refolp(&mut self) -> RefolpW<'_, Csctl3Spec> {
         RefolpW::new(self, 7)
     }
 }

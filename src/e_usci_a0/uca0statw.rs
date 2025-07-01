@@ -454,37 +454,37 @@ impl R {
 impl W {
     #[doc = "Bit 1 - Address received / Idle line detected"]
     #[inline(always)]
-    pub fn ucaddr_ucidle(&mut self) -> UcaddrUcidleW<Uca0statwSpec> {
+    pub fn ucaddr_ucidle(&mut self) -> UcaddrUcidleW<'_, Uca0statwSpec> {
         UcaddrUcidleW::new(self, 1)
     }
     #[doc = "Bit 2 - Receive error flag"]
     #[inline(always)]
-    pub fn ucrxerr(&mut self) -> UcrxerrW<Uca0statwSpec> {
+    pub fn ucrxerr(&mut self) -> UcrxerrW<'_, Uca0statwSpec> {
         UcrxerrW::new(self, 2)
     }
     #[doc = "Bit 3 - Break detect flag"]
     #[inline(always)]
-    pub fn ucbrk(&mut self) -> UcbrkW<Uca0statwSpec> {
+    pub fn ucbrk(&mut self) -> UcbrkW<'_, Uca0statwSpec> {
         UcbrkW::new(self, 3)
     }
     #[doc = "Bit 4 - Parity error flag. When UCPEN = 0, UCPE is read as 0. UCPE is cleared when UCAxRXBUF is read."]
     #[inline(always)]
-    pub fn ucpe(&mut self) -> UcpeW<Uca0statwSpec> {
+    pub fn ucpe(&mut self) -> UcpeW<'_, Uca0statwSpec> {
         UcpeW::new(self, 4)
     }
     #[doc = "Bit 5 - Overrun error flag"]
     #[inline(always)]
-    pub fn ucoe(&mut self) -> UcoeW<Uca0statwSpec> {
+    pub fn ucoe(&mut self) -> UcoeW<'_, Uca0statwSpec> {
         UcoeW::new(self, 5)
     }
     #[doc = "Bit 6 - Framing error flag"]
     #[inline(always)]
-    pub fn ucfe(&mut self) -> UcfeW<Uca0statwSpec> {
+    pub fn ucfe(&mut self) -> UcfeW<'_, Uca0statwSpec> {
         UcfeW::new(self, 6)
     }
     #[doc = "Bit 7 - Listen enable"]
     #[inline(always)]
-    pub fn uclisten(&mut self) -> UclistenW<Uca0statwSpec> {
+    pub fn uclisten(&mut self) -> UclistenW<'_, Uca0statwSpec> {
         UclistenW::new(self, 7)
     }
 }

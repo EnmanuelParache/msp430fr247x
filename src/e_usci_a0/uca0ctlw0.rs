@@ -885,72 +885,72 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Software reset enable"]
     #[inline(always)]
-    pub fn ucswrst(&mut self) -> UcswrstW<Uca0ctlw0Spec> {
+    pub fn ucswrst(&mut self) -> UcswrstW<'_, Uca0ctlw0Spec> {
         UcswrstW::new(self, 0)
     }
     #[doc = "Bit 1 - Transmit break"]
     #[inline(always)]
-    pub fn uctxbrk(&mut self) -> UctxbrkW<Uca0ctlw0Spec> {
+    pub fn uctxbrk(&mut self) -> UctxbrkW<'_, Uca0ctlw0Spec> {
         UctxbrkW::new(self, 1)
     }
     #[doc = "Bit 2 - Transmit address"]
     #[inline(always)]
-    pub fn uctxaddr(&mut self) -> UctxaddrW<Uca0ctlw0Spec> {
+    pub fn uctxaddr(&mut self) -> UctxaddrW<'_, Uca0ctlw0Spec> {
         UctxaddrW::new(self, 2)
     }
     #[doc = "Bit 3 - Dormant"]
     #[inline(always)]
-    pub fn ucdorm(&mut self) -> UcdormW<Uca0ctlw0Spec> {
+    pub fn ucdorm(&mut self) -> UcdormW<'_, Uca0ctlw0Spec> {
         UcdormW::new(self, 3)
     }
     #[doc = "Bit 4 - Receive break character interrupt enable"]
     #[inline(always)]
-    pub fn ucbrkie(&mut self) -> UcbrkieW<Uca0ctlw0Spec> {
+    pub fn ucbrkie(&mut self) -> UcbrkieW<'_, Uca0ctlw0Spec> {
         UcbrkieW::new(self, 4)
     }
     #[doc = "Bit 5 - Receive erroneous-character interrupt enable"]
     #[inline(always)]
-    pub fn ucrxeie(&mut self) -> UcrxeieW<Uca0ctlw0Spec> {
+    pub fn ucrxeie(&mut self) -> UcrxeieW<'_, Uca0ctlw0Spec> {
         UcrxeieW::new(self, 5)
     }
     #[doc = "Bits 6:7 - eUSCI_A clock source select"]
     #[inline(always)]
-    pub fn ucssel(&mut self) -> UcsselW<Uca0ctlw0Spec> {
+    pub fn ucssel(&mut self) -> UcsselW<'_, Uca0ctlw0Spec> {
         UcsselW::new(self, 6)
     }
     #[doc = "Bit 8 - Synchronous mode enable"]
     #[inline(always)]
-    pub fn ucsync(&mut self) -> UcsyncW<Uca0ctlw0Spec> {
+    pub fn ucsync(&mut self) -> UcsyncW<'_, Uca0ctlw0Spec> {
         UcsyncW::new(self, 8)
     }
     #[doc = "Bits 9:10 - eUSCI_A mode"]
     #[inline(always)]
-    pub fn ucmode(&mut self) -> UcmodeW<Uca0ctlw0Spec> {
+    pub fn ucmode(&mut self) -> UcmodeW<'_, Uca0ctlw0Spec> {
         UcmodeW::new(self, 9)
     }
     #[doc = "Bit 11 - Stop bit select"]
     #[inline(always)]
-    pub fn ucspb(&mut self) -> UcspbW<Uca0ctlw0Spec> {
+    pub fn ucspb(&mut self) -> UcspbW<'_, Uca0ctlw0Spec> {
         UcspbW::new(self, 11)
     }
     #[doc = "Bit 12 - Character length"]
     #[inline(always)]
-    pub fn uc7bit(&mut self) -> Uc7bitW<Uca0ctlw0Spec> {
+    pub fn uc7bit(&mut self) -> Uc7bitW<'_, Uca0ctlw0Spec> {
         Uc7bitW::new(self, 12)
     }
     #[doc = "Bit 13 - MSB first select"]
     #[inline(always)]
-    pub fn ucmsb(&mut self) -> UcmsbW<Uca0ctlw0Spec> {
+    pub fn ucmsb(&mut self) -> UcmsbW<'_, Uca0ctlw0Spec> {
         UcmsbW::new(self, 13)
     }
     #[doc = "Bit 14 - Parity select"]
     #[inline(always)]
-    pub fn ucpar(&mut self) -> UcparW<Uca0ctlw0Spec> {
+    pub fn ucpar(&mut self) -> UcparW<'_, Uca0ctlw0Spec> {
         UcparW::new(self, 14)
     }
     #[doc = "Bit 15 - Parity enable"]
     #[inline(always)]
-    pub fn ucpen(&mut self) -> UcpenW<Uca0ctlw0Spec> {
+    pub fn ucpen(&mut self) -> UcpenW<'_, Uca0ctlw0Spec> {
         UcpenW::new(self, 15)
     }
 }

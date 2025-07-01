@@ -181,17 +181,17 @@ impl R {
 impl W {
     #[doc = "Bit 5 - Overrun error flag"]
     #[inline(always)]
-    pub fn ucoe(&mut self) -> UcoeW<Uca0statwSpiSpec> {
+    pub fn ucoe(&mut self) -> UcoeW<'_, Uca0statwSpiSpec> {
         UcoeW::new(self, 5)
     }
     #[doc = "Bit 6 - Framing error flag"]
     #[inline(always)]
-    pub fn ucfe(&mut self) -> UcfeW<Uca0statwSpiSpec> {
+    pub fn ucfe(&mut self) -> UcfeW<'_, Uca0statwSpiSpec> {
         UcfeW::new(self, 6)
     }
     #[doc = "Bit 7 - Listen enable"]
     #[inline(always)]
-    pub fn uclisten(&mut self) -> UclistenW<Uca0statwSpiSpec> {
+    pub fn uclisten(&mut self) -> UclistenW<'_, Uca0statwSpiSpec> {
         UclistenW::new(self, 7)
     }
 }

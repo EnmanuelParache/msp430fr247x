@@ -239,22 +239,22 @@ impl R {
 impl W {
     #[doc = "Bit 0 - This bit is only valid when CPDACBUFS is set to 1."]
     #[inline(always)]
-    pub fn cpdacsw(&mut self) -> CpdacswW<Cp0dacctlSpec> {
+    pub fn cpdacsw(&mut self) -> CpdacswW<'_, Cp0dacctlSpec> {
         CpdacswW::new(self, 0)
     }
     #[doc = "Bit 1 - Comparator built-in DAC buffer controlled source selection."]
     #[inline(always)]
-    pub fn cpdacbufs(&mut self) -> CpdacbufsW<Cp0dacctlSpec> {
+    pub fn cpdacbufs(&mut self) -> CpdacbufsW<'_, Cp0dacctlSpec> {
         CpdacbufsW::new(self, 1)
     }
     #[doc = "Bit 2 - Comparator built-in DAC reference voltage selection"]
     #[inline(always)]
-    pub fn cpdacrefs(&mut self) -> CpdacrefsW<Cp0dacctlSpec> {
+    pub fn cpdacrefs(&mut self) -> CpdacrefsW<'_, Cp0dacctlSpec> {
         CpdacrefsW::new(self, 2)
     }
     #[doc = "Bit 7 - Comparator built-in DAC output control bit."]
     #[inline(always)]
-    pub fn cpdacen(&mut self) -> CpdacenW<Cp0dacctlSpec> {
+    pub fn cpdacen(&mut self) -> CpdacenW<'_, Cp0dacctlSpec> {
         CpdacenW::new(self, 7)
     }
 }

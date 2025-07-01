@@ -181,17 +181,17 @@ impl R {
 impl W {
     #[doc = "Bit 0 - LPMx.5 Lock Bit"]
     #[inline(always)]
-    pub fn locklpm5(&mut self) -> Locklpm5W<Pm5ctl0Spec> {
+    pub fn locklpm5(&mut self) -> Locklpm5W<'_, Pm5ctl0Spec> {
         Locklpm5W::new(self, 0)
     }
     #[doc = "Bit 4 - Reports or sets the LPM3.5 switch connection upon the switch mode set by LPM5SM. When this bit is set, the VLPM3.5 domain can accept full-speed read and write operation by CPU MCLK. If the switch is disconnected, all peripherals within this domain can only accept the operation no more than 40 kHz. In automatic mode (LPM5SM = 0), this bit represents the switch connection between Vcore and VLPM3.5. Any write to this bit has no effect. In manual mode (LPM5SM = 1), this bit can be fully read and written by software. When this bit is set, the switch connection between Vcore and VLPM3.5 is connected. Otherwise, the switch is disconnected."]
     #[inline(always)]
-    pub fn lpm5sw(&mut self) -> Lpm5swW<Pm5ctl0Spec> {
+    pub fn lpm5sw(&mut self) -> Lpm5swW<'_, Pm5ctl0Spec> {
         Lpm5swW::new(self, 4)
     }
     #[doc = "Bit 5 - Specifies the operation mode of the LPM3.5 switch."]
     #[inline(always)]
-    pub fn lpm5sm(&mut self) -> Lpm5smW<Pm5ctl0Spec> {
+    pub fn lpm5sm(&mut self) -> Lpm5smW<'_, Pm5ctl0Spec> {
         Lpm5smW::new(self, 5)
     }
 }

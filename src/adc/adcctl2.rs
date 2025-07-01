@@ -256,22 +256,22 @@ impl R {
 impl W {
     #[doc = "Bit 2 - ADC sampling rate."]
     #[inline(always)]
-    pub fn adcsr(&mut self) -> AdcsrW<Adcctl2Spec> {
+    pub fn adcsr(&mut self) -> AdcsrW<'_, Adcctl2Spec> {
         AdcsrW::new(self, 2)
     }
     #[doc = "Bit 3 - data read-back format"]
     #[inline(always)]
-    pub fn adcdf(&mut self) -> AdcdfW<Adcctl2Spec> {
+    pub fn adcdf(&mut self) -> AdcdfW<'_, Adcctl2Spec> {
         AdcdfW::new(self, 3)
     }
     #[doc = "Bits 4:5 - resolution"]
     #[inline(always)]
-    pub fn adcres(&mut self) -> AdcresW<Adcctl2Spec> {
+    pub fn adcres(&mut self) -> AdcresW<'_, Adcctl2Spec> {
         AdcresW::new(self, 4)
     }
     #[doc = "Bits 8:9 - ADC predivider. This bit predivides the selected ADC clock source before it gets divided again using ADCDIVx."]
     #[inline(always)]
-    pub fn adcpdiv(&mut self) -> AdcpdivW<Adcctl2Spec> {
+    pub fn adcpdiv(&mut self) -> AdcpdivW<'_, Adcctl2Spec> {
         AdcpdivW::new(self, 8)
     }
 }

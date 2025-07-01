@@ -355,32 +355,32 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Interrupt enable. This bits enable or disable the interrupt request for a completed ADC conversion."]
     #[inline(always)]
-    pub fn adcie0(&mut self) -> Adcie0W<AdcieSpec> {
+    pub fn adcie0(&mut self) -> Adcie0W<'_, AdcieSpec> {
         Adcie0W::new(self, 0)
     }
     #[doc = "Bit 1 - Interrupt enable for the inside of window interrupt of the window comparator."]
     #[inline(always)]
-    pub fn adcinie(&mut self) -> AdcinieW<AdcieSpec> {
+    pub fn adcinie(&mut self) -> AdcinieW<'_, AdcieSpec> {
         AdcinieW::new(self, 1)
     }
     #[doc = "Bit 2 - Interrupt enable for the below lower threshold interrupt of the window comparator."]
     #[inline(always)]
-    pub fn adcloie(&mut self) -> AdcloieW<AdcieSpec> {
+    pub fn adcloie(&mut self) -> AdcloieW<'_, AdcieSpec> {
         AdcloieW::new(self, 2)
     }
     #[doc = "Bit 3 - Interrupt enable for the above upper threshold interrupt of the window comparator."]
     #[inline(always)]
-    pub fn adchiie(&mut self) -> AdchiieW<AdcieSpec> {
+    pub fn adchiie(&mut self) -> AdchiieW<'_, AdcieSpec> {
         AdchiieW::new(self, 3)
     }
     #[doc = "Bit 4 - ADCMEM0 overflow interrupt enable."]
     #[inline(always)]
-    pub fn adcovie(&mut self) -> AdcovieW<AdcieSpec> {
+    pub fn adcovie(&mut self) -> AdcovieW<'_, AdcieSpec> {
         AdcovieW::new(self, 4)
     }
     #[doc = "Bit 5 - ADC conversion-time-overflow interrupt enable."]
     #[inline(always)]
-    pub fn adctovie(&mut self) -> AdctovieW<AdcieSpec> {
+    pub fn adctovie(&mut self) -> AdctovieW<'_, AdcieSpec> {
         AdctovieW::new(self, 5)
     }
 }

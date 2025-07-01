@@ -877,77 +877,77 @@ impl R {
 impl W {
     #[doc = "Bit 0 - eUSCI_B receive interrupt flag 0"]
     #[inline(always)]
-    pub fn ucrxifg0(&mut self) -> Ucrxifg0W<Ucb0ifgSpec> {
+    pub fn ucrxifg0(&mut self) -> Ucrxifg0W<'_, Ucb0ifgSpec> {
         Ucrxifg0W::new(self, 0)
     }
     #[doc = "Bit 1 - eUSCI_B transmit interrupt flag 0"]
     #[inline(always)]
-    pub fn uctxifg0(&mut self) -> Uctxifg0W<Ucb0ifgSpec> {
+    pub fn uctxifg0(&mut self) -> Uctxifg0W<'_, Ucb0ifgSpec> {
         Uctxifg0W::new(self, 1)
     }
     #[doc = "Bit 2 - START condition interrupt flag"]
     #[inline(always)]
-    pub fn ucsttifg(&mut self) -> UcsttifgW<Ucb0ifgSpec> {
+    pub fn ucsttifg(&mut self) -> UcsttifgW<'_, Ucb0ifgSpec> {
         UcsttifgW::new(self, 2)
     }
     #[doc = "Bit 3 - STOP condition interrupt flag"]
     #[inline(always)]
-    pub fn ucstpifg(&mut self) -> UcstpifgW<Ucb0ifgSpec> {
+    pub fn ucstpifg(&mut self) -> UcstpifgW<'_, Ucb0ifgSpec> {
         UcstpifgW::new(self, 3)
     }
     #[doc = "Bit 4 - Arbitration lost interrupt flag"]
     #[inline(always)]
-    pub fn ucalifg(&mut self) -> UcalifgW<Ucb0ifgSpec> {
+    pub fn ucalifg(&mut self) -> UcalifgW<'_, Ucb0ifgSpec> {
         UcalifgW::new(self, 4)
     }
     #[doc = "Bit 5 - Not-acknowledge received interrupt flag"]
     #[inline(always)]
-    pub fn ucnackifg(&mut self) -> UcnackifgW<Ucb0ifgSpec> {
+    pub fn ucnackifg(&mut self) -> UcnackifgW<'_, Ucb0ifgSpec> {
         UcnackifgW::new(self, 5)
     }
     #[doc = "Bit 6 - Byte counter interrupt flag"]
     #[inline(always)]
-    pub fn ucbcntifg(&mut self) -> UcbcntifgW<Ucb0ifgSpec> {
+    pub fn ucbcntifg(&mut self) -> UcbcntifgW<'_, Ucb0ifgSpec> {
         UcbcntifgW::new(self, 6)
     }
     #[doc = "Bit 7 - Clock low timeout interrupt flag"]
     #[inline(always)]
-    pub fn uccltoifg(&mut self) -> UccltoifgW<Ucb0ifgSpec> {
+    pub fn uccltoifg(&mut self) -> UccltoifgW<'_, Ucb0ifgSpec> {
         UccltoifgW::new(self, 7)
     }
     #[doc = "Bit 8 - eUSCI_B receive interrupt flag 1"]
     #[inline(always)]
-    pub fn ucrxifg1(&mut self) -> Ucrxifg1W<Ucb0ifgSpec> {
+    pub fn ucrxifg1(&mut self) -> Ucrxifg1W<'_, Ucb0ifgSpec> {
         Ucrxifg1W::new(self, 8)
     }
     #[doc = "Bit 9 - eUSCI_B transmit interrupt flag 1"]
     #[inline(always)]
-    pub fn uctxifg1(&mut self) -> Uctxifg1W<Ucb0ifgSpec> {
+    pub fn uctxifg1(&mut self) -> Uctxifg1W<'_, Ucb0ifgSpec> {
         Uctxifg1W::new(self, 9)
     }
     #[doc = "Bit 10 - eUSCI_B receive interrupt flag 2"]
     #[inline(always)]
-    pub fn ucrxifg2(&mut self) -> Ucrxifg2W<Ucb0ifgSpec> {
+    pub fn ucrxifg2(&mut self) -> Ucrxifg2W<'_, Ucb0ifgSpec> {
         Ucrxifg2W::new(self, 10)
     }
     #[doc = "Bit 11 - eUSCI_B transmit interrupt flag 2"]
     #[inline(always)]
-    pub fn uctxifg2(&mut self) -> Uctxifg2W<Ucb0ifgSpec> {
+    pub fn uctxifg2(&mut self) -> Uctxifg2W<'_, Ucb0ifgSpec> {
         Uctxifg2W::new(self, 11)
     }
     #[doc = "Bit 12 - eUSCI_B receive interrupt flag 3"]
     #[inline(always)]
-    pub fn ucrxifg3(&mut self) -> Ucrxifg3W<Ucb0ifgSpec> {
+    pub fn ucrxifg3(&mut self) -> Ucrxifg3W<'_, Ucb0ifgSpec> {
         Ucrxifg3W::new(self, 12)
     }
     #[doc = "Bit 13 - eUSCI_B transmit interrupt flag 3"]
     #[inline(always)]
-    pub fn uctxifg3(&mut self) -> Uctxifg3W<Ucb0ifgSpec> {
+    pub fn uctxifg3(&mut self) -> Uctxifg3W<'_, Ucb0ifgSpec> {
         Uctxifg3W::new(self, 13)
     }
     #[doc = "Bit 14 - Bit position 9 interrupt flag"]
     #[inline(always)]
-    pub fn ucbit9ifg(&mut self) -> Ucbit9ifgW<Ucb0ifgSpec> {
+    pub fn ucbit9ifg(&mut self) -> Ucbit9ifgW<'_, Ucb0ifgSpec> {
         Ucbit9ifgW::new(self, 14)
     }
 }

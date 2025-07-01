@@ -696,52 +696,52 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Capture/compare interrupt flag"]
     #[inline(always)]
-    pub fn ccifg(&mut self) -> CcifgW<Ta2cctl2Spec> {
+    pub fn ccifg(&mut self) -> CcifgW<'_, Ta2cctl2Spec> {
         CcifgW::new(self, 0)
     }
     #[doc = "Bit 1 - Capture overflow"]
     #[inline(always)]
-    pub fn cov(&mut self) -> CovW<Ta2cctl2Spec> {
+    pub fn cov(&mut self) -> CovW<'_, Ta2cctl2Spec> {
         CovW::new(self, 1)
     }
     #[doc = "Bit 2 - Output"]
     #[inline(always)]
-    pub fn out(&mut self) -> OutW<Ta2cctl2Spec> {
+    pub fn out(&mut self) -> OutW<'_, Ta2cctl2Spec> {
         OutW::new(self, 2)
     }
     #[doc = "Bit 4 - Capture/compare interrupt enable"]
     #[inline(always)]
-    pub fn ccie(&mut self) -> CcieW<Ta2cctl2Spec> {
+    pub fn ccie(&mut self) -> CcieW<'_, Ta2cctl2Spec> {
         CcieW::new(self, 4)
     }
     #[doc = "Bits 5:7 - Output mode"]
     #[inline(always)]
-    pub fn outmod(&mut self) -> OutmodW<Ta2cctl2Spec> {
+    pub fn outmod(&mut self) -> OutmodW<'_, Ta2cctl2Spec> {
         OutmodW::new(self, 5)
     }
     #[doc = "Bit 8 - Capture mode"]
     #[inline(always)]
-    pub fn cap(&mut self) -> CapW<Ta2cctl2Spec> {
+    pub fn cap(&mut self) -> CapW<'_, Ta2cctl2Spec> {
         CapW::new(self, 8)
     }
     #[doc = "Bit 10 - Synchronized capture/compare input"]
     #[inline(always)]
-    pub fn scci(&mut self) -> ScciW<Ta2cctl2Spec> {
+    pub fn scci(&mut self) -> ScciW<'_, Ta2cctl2Spec> {
         ScciW::new(self, 10)
     }
     #[doc = "Bit 11 - Synchronize capture source"]
     #[inline(always)]
-    pub fn scs(&mut self) -> ScsW<Ta2cctl2Spec> {
+    pub fn scs(&mut self) -> ScsW<'_, Ta2cctl2Spec> {
         ScsW::new(self, 11)
     }
     #[doc = "Bits 12:13 - Capture/compare input select"]
     #[inline(always)]
-    pub fn ccis(&mut self) -> CcisW<Ta2cctl2Spec> {
+    pub fn ccis(&mut self) -> CcisW<'_, Ta2cctl2Spec> {
         CcisW::new(self, 12)
     }
     #[doc = "Bits 14:15 - Capture mode"]
     #[inline(always)]
-    pub fn cm(&mut self) -> CmW<Ta2cctl2Spec> {
+    pub fn cm(&mut self) -> CmW<'_, Ta2cctl2Spec> {
         CmW::new(self, 14)
     }
 }

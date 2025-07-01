@@ -580,32 +580,32 @@ impl R {
 impl W {
     #[doc = "Bits 1:2 - conversion sequence mode select"]
     #[inline(always)]
-    pub fn adcconseq(&mut self) -> AdcconseqW<Adcctl1Spec> {
+    pub fn adcconseq(&mut self) -> AdcconseqW<'_, Adcctl1Spec> {
         AdcconseqW::new(self, 1)
     }
     #[doc = "Bits 3:4 - clock source select"]
     #[inline(always)]
-    pub fn adcssel(&mut self) -> AdcsselW<Adcctl1Spec> {
+    pub fn adcssel(&mut self) -> AdcsselW<'_, Adcctl1Spec> {
         AdcsselW::new(self, 3)
     }
     #[doc = "Bits 5:7 - clock divider"]
     #[inline(always)]
-    pub fn adcdiv(&mut self) -> AdcdivW<Adcctl1Spec> {
+    pub fn adcdiv(&mut self) -> AdcdivW<'_, Adcctl1Spec> {
         AdcdivW::new(self, 5)
     }
     #[doc = "Bit 8 - invert signal sample-and-hold"]
     #[inline(always)]
-    pub fn adcissh(&mut self) -> AdcisshW<Adcctl1Spec> {
+    pub fn adcissh(&mut self) -> AdcisshW<'_, Adcctl1Spec> {
         AdcisshW::new(self, 8)
     }
     #[doc = "Bit 9 - sample-and-hold pulse-mode select"]
     #[inline(always)]
-    pub fn adcshp(&mut self) -> AdcshpW<Adcctl1Spec> {
+    pub fn adcshp(&mut self) -> AdcshpW<'_, Adcctl1Spec> {
         AdcshpW::new(self, 9)
     }
     #[doc = "Bits 10:11 - sample-and-hold source select"]
     #[inline(always)]
-    pub fn adcshs(&mut self) -> AdcshsW<Adcctl1Spec> {
+    pub fn adcshs(&mut self) -> AdcshsW<'_, Adcctl1Spec> {
         AdcshsW::new(self, 10)
     }
 }

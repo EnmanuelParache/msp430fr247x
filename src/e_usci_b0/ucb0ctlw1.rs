@@ -454,32 +454,32 @@ impl R {
 impl W {
     #[doc = "Bits 0:1 - Deglitch time"]
     #[inline(always)]
-    pub fn ucglit(&mut self) -> UcglitW<Ucb0ctlw1Spec> {
+    pub fn ucglit(&mut self) -> UcglitW<'_, Ucb0ctlw1Spec> {
         UcglitW::new(self, 0)
     }
     #[doc = "Bits 2:3 - Automatic STOP condition generation"]
     #[inline(always)]
-    pub fn ucastp(&mut self) -> UcastpW<Ucb0ctlw1Spec> {
+    pub fn ucastp(&mut self) -> UcastpW<'_, Ucb0ctlw1Spec> {
         UcastpW::new(self, 2)
     }
     #[doc = "Bit 4 - SW or HW ACK control"]
     #[inline(always)]
-    pub fn ucswack(&mut self) -> UcswackW<Ucb0ctlw1Spec> {
+    pub fn ucswack(&mut self) -> UcswackW<'_, Ucb0ctlw1Spec> {
         UcswackW::new(self, 4)
     }
     #[doc = "Bit 5 - ACK all master bytes"]
     #[inline(always)]
-    pub fn ucstpnack(&mut self) -> UcstpnackW<Ucb0ctlw1Spec> {
+    pub fn ucstpnack(&mut self) -> UcstpnackW<'_, Ucb0ctlw1Spec> {
         UcstpnackW::new(self, 5)
     }
     #[doc = "Bits 6:7 - Clock low timeout select"]
     #[inline(always)]
-    pub fn ucclto(&mut self) -> UccltoW<Ucb0ctlw1Spec> {
+    pub fn ucclto(&mut self) -> UccltoW<'_, Ucb0ctlw1Spec> {
         UccltoW::new(self, 6)
     }
     #[doc = "Bit 8 - Early UCTXIFG0"]
     #[inline(always)]
-    pub fn ucetxint(&mut self) -> UcetxintW<Ucb0ctlw1Spec> {
+    pub fn ucetxint(&mut self) -> UcetxintW<'_, Ucb0ctlw1Spec> {
         UcetxintW::new(self, 8)
     }
 }

@@ -504,42 +504,42 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Carry of the multiplier"]
     #[inline(always)]
-    pub fn mpyc(&mut self) -> MpycW<Mpy32ctl0Spec> {
+    pub fn mpyc(&mut self) -> MpycW<'_, Mpy32ctl0Spec> {
         MpycW::new(self, 0)
     }
     #[doc = "Bit 2 - Fractional mode."]
     #[inline(always)]
-    pub fn mpyfrac(&mut self) -> MpyfracW<Mpy32ctl0Spec> {
+    pub fn mpyfrac(&mut self) -> MpyfracW<'_, Mpy32ctl0Spec> {
         MpyfracW::new(self, 2)
     }
     #[doc = "Bit 3 - Saturation mode"]
     #[inline(always)]
-    pub fn mpysat(&mut self) -> MpysatW<Mpy32ctl0Spec> {
+    pub fn mpysat(&mut self) -> MpysatW<'_, Mpy32ctl0Spec> {
         MpysatW::new(self, 3)
     }
     #[doc = "Bits 4:5 - Multiplier mode"]
     #[inline(always)]
-    pub fn mpym(&mut self) -> MpymW<Mpy32ctl0Spec> {
+    pub fn mpym(&mut self) -> MpymW<'_, Mpy32ctl0Spec> {
         MpymW::new(self, 4)
     }
     #[doc = "Bit 6 - Multiplier bit width of operand 1"]
     #[inline(always)]
-    pub fn mpyop1_32(&mut self) -> Mpyop1_32W<Mpy32ctl0Spec> {
+    pub fn mpyop1_32(&mut self) -> Mpyop1_32W<'_, Mpy32ctl0Spec> {
         Mpyop1_32W::new(self, 6)
     }
     #[doc = "Bit 7 - Multiplier bit width of operand 2"]
     #[inline(always)]
-    pub fn mpyop2_32(&mut self) -> Mpyop2_32W<Mpy32ctl0Spec> {
+    pub fn mpyop2_32(&mut self) -> Mpyop2_32W<'_, Mpy32ctl0Spec> {
         Mpyop2_32W::new(self, 7)
     }
     #[doc = "Bit 8 - Delayed write enable."]
     #[inline(always)]
-    pub fn mpydlywrten(&mut self) -> MpydlywrtenW<Mpy32ctl0Spec> {
+    pub fn mpydlywrten(&mut self) -> MpydlywrtenW<'_, Mpy32ctl0Spec> {
         MpydlywrtenW::new(self, 8)
     }
     #[doc = "Bit 9 - Delayed write mode."]
     #[inline(always)]
-    pub fn mpydly32(&mut self) -> Mpydly32W<Mpy32ctl0Spec> {
+    pub fn mpydly32(&mut self) -> Mpydly32W<'_, Mpy32ctl0Spec> {
         Mpydly32W::new(self, 9)
     }
 }

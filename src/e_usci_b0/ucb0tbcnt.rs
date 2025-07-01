@@ -16,7 +16,7 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - Byte counter threshold value"]
     #[inline(always)]
-    pub fn uctbcnt(&mut self) -> UctbcntW<Ucb0tbcntSpec> {
+    pub fn uctbcnt(&mut self) -> UctbcntW<'_, Ucb0tbcntSpec> {
         UctbcntW::new(self, 0)
     }
 }

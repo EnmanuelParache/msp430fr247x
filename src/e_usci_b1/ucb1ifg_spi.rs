@@ -123,12 +123,12 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Receive interrupt flag"]
     #[inline(always)]
-    pub fn ucrxifg(&mut self) -> UcrxifgW<Ucb1ifgSpiSpec> {
+    pub fn ucrxifg(&mut self) -> UcrxifgW<'_, Ucb1ifgSpiSpec> {
         UcrxifgW::new(self, 0)
     }
     #[doc = "Bit 1 - Transmit interrupt flag"]
     #[inline(always)]
-    pub fn uctxifg(&mut self) -> UctxifgW<Ucb1ifgSpiSpec> {
+    pub fn uctxifg(&mut self) -> UctxifgW<'_, Ucb1ifgSpiSpec> {
         UctxifgW::new(self, 1)
     }
 }
