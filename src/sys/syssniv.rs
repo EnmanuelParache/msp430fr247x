@@ -1,166 +1,155 @@
 #[doc = "Register `SYSSNIV` reader"]
-pub struct R(crate::R<SYSSNIV_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<SYSSNIV_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl From<crate::R<SYSSNIV_SPEC>> for R {
-    #[inline(always)]
-    fn from(reader: crate::R<SYSSNIV_SPEC>) -> Self {
-        R(reader)
-    }
-}
+pub type R = crate::R<SyssnivSpec>;
 #[doc = "Register `SYSSNIV` writer"]
-pub struct W(crate::W<SYSSNIV_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<SYSSNIV_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl From<crate::W<SYSSNIV_SPEC>> for W {
-    #[inline(always)]
-    fn from(writer: crate::W<SYSSNIV_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `SYSSNIV` reader - System NMI vector"]
-pub type SYSSNIV_R = crate::FieldReader<u16, SYSSNIV_A>;
+pub type W = crate::W<SyssnivSpec>;
 #[doc = "System NMI vector\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u16)]
-pub enum SYSSNIV_A {
+pub enum Syssniv {
     #[doc = "0: No interrupt pending"]
-    NONE = 0,
+    None = 0,
     #[doc = "2: SVS low-power reset entry"]
-    SVSLIFG = 2,
+    Svslifg = 2,
     #[doc = "4: Uncorrectable FRAM bit error detection"]
-    UBDIFG = 4,
+    Ubdifg = 4,
     // #[doc = "6: Reserved"]
-    // NONE = 6,
+    // None = 6,
     // #[doc = "8: Reserved"]
-    // NONE = 8,
+    // None = 8,
     // #[doc = "10: Reserved"]
-    // NONE = 10,
+    // None = 10,
     // #[doc = "12: Reserved"]
-    // NONE = 12,
+    // None = 12,
     // #[doc = "14: Reserved"]
-    // NONE = 14,
+    // None = 14,
     // #[doc = "16: Reserved"]
-    // NONE = 16,
+    // None = 16,
     #[doc = "18: VMAIFG Vacant memory access"]
-    VMAIFG = 18,
+    Vmaifg = 18,
     #[doc = "20: JMBINIFG JTAG mailbox input"]
-    JMBINIFG = 20,
+    Jmbinifg = 20,
     #[doc = "22: JMBOUTIFG JTAG mailbox output"]
-    JMBOUTIFG = 22,
+    Jmboutifg = 22,
     #[doc = "24: Correctable FRAM bit error detection"]
-    CBDIFG = 24,
+    Cbdifg = 24,
 }
-impl From<SYSSNIV_A> for u16 {
+impl From<Syssniv> for u16 {
     #[inline(always)]
-    fn from(variant: SYSSNIV_A) -> Self {
+    fn from(variant: Syssniv) -> Self {
         variant as _
     }
 }
-impl SYSSNIV_R {
+impl crate::FieldSpec for Syssniv {
+    type Ux = u16;
+}
+impl crate::IsEnum for Syssniv {}
+#[doc = "Field `SYSSNIV` reader - System NMI vector"]
+pub type SyssnivR = crate::FieldReader<Syssniv>;
+impl SyssnivR {
     #[doc = "Get enumerated values variant"]
     #[inline(always)]
-    pub fn variant(&self) -> Option<SYSSNIV_A> {
+    pub const fn variant(&self) -> Option<Syssniv> {
         match self.bits {
-            0 => Some(SYSSNIV_A::NONE),
-            2 => Some(SYSSNIV_A::SVSLIFG),
-            4 => Some(SYSSNIV_A::UBDIFG),
-            6 => Some(SYSSNIV_A::NONE),
-            8 => Some(SYSSNIV_A::NONE),
-            10 => Some(SYSSNIV_A::NONE),
-            12 => Some(SYSSNIV_A::NONE),
-            14 => Some(SYSSNIV_A::NONE),
-            16 => Some(SYSSNIV_A::NONE),
-            18 => Some(SYSSNIV_A::VMAIFG),
-            20 => Some(SYSSNIV_A::JMBINIFG),
-            22 => Some(SYSSNIV_A::JMBOUTIFG),
-            24 => Some(SYSSNIV_A::CBDIFG),
+            0 => Some(Syssniv::None),
+            2 => Some(Syssniv::Svslifg),
+            4 => Some(Syssniv::Ubdifg),
+            6 => Some(Syssniv::None),
+            8 => Some(Syssniv::None),
+            10 => Some(Syssniv::None),
+            12 => Some(Syssniv::None),
+            14 => Some(Syssniv::None),
+            16 => Some(Syssniv::None),
+            18 => Some(Syssniv::Vmaifg),
+            20 => Some(Syssniv::Jmbinifg),
+            22 => Some(Syssniv::Jmboutifg),
+            24 => Some(Syssniv::Cbdifg),
             _ => None,
         }
     }
-    #[doc = "Checks if the value of the field is `NONE`"]
+    #[doc = "No interrupt pending"]
     #[inline(always)]
     pub fn is_none(&self) -> bool {
-        *self == SYSSNIV_A::NONE
+        *self == Syssniv::None
     }
-    #[doc = "Checks if the value of the field is `SVSLIFG`"]
+    #[doc = "SVS low-power reset entry"]
     #[inline(always)]
     pub fn is_svslifg(&self) -> bool {
-        *self == SYSSNIV_A::SVSLIFG
+        *self == Syssniv::Svslifg
     }
-    #[doc = "Checks if the value of the field is `UBDIFG`"]
+    #[doc = "Uncorrectable FRAM bit error detection"]
     #[inline(always)]
     pub fn is_ubdifg(&self) -> bool {
-        *self == SYSSNIV_A::UBDIFG
+        *self == Syssniv::Ubdifg
     }
-    #[doc = "Checks if the value of the field is `VMAIFG`"]
+    // #[doc = "Reserved"]
+    // #[inline(always)]
+    // pub fn is_none(&self) -> bool {
+    //     *self == Syssniv::None
+    // }
+    // #[doc = "Reserved"]
+    // #[inline(always)]
+    // pub fn is_none(&self) -> bool {
+    //     *self == Syssniv::None
+    // }
+    // #[doc = "Reserved"]
+    // #[inline(always)]
+    // pub fn is_none(&self) -> bool {
+    //     *self == Syssniv::None
+    // }
+    // #[doc = "Reserved"]
+    // #[inline(always)]
+    // pub fn is_none(&self) -> bool {
+    //     *self == Syssniv::None
+    // }
+    // #[doc = "Reserved"]
+    // #[inline(always)]
+    // pub fn is_none(&self) -> bool {
+    //     *self == Syssniv::None
+    // }
+    // #[doc = "Reserved"]
+    // #[inline(always)]
+    // pub fn is_none(&self) -> bool {
+    //     *self == Syssniv::None
+    // }
+    #[doc = "VMAIFG Vacant memory access"]
     #[inline(always)]
     pub fn is_vmaifg(&self) -> bool {
-        *self == SYSSNIV_A::VMAIFG
+        *self == Syssniv::Vmaifg
     }
-    #[doc = "Checks if the value of the field is `JMBINIFG`"]
+    #[doc = "JMBINIFG JTAG mailbox input"]
     #[inline(always)]
     pub fn is_jmbinifg(&self) -> bool {
-        *self == SYSSNIV_A::JMBINIFG
+        *self == Syssniv::Jmbinifg
     }
-    #[doc = "Checks if the value of the field is `JMBOUTIFG`"]
+    #[doc = "JMBOUTIFG JTAG mailbox output"]
     #[inline(always)]
     pub fn is_jmboutifg(&self) -> bool {
-        *self == SYSSNIV_A::JMBOUTIFG
+        *self == Syssniv::Jmboutifg
     }
-    #[doc = "Checks if the value of the field is `CBDIFG`"]
+    #[doc = "Correctable FRAM bit error detection"]
     #[inline(always)]
     pub fn is_cbdifg(&self) -> bool {
-        *self == SYSSNIV_A::CBDIFG
+        *self == Syssniv::Cbdifg
     }
 }
 impl R {
     #[doc = "Bits 0:15 - System NMI vector"]
     #[inline(always)]
-    pub fn syssniv(&self) -> SYSSNIV_R {
-        SYSSNIV_R::new(self.bits)
+    pub fn syssniv(&self) -> SyssnivR {
+        SyssnivR::new(self.bits)
     }
 }
-impl W {
-    #[doc = "Writes raw bits to the register."]
-    #[inline(always)]
-    pub unsafe fn bits(&mut self, bits: u16) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "System NMI Vector Generator\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [syssniv](index.html) module"]
-pub struct SYSSNIV_SPEC;
-impl crate::RegisterSpec for SYSSNIV_SPEC {
+impl W {}
+#[doc = "System NMI Vector Generator\n\nYou can [`read`](crate::Reg::read) this register and get [`syssniv::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`syssniv::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct SyssnivSpec;
+impl crate::RegisterSpec for SyssnivSpec {
     type Ux = u16;
 }
-#[doc = "`read()` method returns [syssniv::R](R) reader structure"]
-impl crate::Readable for SYSSNIV_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [syssniv::W](W) writer structure"]
-impl crate::Writable for SYSSNIV_SPEC {
-    type Writer = W;
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+#[doc = "`read()` method returns [`syssniv::R`](R) reader structure"]
+impl crate::Readable for SyssnivSpec {}
+#[doc = "`write(|w| ..)` method takes [`syssniv::W`](W) writer structure"]
+impl crate::Writable for SyssnivSpec {
+    type Safety = crate::Unsafe;
 }
 #[doc = "`reset()` method sets SYSSNIV to value 0"]
-impl crate::Resettable for SYSSNIV_SPEC {
-    const RESET_VALUE: Self::Ux = 0;
-}
+impl crate::Resettable for SyssnivSpec {}
