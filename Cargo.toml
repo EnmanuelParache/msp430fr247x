@@ -7,17 +7,23 @@ description = "Peripheral access crate for TI MSP430FR247x microcontroller"
 keywords = ["no-std", "msp430", "svd2rust", "embedded", "ti"]
 repository = "https://github.com/EnmanuelParache/msp430fr247x"
 license = "MIT OR Apache-2.0"
+documentation = "https://docs.rs/msp430fr247x"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 critical-section = { version = "1.0", optional = true }
 msp430 = "0.4.0"
+portable-atomic = { version = "0.3.16", default-features = false }
 msp430-rt = { version = "0.4.0", optional = true }
 vcell = "0.1.0"
 
 [features]
 rt = ["msp430-rt/device"]
+
+[package.metadata.docs.rs]
+targets = ["msp430-none-elf"]
+cargo-args = ["-Z", "build-std=core"]
 
 [lib]
 name = "msp430fr247x"

@@ -2,6 +2,42 @@
 pub type R = crate::R<Ucb1statwSpiSpec>;
 #[doc = "Register `UCB1STATW_SPI` writer"]
 pub type W = crate::W<Ucb1statwSpiSpec>;
+#[doc = "eUSCI_B1 busy\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Ucbusy {
+    #[doc = "0: eUSCI_B1 inactive"]
+    Idle = 0,
+    #[doc = "1: eUSCI_B1 transmitting or receiving"]
+    Busy = 1,
+}
+impl From<Ucbusy> for bool {
+    #[inline(always)]
+    fn from(variant: Ucbusy) -> Self {
+        variant as u8 != 0
+    }
+}
+#[doc = "Field `UCBUSY` reader - eUSCI_B1 busy"]
+pub type UcbusyR = crate::BitReader<Ucbusy>;
+impl UcbusyR {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Ucbusy {
+        match self.bits {
+            false => Ucbusy::Idle,
+            true => Ucbusy::Busy,
+        }
+    }
+    #[doc = "eUSCI_B1 inactive"]
+    #[inline(always)]
+    pub fn is_idle(&self) -> bool {
+        *self == Ucbusy::Idle
+    }
+    #[doc = "eUSCI_B1 transmitting or receiving"]
+    #[inline(always)]
+    pub fn is_busy(&self) -> bool {
+        *self == Ucbusy::Busy
+    }
+}
 #[doc = "Overrun error flag\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ucoe {
@@ -162,6 +198,11 @@ where
     }
 }
 impl R {
+    #[doc = "Bit 0 - eUSCI_B1 busy"]
+    #[inline(always)]
+    pub fn ucbusy(&self) -> UcbusyR {
+        UcbusyR::new((self.bits & 1) != 0)
+    }
     #[doc = "Bit 5 - Overrun error flag"]
     #[inline(always)]
     pub fn ucoe(&self) -> UcoeR {

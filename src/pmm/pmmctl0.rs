@@ -214,10 +214,70 @@ where
         self.variant(Svshe::Svshe1)
     }
 }
+#[doc = "PMM password.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+#[repr(u8)]
+pub enum Pmmpwr {
+    #[doc = "150: Values always reads from the PMMCTL0 register"]
+    Password = 150,
+}
+impl From<Pmmpwr> for u8 {
+    #[inline(always)]
+    fn from(variant: Pmmpwr) -> Self {
+        variant as _
+    }
+}
+impl crate::FieldSpec for Pmmpwr {
+    type Ux = u8;
+}
+impl crate::IsEnum for Pmmpwr {}
 #[doc = "Field `PMMPW` reader - PMM password."]
-pub type PmmpwR = crate::FieldReader;
+pub type PmmpwR = crate::FieldReader<Pmmpwr>;
+impl PmmpwR {
+    #[doc = "Get enumerated values variant"]
+    #[inline(always)]
+    pub const fn variant(&self) -> Option<Pmmpwr> {
+        match self.bits {
+            150 => Some(Pmmpwr::Password),
+            _ => None,
+        }
+    }
+    #[doc = "Values always reads from the PMMCTL0 register"]
+    #[inline(always)]
+    pub fn is_password(&self) -> bool {
+        *self == Pmmpwr::Password
+    }
+}
+#[doc = "PMM password.\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+#[repr(u8)]
+pub enum PmmpwwWO {
+    #[doc = "165: Values which must be written to the PMMCTL0 register"]
+    Password = 165,
+}
+impl From<PmmpwwWO> for u8 {
+    #[inline(always)]
+    fn from(variant: PmmpwwWO) -> Self {
+        variant as _
+    }
+}
+impl crate::FieldSpec for PmmpwwWO {
+    type Ux = u8;
+}
+impl crate::IsEnum for PmmpwwWO {}
 #[doc = "Field `PMMPW` writer - PMM password."]
-pub type PmmpwW<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+pub type PmmpwW<'a, REG> = crate::FieldWriter<'a, REG, 8, PmmpwwWO>;
+impl<'a, REG> PmmpwW<'a, REG>
+where
+    REG: crate::Writable + crate::RegisterSpec,
+    REG::Ux: From<u8>,
+{
+    #[doc = "Values which must be written to the PMMCTL0 register"]
+    #[inline(always)]
+    pub fn password(self) -> &'a mut crate::W<REG> {
+        self.variant(PmmpwwWO::Password)
+    }
+}
 impl R {
     #[doc = "Bit 2 - Software brownout reset."]
     #[inline(always)]
