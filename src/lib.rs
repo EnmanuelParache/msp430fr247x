@@ -52,7 +52,25 @@ pub union Vector {
 #[link_section = ".vector_table.interrupts"]
 #[no_mangle]
 #[used]
-pub static __INTERRUPTS: [Vector; 45] = [
+pub static __INTERRUPTS: [Vector; 63] = [
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
     Vector { _reserved: 0 },
     Vector { _reserved: 0 },
     Vector { _reserved: 0 },
