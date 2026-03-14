@@ -12,18 +12,18 @@ pub enum Syssniv {
     Svslifg = 2,
     #[doc = "4: Uncorrectable FRAM bit error detection"]
     Ubdifg = 4,
-    // #[doc = "6: Reserved"]
-    // None = 6,
-    // #[doc = "8: Reserved"]
-    // None = 8,
-    // #[doc = "10: Reserved"]
-    // None = 10,
-    // #[doc = "12: Reserved"]
-    // None = 12,
-    // #[doc = "14: Reserved"]
-    // None = 14,
-    // #[doc = "16: Reserved"]
-    // None = 16,
+    #[doc = "6: FRAM Access Time Error"]
+    Accteifg = 6,
+    #[doc = "8: Reserved"]
+    Syssniv8 = 8,
+    #[doc = "10: Reserved"]
+    Syssniv10 = 10,
+    #[doc = "12: Reserved"]
+    Syssniv12 = 12,
+    #[doc = "14: Reserved"]
+    Syssniv14 = 14,
+    #[doc = "16: Reserved"]
+    Syssniv16 = 16,
     #[doc = "18: VMAIFG Vacant memory access"]
     Vmaifg = 18,
     #[doc = "20: JMBINIFG JTAG mailbox input"]
@@ -53,12 +53,12 @@ impl SyssnivR {
             0 => Some(Syssniv::None),
             2 => Some(Syssniv::Svslifg),
             4 => Some(Syssniv::Ubdifg),
-            6 => Some(Syssniv::None),
-            8 => Some(Syssniv::None),
-            10 => Some(Syssniv::None),
-            12 => Some(Syssniv::None),
-            14 => Some(Syssniv::None),
-            16 => Some(Syssniv::None),
+            6 => Some(Syssniv::Accteifg),
+            8 => Some(Syssniv::Syssniv8),
+            10 => Some(Syssniv::Syssniv10),
+            12 => Some(Syssniv::Syssniv12),
+            14 => Some(Syssniv::Syssniv14),
+            16 => Some(Syssniv::Syssniv16),
             18 => Some(Syssniv::Vmaifg),
             20 => Some(Syssniv::Jmbinifg),
             22 => Some(Syssniv::Jmboutifg),
@@ -81,36 +81,36 @@ impl SyssnivR {
     pub fn is_ubdifg(&self) -> bool {
         *self == Syssniv::Ubdifg
     }
-    // #[doc = "Reserved"]
-    // #[inline(always)]
-    // pub fn is_none(&self) -> bool {
-    //     *self == Syssniv::None
-    // }
-    // #[doc = "Reserved"]
-    // #[inline(always)]
-    // pub fn is_none(&self) -> bool {
-    //     *self == Syssniv::None
-    // }
-    // #[doc = "Reserved"]
-    // #[inline(always)]
-    // pub fn is_none(&self) -> bool {
-    //     *self == Syssniv::None
-    // }
-    // #[doc = "Reserved"]
-    // #[inline(always)]
-    // pub fn is_none(&self) -> bool {
-    //     *self == Syssniv::None
-    // }
-    // #[doc = "Reserved"]
-    // #[inline(always)]
-    // pub fn is_none(&self) -> bool {
-    //     *self == Syssniv::None
-    // }
-    // #[doc = "Reserved"]
-    // #[inline(always)]
-    // pub fn is_none(&self) -> bool {
-    //     *self == Syssniv::None
-    // }
+    #[doc = "FRAM Access Time Error"]
+    #[inline(always)]
+    pub fn is_accteifg(&self) -> bool {
+        *self == Syssniv::Accteifg
+    }
+    #[doc = "Reserved"]
+    #[inline(always)]
+    pub fn is_syssniv_8(&self) -> bool {
+        *self == Syssniv::Syssniv8
+    }
+    #[doc = "Reserved"]
+    #[inline(always)]
+    pub fn is_syssniv_10(&self) -> bool {
+        *self == Syssniv::Syssniv10
+    }
+    #[doc = "Reserved"]
+    #[inline(always)]
+    pub fn is_syssniv_12(&self) -> bool {
+        *self == Syssniv::Syssniv12
+    }
+    #[doc = "Reserved"]
+    #[inline(always)]
+    pub fn is_syssniv_14(&self) -> bool {
+        *self == Syssniv::Syssniv14
+    }
+    #[doc = "Reserved"]
+    #[inline(always)]
+    pub fn is_syssniv_16(&self) -> bool {
+        *self == Syssniv::Syssniv16
+    }
     #[doc = "VMAIFG Vacant memory access"]
     #[inline(always)]
     pub fn is_vmaifg(&self) -> bool {

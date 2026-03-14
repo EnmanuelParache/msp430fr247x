@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
+<device schemaVersion="1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <vendor>msp430gen</vendor>
   <name>MSP430FR2475</name>
-  <version>v0.4.0</version>
-  <description/>
+  <version>v0.4.0-21-gfdbe417</version>
+  <description></description>
   <addressUnitBits>8</addressUnitBits>
   <width>16</width>
   <size>16</size>
@@ -1301,6 +1301,24 @@
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
+              <enumeratedValues>
+                <name>PMMPWR</name>
+                <usage>read</usage>
+                <enumeratedValue>
+                  <name>PASSWORD</name>
+                  <description>Values always reads from the PMMCTL0 register</description>
+                  <value>150</value>
+                </enumeratedValue>
+              </enumeratedValues>
+              <enumeratedValues>
+                <name>PMMPWW</name>
+                <usage>write</usage>
+                <enumeratedValue>
+                  <name>PASSWORD</name>
+                  <description>Values which must be written to the PMMCTL0 register</description>
+                  <value>165</value>
+                </enumeratedValue>
+              </enumeratedValues>
             </field>
           </fields>
         </register>
@@ -2176,6 +2194,7 @@
               <bitWidth>16</bitWidth>
               <access>read-only</access>
               <enumeratedValues>
+                <name>SYSSNIV</name>
                 <enumeratedValue>
                   <name>NONE</name>
                   <description>No interrupt pending</description>
@@ -2192,32 +2211,32 @@
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>NONE</name>
-                  <description>Reserved</description>
+                  <name>ACCTEIFG</name>
+                  <description>FRAM Access Time Error</description>
                   <value>6</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>NONE</name>
+                  <name>SYSSNIV_8</name>
                   <description>Reserved</description>
                   <value>8</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>NONE</name>
+                  <name>SYSSNIV_10</name>
                   <description>Reserved</description>
                   <value>10</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>NONE</name>
+                  <name>SYSSNIV_12</name>
                   <description>Reserved</description>
                   <value>12</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>NONE</name>
+                  <name>SYSSNIV_14</name>
                   <description>Reserved</description>
                   <value>14</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>NONE</name>
+                  <name>SYSSNIV_16</name>
                   <description>Reserved</description>
                   <value>16</value>
                 </enumeratedValue>
@@ -11947,6 +11966,26 @@
                 </enumeratedValue>
               </enumeratedValues>
             </field>
+            <field>
+              <name>UCBUSY</name>
+              <description>eUSCI_A0 busy</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+              <enumeratedValues>
+                <name>UCBUSY</name>
+                <enumeratedValue>
+                  <name>IDLE</name>
+                  <description>eUSCI_A0 inactive</description>
+                  <value>0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>BUSY</name>
+                  <description>eUSCI_A0 transmitting or receiving</description>
+                  <value>1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
           </fields>
         </register>
         <register>
@@ -13395,6 +13434,26 @@
                 </enumeratedValue>
               </enumeratedValues>
             </field>
+            <field>
+              <name>UCBUSY</name>
+              <description>eUSCI_A1 busy</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+              <enumeratedValues>
+                <name>UCBUSY</name>
+                <enumeratedValue>
+                  <name>IDLE</name>
+                  <description>eUSCI_A1 inactive</description>
+                  <value>0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>BUSY</name>
+                  <description>eUSCI_A1 transmitting or receiving</description>
+                  <value>1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
           </fields>
         </register>
         <register>
@@ -14805,6 +14864,26 @@
                 <enumeratedValue>
                   <name>UCLISTEN_1</name>
                   <description>Enabled. UCBxTXD is internally fed back to the receiver</description>
+                  <value>1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>UCBUSY</name>
+              <description>eUSCI_B0 busy</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+              <enumeratedValues>
+                <name>UCBUSY</name>
+                <enumeratedValue>
+                  <name>IDLE</name>
+                  <description>eUSCI_B0 inactive</description>
+                  <value>0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>BUSY</name>
+                  <description>eUSCI_B0 transmitting or receiving</description>
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -16721,6 +16800,26 @@
                 <enumeratedValue>
                   <name>UCLISTEN_1</name>
                   <description>Enabled. UCBxTXD is internally fed back to the receiver</description>
+                  <value>1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>UCBUSY</name>
+              <description>eUSCI_B1 busy</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+              <enumeratedValues>
+                <name>UCBUSY</name>
+                <enumeratedValue>
+                  <name>IDLE</name>
+                  <description>eUSCI_B1 inactive</description>
+                  <value>0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>BUSY</name>
+                  <description>eUSCI_B1 transmitting or receiving</description>
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
