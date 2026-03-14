@@ -4,9 +4,9 @@ version = 4
 
 [[package]]
 name = "critical-section"
-version = "1.1.1"
+version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6548a0ad5d2549e111e1f6a11a6c2e2d00ce6a3dafe22948d67c2b443f775e52"
+checksum = "790eea4361631c5e7d22598ecd5723ff611904e3344ce8720784c93e3d83d40b"
 
 [[package]]
 name = "msp430"
@@ -19,9 +19,9 @@ dependencies = [
 
 [[package]]
 name = "msp430-rt"
-version = "0.4.0"
+version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1cc30f2ba29ff74917c683ceb0aec99b033e88b00cee40b7cbe50a15d888c03e"
+checksum = "71e7f4fcd582ab8da94544e6a67116725df165b36f411623d7665ffe3201f060"
 dependencies = [
  "msp430",
  "msp430-rt-macros",
@@ -29,9 +29,9 @@ dependencies = [
 
 [[package]]
 name = "msp430-rt-macros"
-version = "0.4.0"
+version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "37d2b9559b880515bc8078e017bf49bb0dae911814b67963d629e7e0cc5f58db"
+checksum = "1f13ca897dbd30320da83524321d1a66e9bd9cbb894b3a8260fe367247929fdf"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -42,22 +42,13 @@ dependencies = [
 
 [[package]]
 name = "msp430fr247x"
-version = "0.3.0"
+version = "0.3.1"
 dependencies = [
  "critical-section",
  "msp430",
  "msp430-rt",
- "portable-atomic 0.3.20",
+ "portable-atomic",
  "vcell",
-]
-
-[[package]]
-name = "portable-atomic"
-version = "0.3.20"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e30165d31df606f5726b090ec7592c308a0eaf61721ff64c9a3018e344a8753e"
-dependencies = [
- "portable-atomic 1.13.1",
 ]
 
 [[package]]
