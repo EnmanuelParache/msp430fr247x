@@ -42,7 +42,7 @@ dependencies = [
 
 [[package]]
 name = "msp430fr247x"
-version = "0.3.1"
+version = "0.3.2"
 dependencies = [
  "critical-section",
  "msp430",
