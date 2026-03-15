@@ -2,7 +2,7 @@
 <device schemaVersion="1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <vendor>msp430gen</vendor>
   <name>MSP430FR2475</name>
-  <version>v0.4.0-21-gfdbe417</version>
+  <version>v0.4.0-22-g754f7f3</version>
   <description></description>
   <addressUnitBits>8</addressUnitBits>
   <width>16</width>
@@ -20211,132 +20211,132 @@
       <interrupt>
         <name>ECOMP0</name>
         <description>0xFFCA</description>
-        <value>19</value>
+        <value>37</value>
       </interrupt>
       <interrupt>
         <name>PORT6</name>
         <description>0xFFCC</description>
-        <value>20</value>
+        <value>38</value>
       </interrupt>
       <interrupt>
         <name>PORT5</name>
         <description>0xFFCE</description>
-        <value>21</value>
+        <value>39</value>
       </interrupt>
       <interrupt>
         <name>PORT4</name>
         <description>0xFFD0</description>
-        <value>22</value>
+        <value>40</value>
       </interrupt>
       <interrupt>
         <name>PORT3</name>
         <description>0xFFD2</description>
-        <value>23</value>
+        <value>41</value>
       </interrupt>
       <interrupt>
         <name>PORT2</name>
         <description>0xFFD4</description>
-        <value>24</value>
+        <value>42</value>
       </interrupt>
       <interrupt>
         <name>PORT1</name>
         <description>0xFFD6</description>
-        <value>25</value>
+        <value>43</value>
       </interrupt>
       <interrupt>
         <name>ADC</name>
         <description>0xFFD8</description>
-        <value>26</value>
+        <value>44</value>
       </interrupt>
       <interrupt>
         <name>EUSCI_B1</name>
         <description>0xFFDA</description>
-        <value>27</value>
+        <value>45</value>
       </interrupt>
       <interrupt>
         <name>EUSCI_B0</name>
         <description>0xFFDC</description>
-        <value>28</value>
+        <value>46</value>
       </interrupt>
       <interrupt>
         <name>EUSCI_A1</name>
         <description>0xFFDE</description>
-        <value>29</value>
+        <value>47</value>
       </interrupt>
       <interrupt>
         <name>EUSCI_A0</name>
         <description>0xFFE0</description>
-        <value>30</value>
+        <value>48</value>
       </interrupt>
       <interrupt>
         <name>WDT</name>
         <description>0xFFE2</description>
-        <value>31</value>
+        <value>49</value>
       </interrupt>
       <interrupt>
         <name>RTC</name>
         <description>0xFFE4</description>
-        <value>32</value>
+        <value>50</value>
       </interrupt>
       <interrupt>
         <name>TIMER0_B1</name>
         <description>0xFFE6</description>
-        <value>33</value>
+        <value>51</value>
       </interrupt>
       <interrupt>
         <name>TIMER0_B0</name>
         <description>0xFFE8</description>
-        <value>34</value>
+        <value>52</value>
       </interrupt>
       <interrupt>
         <name>TIMER3_A1</name>
         <description>0xFFEA</description>
-        <value>35</value>
+        <value>53</value>
       </interrupt>
       <interrupt>
         <name>TIMER3_A0</name>
         <description>0xFFEC</description>
-        <value>36</value>
+        <value>54</value>
       </interrupt>
       <interrupt>
         <name>TIMER2_A1</name>
         <description>0xFFEE</description>
-        <value>37</value>
+        <value>55</value>
       </interrupt>
       <interrupt>
         <name>TIMER2_A0</name>
         <description>0xFFF0</description>
-        <value>38</value>
+        <value>56</value>
       </interrupt>
       <interrupt>
         <name>TIMER1_A1</name>
         <description>0xFFF2</description>
-        <value>39</value>
+        <value>57</value>
       </interrupt>
       <interrupt>
         <name>TIMER1_A0</name>
         <description>0xFFF4</description>
-        <value>40</value>
+        <value>58</value>
       </interrupt>
       <interrupt>
         <name>TIMER0_A1</name>
         <description>0xFFF6</description>
-        <value>41</value>
+        <value>59</value>
       </interrupt>
       <interrupt>
         <name>TIMER0_A0</name>
         <description>0xFFF8</description>
-        <value>42</value>
+        <value>60</value>
       </interrupt>
       <interrupt>
         <name>UNMI</name>
         <description>0xFFFA</description>
-        <value>43</value>
+        <value>61</value>
       </interrupt>
       <interrupt>
         <name>SYSNMI</name>
         <description>0xFFFC</description>
-        <value>44</value>
+        <value>62</value>
       </interrupt>
     </peripheral>
   </peripherals>
