@@ -2,9 +2,8 @@
 pub type R = crate::R<PmmifgSpec>;
 #[doc = "Register `PMMIFG` writer"]
 pub type W = crate::W<PmmifgSpec>;
-#[doc = "Field `PMMSPSIFG` reader - PMM secondary power supply interrupt flag. Reserved for future multi power supply systems."]
-pub type PmmspsifgR = crate::BitReader;
 #[doc = "PMM software brownout reset interrupt flag.\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pmmborifg {
     #[doc = "0: Reset not due to PMMSWBOR"]
@@ -58,6 +57,7 @@ where
     }
 }
 #[doc = "PMM reset pin interrupt flag.\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pmmrstifg {
     #[doc = "0: Reset not due to reset pin"]
@@ -111,6 +111,7 @@ where
     }
 }
 #[doc = "PMM software POR interrupt flag.\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pmmporifg {
     #[doc = "0: Reset not due to PMMSWPOR"]
@@ -163,11 +164,8 @@ where
         self.variant(Pmmporifg::Pmmporifg1)
     }
 }
-#[doc = "Field `SPWRIFG` reader - Secondary Power interrupt flag. This bit only works in multi power supply systems. When the secondary power is ready to use, this bit is set., In single power supply systems, this bit does not work."]
-pub type SpwrifgR = crate::BitReader;
-#[doc = "Field `PPWRIFG` reader - Primary Power interrupt flag. This bit only works in multi power supply systems. When the primary power is ready to use, this bit is set. In single power supply systems, this bit does not work"]
-pub type PpwrifgR = crate::BitReader;
 #[doc = "High-side SVS interrupt flag.\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Svshifg {
     #[doc = "0: Reset not due to SVSH"]
@@ -221,6 +219,7 @@ where
     }
 }
 #[doc = "LPMx.5 flag.\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pmmlpm5ifg {
     #[doc = "0: Reset not due to wake-up from LPMx.5"]
@@ -274,11 +273,6 @@ where
     }
 }
 impl R {
-    #[doc = "Bit 0 - PMM secondary power supply interrupt flag. Reserved for future multi power supply systems."]
-    #[inline(always)]
-    pub fn pmmspsifg(&self) -> PmmspsifgR {
-        PmmspsifgR::new((self.bits & 1) != 0)
-    }
     #[doc = "Bit 8 - PMM software brownout reset interrupt flag."]
     #[inline(always)]
     pub fn pmmborifg(&self) -> PmmborifgR {
@@ -293,16 +287,6 @@ impl R {
     #[inline(always)]
     pub fn pmmporifg(&self) -> PmmporifgR {
         PmmporifgR::new(((self.bits >> 10) & 1) != 0)
-    }
-    #[doc = "Bit 11 - Secondary Power interrupt flag. This bit only works in multi power supply systems. When the secondary power is ready to use, this bit is set., In single power supply systems, this bit does not work."]
-    #[inline(always)]
-    pub fn spwrifg(&self) -> SpwrifgR {
-        SpwrifgR::new(((self.bits >> 11) & 1) != 0)
-    }
-    #[doc = "Bit 12 - Primary Power interrupt flag. This bit only works in multi power supply systems. When the primary power is ready to use, this bit is set. In single power supply systems, this bit does not work"]
-    #[inline(always)]
-    pub fn ppwrifg(&self) -> PpwrifgR {
-        PpwrifgR::new(((self.bits >> 12) & 1) != 0)
     }
     #[doc = "Bit 13 - High-side SVS interrupt flag."]
     #[inline(always)]

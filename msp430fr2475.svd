@@ -2,7 +2,7 @@
 <device schemaVersion="1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <vendor>msp430gen</vendor>
   <name>MSP430FR2475</name>
-  <version>v0.4.0-22-g754f7f3</version>
+  <version>v0.4.0-28-gb0087ce-dirty</version>
   <description></description>
   <addressUnitBits>8</addressUnitBits>
   <width>16</width>
@@ -96,52 +96,53 @@
               <name>P1IV</name>
               <description>Port 1 interrupt vector value</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>5</bitWidth>
+              <bitWidth>16</bitWidth>
               <access>read-only</access>
               <enumeratedValues>
+                <name>P1IV</name>
                 <enumeratedValue>
                   <name>NONE</name>
                   <description>No interrupt pending</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P1IFG0</name>
-                  <description>Interrupt Source: Port 1.0 interrupt; Interrupt Flag: P1IFG0; Interrupt Priority: Highest</description>
+                  <name>IFG0</name>
+                  <description>Interrupt Source: Port x.0 interrupt; Interrupt Flag: PxIFG.0; Interrupt Priority: Highest</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P1IFG1</name>
-                  <description>Interrupt Source: Port 1.1 interrupt; Interrupt Flag: P1IFG1</description>
+                  <name>IFG1</name>
+                  <description>Interrupt Source: Port x.1 interrupt; Interrupt Flag: PxIFG.1</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P1IFG2</name>
-                  <description>Interrupt Source: Port 1.2 interrupt; Interrupt Flag: P1IFG2</description>
+                  <name>IFG2</name>
+                  <description>Interrupt Source: Port x.2 interrupt; Interrupt Flag: PxIFG.2</description>
                   <value>6</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P1IFG3</name>
-                  <description>Interrupt Source: Port 1.3 interrupt; Interrupt Flag: P1IFG3</description>
+                  <name>IFG3</name>
+                  <description>Interrupt Source: Port x.3 interrupt; Interrupt Flag: PxIFG.3</description>
                   <value>8</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P1IFG4</name>
-                  <description>Interrupt Source: Port 1.4 interrupt; Interrupt Flag: P1IFG4</description>
+                  <name>IFG4</name>
+                  <description>Interrupt Source: Port x.4 interrupt; Interrupt Flag: PxIFG.4</description>
                   <value>10</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P1IFG5</name>
-                  <description>Interrupt Source: Port 1.5 interrupt; Interrupt Flag: P1IFG5</description>
+                  <name>IFG5</name>
+                  <description>Interrupt Source: Port x.5 interrupt; Interrupt Flag: PxIFG.5</description>
                   <value>12</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P1IFG6</name>
-                  <description>Interrupt Source: Port 1.6 interrupt; Interrupt Flag: P1IFG6</description>
+                  <name>IFG6</name>
+                  <description>Interrupt Source: Port x.6 interrupt; Interrupt Flag: PxIFG.6</description>
                   <value>14</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P1IFG7</name>
-                  <description>Interrupt Source: Port 1.7 interrupt; Interrupt Flag: P1IFG7; Interrupt Priority: Lowest</description>
+                  <name>IFG7</name>
+                  <description>Interrupt Source: Port x.7 interrupt; Interrupt Flag: PxIFG.7; Interrupt Priority: Lowest</description>
                   <value>16</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -236,52 +237,53 @@
               <name>P2IV</name>
               <description>Port 2 interrupt vector value</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>5</bitWidth>
+              <bitWidth>16</bitWidth>
               <access>read-only</access>
               <enumeratedValues>
+                <name>P2IV</name>
                 <enumeratedValue>
                   <name>NONE</name>
                   <description>No interrupt pending</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P2IFG0</name>
-                  <description>Interrupt Source: Port 2.0 interrupt; Interrupt Flag: P2IFG0; Interrupt Priority: Highest</description>
+                  <name>IFG0</name>
+                  <description>Interrupt Source: Port x.0 interrupt; Interrupt Flag: PxIFG.0; Interrupt Priority: Highest</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P2IFG1</name>
-                  <description>Interrupt Source: Port 2.1 interrupt; Interrupt Flag: P2IFG1</description>
+                  <name>IFG1</name>
+                  <description>Interrupt Source: Port x.1 interrupt; Interrupt Flag: PxIFG.1</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P2IFG2</name>
-                  <description>Interrupt Source: Port 2.2 interrupt; Interrupt Flag: P2IFG2</description>
+                  <name>IFG2</name>
+                  <description>Interrupt Source: Port x.2 interrupt; Interrupt Flag: PxIFG.2</description>
                   <value>6</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P2IFG3</name>
-                  <description>Interrupt Source: Port 2.3 interrupt; Interrupt Flag: P2IFG3</description>
+                  <name>IFG3</name>
+                  <description>Interrupt Source: Port x.3 interrupt; Interrupt Flag: PxIFG.3</description>
                   <value>8</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P2IFG4</name>
-                  <description>Interrupt Source: Port 2.4 interrupt; Interrupt Flag: P2IFG4</description>
+                  <name>IFG4</name>
+                  <description>Interrupt Source: Port x.4 interrupt; Interrupt Flag: PxIFG.4</description>
                   <value>10</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P2IFG5</name>
-                  <description>Interrupt Source: Port 2.5 interrupt; Interrupt Flag: P2IFG5</description>
+                  <name>IFG5</name>
+                  <description>Interrupt Source: Port x.5 interrupt; Interrupt Flag: PxIFG.5</description>
                   <value>12</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P2IFG6</name>
-                  <description>Interrupt Source: Port 2.6 interrupt; Interrupt Flag: P2IFG6</description>
+                  <name>IFG6</name>
+                  <description>Interrupt Source: Port x.6 interrupt; Interrupt Flag: PxIFG.6</description>
                   <value>14</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P2IFG7</name>
-                  <description>Interrupt Source: Port 2.7 interrupt; Interrupt Flag: P2IFG7; Interrupt Priority: Lowest</description>
+                  <name>IFG7</name>
+                  <description>Interrupt Source: Port x.7 interrupt; Interrupt Flag: PxIFG.7; Interrupt Priority: Lowest</description>
                   <value>16</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -376,52 +378,53 @@
               <name>P3IV</name>
               <description>Port 3 interrupt vector value</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>5</bitWidth>
+              <bitWidth>16</bitWidth>
               <access>read-only</access>
               <enumeratedValues>
+                <name>P3IV</name>
                 <enumeratedValue>
                   <name>NONE</name>
                   <description>No interrupt pending</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P3IFG0</name>
-                  <description>Interrupt Source: Port 3.0 interrupt; Interrupt Flag: P3IFG0; Interrupt Priority: Highest</description>
+                  <name>IFG0</name>
+                  <description>Interrupt Source: Port x.0 interrupt; Interrupt Flag: PxIFG.0; Interrupt Priority: Highest</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P3IFG1</name>
-                  <description>Interrupt Source: Port 3.1 interrupt; Interrupt Flag: P3IFG1</description>
+                  <name>IFG1</name>
+                  <description>Interrupt Source: Port x.1 interrupt; Interrupt Flag: PxIFG.1</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P3IFG2</name>
-                  <description>Interrupt Source: Port 3.2 interrupt; Interrupt Flag: P3IFG2</description>
+                  <name>IFG2</name>
+                  <description>Interrupt Source: Port x.2 interrupt; Interrupt Flag: PxIFG.2</description>
                   <value>6</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P3IFG3</name>
-                  <description>Interrupt Source: Port 3.3 interrupt; Interrupt Flag: P3IFG3</description>
+                  <name>IFG3</name>
+                  <description>Interrupt Source: Port x.3 interrupt; Interrupt Flag: PxIFG.3</description>
                   <value>8</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P3IFG4</name>
-                  <description>Interrupt Source: Port 3.4 interrupt; Interrupt Flag: P3IFG4</description>
+                  <name>IFG4</name>
+                  <description>Interrupt Source: Port x.4 interrupt; Interrupt Flag: PxIFG.4</description>
                   <value>10</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P3IFG5</name>
-                  <description>Interrupt Source: Port 3.5 interrupt; Interrupt Flag: P3IFG5</description>
+                  <name>IFG5</name>
+                  <description>Interrupt Source: Port x.5 interrupt; Interrupt Flag: PxIFG.5</description>
                   <value>12</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P3IFG6</name>
-                  <description>Interrupt Source: Port 3.6 interrupt; Interrupt Flag: P3IFG6</description>
+                  <name>IFG6</name>
+                  <description>Interrupt Source: Port x.6 interrupt; Interrupt Flag: PxIFG.6</description>
                   <value>14</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P3IFG7</name>
-                  <description>Interrupt Source: Port 3.7 interrupt; Interrupt Flag: P3IFG7; Interrupt Priority: Lowest</description>
+                  <name>IFG7</name>
+                  <description>Interrupt Source: Port x.7 interrupt; Interrupt Flag: PxIFG.7; Interrupt Priority: Lowest</description>
                   <value>16</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -516,52 +519,53 @@
               <name>P4IV</name>
               <description>Port 4 interrupt vector value</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>5</bitWidth>
+              <bitWidth>16</bitWidth>
               <access>read-only</access>
               <enumeratedValues>
+                <name>P4IV</name>
                 <enumeratedValue>
                   <name>NONE</name>
                   <description>No interrupt pending</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P4IFG0</name>
-                  <description>Interrupt Source: Port 4.0 interrupt; Interrupt Flag: P4IFG0; Interrupt Priority: Highest</description>
+                  <name>IFG0</name>
+                  <description>Interrupt Source: Port x.0 interrupt; Interrupt Flag: PxIFG.0; Interrupt Priority: Highest</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P4IFG1</name>
-                  <description>Interrupt Source: Port 4.1 interrupt; Interrupt Flag: P4IFG1</description>
+                  <name>IFG1</name>
+                  <description>Interrupt Source: Port x.1 interrupt; Interrupt Flag: PxIFG.1</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P4IFG2</name>
-                  <description>Interrupt Source: Port 4.2 interrupt; Interrupt Flag: P4IFG2</description>
+                  <name>IFG2</name>
+                  <description>Interrupt Source: Port x.2 interrupt; Interrupt Flag: PxIFG.2</description>
                   <value>6</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P4IFG3</name>
-                  <description>Interrupt Source: Port 4.3 interrupt; Interrupt Flag: P4IFG3</description>
+                  <name>IFG3</name>
+                  <description>Interrupt Source: Port x.3 interrupt; Interrupt Flag: PxIFG.3</description>
                   <value>8</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P4IFG4</name>
-                  <description>Interrupt Source: Port 4.4 interrupt; Interrupt Flag: P4IFG4</description>
+                  <name>IFG4</name>
+                  <description>Interrupt Source: Port x.4 interrupt; Interrupt Flag: PxIFG.4</description>
                   <value>10</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P4IFG5</name>
-                  <description>Interrupt Source: Port 4.5 interrupt; Interrupt Flag: P4IFG5</description>
+                  <name>IFG5</name>
+                  <description>Interrupt Source: Port x.5 interrupt; Interrupt Flag: PxIFG.5</description>
                   <value>12</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P4IFG6</name>
-                  <description>Interrupt Source: Port 4.6 interrupt; Interrupt Flag: P4IFG6</description>
+                  <name>IFG6</name>
+                  <description>Interrupt Source: Port x.6 interrupt; Interrupt Flag: PxIFG.6</description>
                   <value>14</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P4IFG7</name>
-                  <description>Interrupt Source: Port 4.7 interrupt; Interrupt Flag: P4IFG7; Interrupt Priority: Lowest</description>
+                  <name>IFG7</name>
+                  <description>Interrupt Source: Port x.7 interrupt; Interrupt Flag: PxIFG.7; Interrupt Priority: Lowest</description>
                   <value>16</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -656,52 +660,53 @@
               <name>P5IV</name>
               <description>Port 5 interrupt vector value</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>5</bitWidth>
+              <bitWidth>16</bitWidth>
               <access>read-only</access>
               <enumeratedValues>
+                <name>P5IV</name>
                 <enumeratedValue>
                   <name>NONE</name>
                   <description>No interrupt pending</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P5IFG0</name>
-                  <description>Interrupt Source: Port 5.0 interrupt; Interrupt Flag: P5IFG0; Interrupt Priority: Highest</description>
+                  <name>IFG0</name>
+                  <description>Interrupt Source: Port x.0 interrupt; Interrupt Flag: PxIFG.0; Interrupt Priority: Highest</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P5IFG1</name>
-                  <description>Interrupt Source: Port 5.1 interrupt; Interrupt Flag: P5IFG1</description>
+                  <name>IFG1</name>
+                  <description>Interrupt Source: Port x.1 interrupt; Interrupt Flag: PxIFG.1</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P5IFG2</name>
-                  <description>Interrupt Source: Port 5.2 interrupt; Interrupt Flag: P5IFG2</description>
+                  <name>IFG2</name>
+                  <description>Interrupt Source: Port x.2 interrupt; Interrupt Flag: PxIFG.2</description>
                   <value>6</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P5IFG3</name>
-                  <description>Interrupt Source: Port 5.3 interrupt; Interrupt Flag: P5IFG3</description>
+                  <name>IFG3</name>
+                  <description>Interrupt Source: Port x.3 interrupt; Interrupt Flag: PxIFG.3</description>
                   <value>8</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P5IFG4</name>
-                  <description>Interrupt Source: Port 5.4 interrupt; Interrupt Flag: P5IFG4</description>
+                  <name>IFG4</name>
+                  <description>Interrupt Source: Port x.4 interrupt; Interrupt Flag: PxIFG.4</description>
                   <value>10</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P5IFG5</name>
-                  <description>Interrupt Source: Port 5.5 interrupt; Interrupt Flag: P5IFG5</description>
+                  <name>IFG5</name>
+                  <description>Interrupt Source: Port x.5 interrupt; Interrupt Flag: PxIFG.5</description>
                   <value>12</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P5IFG6</name>
-                  <description>Interrupt Source: Port 5.6 interrupt; Interrupt Flag: P5IFG6</description>
+                  <name>IFG6</name>
+                  <description>Interrupt Source: Port x.6 interrupt; Interrupt Flag: PxIFG.6</description>
                   <value>14</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P5IFG7</name>
-                  <description>Interrupt Source: Port 5.7 interrupt; Interrupt Flag: P5IFG7; Interrupt Priority: Lowest</description>
+                  <name>IFG7</name>
+                  <description>Interrupt Source: Port x.7 interrupt; Interrupt Flag: PxIFG.7; Interrupt Priority: Lowest</description>
                   <value>16</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -796,52 +801,53 @@
               <name>P6IV</name>
               <description>Port 6 interrupt vector value</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>5</bitWidth>
+              <bitWidth>16</bitWidth>
               <access>read-only</access>
               <enumeratedValues>
+                <name>P6IV</name>
                 <enumeratedValue>
                   <name>NONE</name>
                   <description>No interrupt pending</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P6IFG0</name>
-                  <description>Interrupt Source: Port 6.0 interrupt; Interrupt Flag: P6IFG0; Interrupt Priority: Highest</description>
+                  <name>IFG0</name>
+                  <description>Interrupt Source: Port x.0 interrupt; Interrupt Flag: PxIFG.0; Interrupt Priority: Highest</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P6IFG1</name>
-                  <description>Interrupt Source: Port 6.1 interrupt; Interrupt Flag: P6IFG1</description>
+                  <name>IFG1</name>
+                  <description>Interrupt Source: Port x.1 interrupt; Interrupt Flag: PxIFG.1</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P6IFG2</name>
-                  <description>Interrupt Source: Port 6.2 interrupt; Interrupt Flag: P6IFG2</description>
+                  <name>IFG2</name>
+                  <description>Interrupt Source: Port x.2 interrupt; Interrupt Flag: PxIFG.2</description>
                   <value>6</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P6IFG3</name>
-                  <description>Interrupt Source: Port 6.3 interrupt; Interrupt Flag: P6IFG3</description>
+                  <name>IFG3</name>
+                  <description>Interrupt Source: Port x.3 interrupt; Interrupt Flag: PxIFG.3</description>
                   <value>8</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P6IFG4</name>
-                  <description>Interrupt Source: Port 6.4 interrupt; Interrupt Flag: P6IFG4</description>
+                  <name>IFG4</name>
+                  <description>Interrupt Source: Port x.4 interrupt; Interrupt Flag: PxIFG.4</description>
                   <value>10</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P6IFG5</name>
-                  <description>Interrupt Source: Port 6.5 interrupt; Interrupt Flag: P6IFG5</description>
+                  <name>IFG5</name>
+                  <description>Interrupt Source: Port x.5 interrupt; Interrupt Flag: PxIFG.5</description>
                   <value>12</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P6IFG6</name>
-                  <description>Interrupt Source: Port 6.6 interrupt; Interrupt Flag: P6IFG6</description>
+                  <name>IFG6</name>
+                  <description>Interrupt Source: Port x.6 interrupt; Interrupt Flag: PxIFG.6</description>
                   <value>14</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>P6IFG7</name>
-                  <description>Interrupt Source: Port 6.7 interrupt; Interrupt Flag: P6IFG7; Interrupt Priority: Lowest</description>
+                  <name>IFG7</name>
+                  <description>Interrupt Source: Port x.7 interrupt; Interrupt Flag: PxIFG.7; Interrupt Priority: Lowest</description>
                   <value>16</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -1283,13 +1289,14 @@
               <bitWidth>1</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>SVSHE</name>
                 <enumeratedValue>
-                  <name>SVSHE_0</name>
+                  <name>DISABLED</name>
                   <description>High-side SVS (SVSH) is disabled in LPM2, LPM3, LPM4, LPM3.5, and LPM4.5. SVSH is always enabled in active mode, LPM0, and LPM1.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>SVSHE_1</name>
+                  <name>ENABLED</name>
                   <description>SVSH is always enabled.</description>
                   <value>1</value>
                 </enumeratedValue>
@@ -1316,6 +1323,45 @@
                 <enumeratedValue>
                   <name>PASSWORD</name>
                   <description>Values which must be written to the PMMCTL0 register</description>
+                  <value>165</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>PMMCTL0_H</name>
+          <description>Power Management Module Control Register 0, upper byte</description>
+          <alternateRegister>PMMCTL0</alternateRegister>
+          <addressOffset>1</addressOffset>
+          <size>8</size>
+          <fields>
+            <field>
+              <name>PMMPW</name>
+              <description>PMM password</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <name>PMMPWR</name>
+                <usage>read</usage>
+                <enumeratedValue>
+                  <name>PASSWORD</name>
+                  <description>Value always read from the PMM password</description>
+                  <value>150</value>
+                </enumeratedValue>
+              </enumeratedValues>
+              <enumeratedValues>
+                <name>PMMPWW</name>
+                <usage>write</usage>
+                <enumeratedValue>
+                  <name>LOCK</name>
+                  <description>Locks the PMM registers again</description>
+                  <value>0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>PASSWORD</name>
+                  <description>Unlocks the PMM registers</description>
                   <value>165</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -1373,13 +1419,6 @@
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
-            </field>
-            <field>
-              <name>PWRMODE</name>
-              <description>Power Mode Selection. The two bits are used to select the power supply in multi power supply systems. A single power supply system is not affected by the bits. Reserved for future use.</description>
-              <bitOffset>14</bitOffset>
-              <bitWidth>2</bitWidth>
-              <access>read-write</access>
             </field>
             <field>
               <name>TSENSOREN</name>
@@ -1502,25 +1541,21 @@
               <bitWidth>2</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>REFVSEL</name>
                 <enumeratedValue>
-                  <name>REFVSEL_0</name>
-                  <description>00b = 1.5V</description>
+                  <name>V1_5</name>
+                  <description>1.5 V</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>REFVSEL_1</name>
-                  <description>01b = 2.0V</description>
+                  <name>V2_0</name>
+                  <description>2.0 V</description>
                   <value>1</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>REFVSEL_2</name>
-                  <description>10b = 2.5V</description>
+                  <name>V2_5</name>
+                  <description>2.5 V</description>
                   <value>2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>REFVSEL_3</name>
-                  <description>11b = Reserved</description>
-                  <value>3</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -1629,13 +1664,6 @@
               </enumeratedValues>
             </field>
             <field>
-              <name>SPWRIFG</name>
-              <description>Secondary Power interrupt flag. This bit only works in multi power supply systems. When the secondary power is ready to use, this bit is set., In single power supply systems, this bit does not work.</description>
-              <bitOffset>11</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-only</access>
-            </field>
-            <field>
               <name>SVSHIFG</name>
               <description>High-side SVS interrupt flag.</description>
               <bitOffset>13</bitOffset>
@@ -1673,20 +1701,6 @@
                 </enumeratedValue>
               </enumeratedValues>
             </field>
-            <field>
-              <name>PMMSPSIFG</name>
-              <description>PMM secondary power supply interrupt flag. Reserved for future multi power supply systems.</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-only</access>
-            </field>
-            <field>
-              <name>PPWRIFG</name>
-              <description>Primary Power interrupt flag. This bit only works in multi power supply systems. When the primary power is ready to use, this bit is set. In single power supply systems, this bit does not work</description>
-              <bitOffset>12</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-only</access>
-            </field>
           </fields>
         </register>
         <register>
@@ -1715,44 +1729,6 @@
                 </enumeratedValue>
               </enumeratedValues>
             </field>
-            <field>
-              <name>LPM5SW</name>
-              <description>Reports or sets the LPM3.5 switch connection upon the switch mode set by LPM5SM. When this bit is set, the VLPM3.5 domain can accept full-speed read and write operation by CPU MCLK. If the switch is disconnected, all peripherals within this domain can only accept the operation no more than 40 kHz. In automatic mode (LPM5SM = 0), this bit represents the switch connection between Vcore and VLPM3.5. Any write to this bit has no effect. In manual mode (LPM5SM = 1), this bit can be fully read and written by software. When this bit is set, the switch connection between Vcore and VLPM3.5 is connected. Otherwise, the switch is disconnected.</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>LPM5SW_0</name>
-                  <description>LPMx.5 switch disconnected</description>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>LPM5SW_1</name>
-                  <description>LPMx.5 switch connected</description>
-                  <value>1</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
-            <field>
-              <name>LPM5SM</name>
-              <description>Specifies the operation mode of the LPM3.5 switch.</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>LPM5SM_0</name>
-                  <description>Automatic mode for LPM3.5 switch that the switch is fully handled by the circuitry during mode switch.</description>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>LPM5SM_1</name>
-                  <description>Manual mode for LPM3.5 switch that the switch is specified by LPM5SW bit setting in software.</description>
-                  <value>1</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
           </fields>
         </register>
       </registers>
@@ -1776,14 +1752,15 @@
               <bitWidth>1</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>SYSRIVECT</name>
                 <enumeratedValue>
                   <name>FRAM</name>
-                  <description>Interrupt vectors generated with end address TOP of lower 64K FRAM FFFFh</description>
+                  <description>Interrupt vectors generated with end address TOP of lower 64KB of FRAM FFFFh</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>RAM</name>
-                  <description>Interrupt vectors generated with end address TOP of RAM, when RAM available</description>
+                  <description>Interrupt vectors generated with end address TOP of RAM</description>
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -1795,6 +1772,7 @@
               <bitWidth>1</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>SYSPMMPE</name>
                 <enumeratedValue>
                   <name>DIS</name>
                   <description>Access from anywhere in memory</description>
@@ -1802,7 +1780,7 @@
                 </enumeratedValue>
                 <enumeratedValue>
                   <name>EN</name>
-                  <description>Access only from the BSL segments</description>
+                  <description>Access only from the protected BSL segments</description>
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -1814,6 +1792,7 @@
               <bitWidth>1</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>SYSBSLIND</name>
                 <enumeratedValue>
                   <name>CLR</name>
                   <description>No BSL entry sequence detected</description>
@@ -1833,9 +1812,10 @@
               <bitWidth>1</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>SYSJTAGPIN</name>
                 <enumeratedValue>
                   <name>SHARED</name>
-                  <description>Shared JTAG pins (JTAG mode selectable using SBW sequence)</description>
+                  <description>Shared JTAG pins (JTAG mode selectable by JTAG/SBW sequence)</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
@@ -1861,6 +1841,7 @@
               <bitWidth>1</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>SYSBSLR</name>
                 <enumeratedValue>
                   <name>NORAM</name>
                   <description>No RAM assigned to BSL area</description>
@@ -1880,6 +1861,7 @@
               <bitWidth>1</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>SYSBSLOFF</name>
                 <enumeratedValue>
                   <name>ON</name>
                   <description>BSL memory is addressed when this area is read.</description>
@@ -1899,6 +1881,7 @@
               <bitWidth>1</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>SYSBSLPE</name>
                 <enumeratedValue>
                   <name>NOTPROT</name>
                   <description>Area not protected. Read, program, and erase of BSL memory is possible.</description>
@@ -2161,18 +2144,14 @@
               <bitWidth>16</bitWidth>
               <access>read-only</access>
               <enumeratedValues>
+                <name>SYSUNIV</name>
                 <enumeratedValue>
-                  <name>NONE</name>
-                  <description>No interrupt pending</description>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>NMIIFG</name>
-                  <description>NMIFG NMI pin or SVSH event</description>
+                  <name>NMI_PIN</name>
+                  <description>NMIIFG NMI pin or SVSH event</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>OFIFG</name>
+                  <name>OSCILLATOR_FAULT</name>
                   <description>OFIFG oscillator fault</description>
                   <value>4</value>
                 </enumeratedValue>
@@ -2196,67 +2175,32 @@
               <enumeratedValues>
                 <name>SYSSNIV</name>
                 <enumeratedValue>
-                  <name>NONE</name>
-                  <description>No interrupt pending</description>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>SVSLIFG</name>
+                  <name>SVS_LOW_POWER_RESET_ENTRY</name>
                   <description>SVS low-power reset entry</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>UBDIFG</name>
+                  <name>FRAM_UNCORRECTABLE_BIT_ERROR</name>
                   <description>Uncorrectable FRAM bit error detection</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ACCTEIFG</name>
-                  <description>FRAM Access Time Error</description>
-                  <value>6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>SYSSNIV_8</name>
-                  <description>Reserved</description>
-                  <value>8</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>SYSSNIV_10</name>
-                  <description>Reserved</description>
-                  <value>10</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>SYSSNIV_12</name>
-                  <description>Reserved</description>
-                  <value>12</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>SYSSNIV_14</name>
-                  <description>Reserved</description>
-                  <value>14</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>SYSSNIV_16</name>
-                  <description>Reserved</description>
-                  <value>16</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>VMAIFG</name>
-                  <description>VMAIFG Vacant memory access</description>
+                  <name>VACANT_MEMORY_ACCESS</name>
+                  <description>VMAIFG vacant memory access</description>
                   <value>18</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>JMBINIFG</name>
+                  <name>JTAG_MAILBOX_IN</name>
                   <description>JMBINIFG JTAG mailbox input</description>
                   <value>20</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>JMBOUTIFG</name>
+                  <name>JTAG_MAILBOX_OUT</name>
                   <description>JMBOUTIFG JTAG mailbox output</description>
                   <value>22</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>CBDIFG</name>
+                  <name>FRAM_CORRECTABLE_BIT_ERROR</name>
                   <description>Correctable FRAM bit error detection</description>
                   <value>24</value>
                 </enumeratedValue>
@@ -2278,98 +2222,74 @@
               <bitWidth>16</bitWidth>
               <access>read-only</access>
               <enumeratedValues>
+                <name>SYSRSTIV</name>
                 <enumeratedValue>
-                  <name>NONE</name>
-                  <description>No interrupt pending</description>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>BOR</name>
-                  <description>Brownout</description>
+                  <name>BROWNOUT</name>
+                  <description>Brownout (BOR)</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>RSTNMI</name>
-                  <description>RSTIFG RST/NMI</description>
+                  <name>RESET_PIN</name>
+                  <description>RSTIFG RST/NMI (BOR)</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>PMMSWBOR</name>
-                  <description>PMMSWBOR software BOR</description>
+                  <name>SOFTWARE_BOR</name>
+                  <description>PMMSWBOR software BOR (BOR)</description>
                   <value>6</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>LPM5WU</name>
-                  <description>LPMx.5 wakeup</description>
+                  <name>LPMX5_WAKE_UP</name>
+                  <description>LPMx.5 wakeup (BOR)</description>
                   <value>8</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>SECYV</name>
-                  <description>Security violation</description>
+                  <name>SECURITY_VIOLATION</name>
+                  <description>Security violation (BOR)</description>
                   <value>10</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>SYSRSTIV_12</name>
-                  <description>Reserved</description>
-                  <value>12</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>SVSHIFG</name>
-                  <description>SVSHIFG SVSH event</description>
+                  <name>SVSH</name>
+                  <description>SVSHIFG SVSH event (BOR)</description>
                   <value>14</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>SYSRSTIV_16</name>
-                  <description>Reserved</description>
-                  <value>16</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>SYSRSTIV_18</name>
-                  <description>Reserved</description>
-                  <value>18</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>PMMSWPOR</name>
-                  <description>PMMSWPOR software POR</description>
+                  <name>SOFTWARE_POR</name>
+                  <description>PMMSWPOR software POR (POR)</description>
                   <value>20</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>WDTIFG</name>
-                  <description>WDTIFG watchdog timeout</description>
+                  <name>WATCHDOG_TIMEOUT</name>
+                  <description>WDTIFG watchdog time-out (PUC)</description>
                   <value>22</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>WDTPW</name>
-                  <description>WDTPW watchdog password violation</description>
+                  <name>WATCHDOG_PASSWORD</name>
+                  <description>WDTPW password violation (PUC)</description>
                   <value>24</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>FRCTLPW</name>
-                  <description>FRCTLPW password violation</description>
+                  <name>FRAM_PASSWORD</name>
+                  <description>FRCTLPW password violation (PUC)</description>
                   <value>26</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>UBDIFG</name>
+                  <name>FRAM_BIT_ERROR</name>
                   <description>Uncorrectable FRAM bit error detection</description>
                   <value>28</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>PERF</name>
-                  <description>Peripheral area fetch</description>
+                  <name>PERIPHERAL_AREA_FETCH</name>
+                  <description>Peripheral area fetch (PUC)</description>
                   <value>30</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>PMMPW</name>
-                  <description>PMM password violation</description>
+                  <name>PMM_PASSWORD</name>
+                  <description>PMMPW PMM password violation (PUC)</description>
                   <value>32</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>SYSRSTIV_34</name>
-                  <description>Reserved</description>
-                  <value>34</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>FLLUL</name>
+                  <name>FLL_UNLOCK</name>
                   <description>FLL unlock (PUC)</description>
                   <value>36</value>
                 </enumeratedValue>
@@ -2409,6 +2329,24 @@
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
+              <enumeratedValues>
+                <name>FRWPPWR</name>
+                <usage>read</usage>
+                <enumeratedValue>
+                  <name>PASSWORD</name>
+                  <description>Value always read from the SYSCFG0 password field</description>
+                  <value>150</value>
+                </enumeratedValue>
+              </enumeratedValues>
+              <enumeratedValues>
+                <name>FRWPPWW</name>
+                <usage>write</usage>
+                <enumeratedValue>
+                  <name>PASSWORD</name>
+                  <description>Value which must be written to the SYSCFG0 password field</description>
+                  <value>165</value>
+                </enumeratedValue>
+              </enumeratedValues>
             </field>
             <field>
               <name>DFWP</name>
@@ -2490,6 +2428,7 @@
               <bitWidth>1</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>IRMSEL</name>
                 <enumeratedValue>
                   <name>ASK</name>
                   <description>ASK mode</description>
@@ -2537,35 +2476,6 @@
                   <name>HIGH</name>
                   <description>Infrared data logic 1</description>
                   <value>1</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
-            <field>
-              <name>SYNCSEL</name>
-              <description>Captivate Conversion triggered Source Selection</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>2</bitWidth>
-              <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>SYNCSEL_0</name>
-                  <description>External source is selected</description>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>SYNCSEL_1</name>
-                  <description>ADC as the source is selected</description>
-                  <value>1</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>SYNCSEL_2</name>
-                  <description>Comparator as the source is selected</description>
-                  <value>2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>SYNCSEL_3</name>
-                  <description>Reserved</description>
-                  <value>3</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -2742,6 +2652,12 @@
               <bitOffset>0</bitOffset>
               <bitWidth>9</bitWidth>
               <access>read-write</access>
+              <writeConstraint>
+                <range>
+                  <minimum>0</minimum>
+                  <maximum>511</maximum>
+                </range>
+              </writeConstraint>
             </field>
             <field>
               <name>MOD</name>
@@ -2749,6 +2665,12 @@
               <bitOffset>9</bitOffset>
               <bitWidth>5</bitWidth>
               <access>read-write</access>
+              <writeConstraint>
+                <range>
+                  <minimum>0</minimum>
+                  <maximum>31</maximum>
+                </range>
+              </writeConstraint>
             </field>
           </fields>
         </register>
@@ -2785,45 +2707,36 @@
               <bitWidth>3</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>DCORSEL</name>
                 <enumeratedValue>
-                  <name>DCORSEL_0</name>
+                  <name>RANGE_1MHZ</name>
                   <description>1 MHz</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>DCORSEL_1</name>
+                  <name>RANGE_2MHZ</name>
                   <description>2 MHz</description>
                   <value>1</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>DCORSEL_2</name>
+                  <name>RANGE_4MHZ</name>
                   <description>4 MHz</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>DCORSEL_3</name>
+                  <name>RANGE_8MHZ</name>
                   <description>8 MHz</description>
                   <value>3</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>DCORSEL_4</name>
+                  <name>RANGE_12MHZ</name>
                   <description>12 MHz</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>DCORSEL_5</name>
+                  <name>RANGE_16MHZ</name>
                   <description>16 MHz</description>
                   <value>5</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>DCORSEL_6</name>
-                  <description>20 MHz(Only avaliable in 24MHz clock system)</description>
-                  <value>6</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>DCORSEL_7</name>
-                  <description>24 MHz(Only avaliable in 24MHz clock system)</description>
-                  <value>7</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -2833,6 +2746,12 @@
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
+              <writeConstraint>
+                <range>
+                  <minimum>0</minimum>
+                  <maximum>7</maximum>
+                </range>
+              </writeConstraint>
             </field>
             <field>
               <name>DCOFTRIMEN</name>
@@ -2868,6 +2787,12 @@
               <bitOffset>0</bitOffset>
               <bitWidth>10</bitWidth>
               <access>read-write</access>
+              <writeConstraint>
+                <range>
+                  <minimum>0</minimum>
+                  <maximum>1023</maximum>
+                </range>
+              </writeConstraint>
             </field>
             <field>
               <name>FLLD</name>
@@ -3598,23 +3523,24 @@
               <bitWidth>2</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>FLLUNLOCK</name>
                 <enumeratedValue>
-                  <name>FLLUNLOCK_0</name>
+                  <name>LOCKED</name>
                   <description>FLL is locked. No unlock condition currently active.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>FLLUNLOCK_1</name>
+                  <name>TOO_SLOW</name>
                   <description>DCOCLK is currently too slow.</description>
                   <value>1</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>FLLUNLOCK_2</name>
+                  <name>TOO_FAST</name>
                   <description>DCOCLK is currently too fast.</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>FLLUNLOCK_3</name>
+                  <name>OUT_OF_RANGE</name>
                   <description>DCOERROR. DCO out of range.</description>
                   <value>3</value>
                 </enumeratedValue>
@@ -3627,23 +3553,24 @@
               <bitWidth>2</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>FLLUNLOCKHIS</name>
                 <enumeratedValue>
-                  <name>FLLUNLOCKHIS_0</name>
+                  <name>LOCKED</name>
                   <description>FLL is locked. No unlock situation has been detected since the last reset of these bits.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>FLLUNLOCKHIS_1</name>
+                  <name>TOO_SLOW</name>
                   <description>DCOCLK has been too slow since the bits were cleared.</description>
                   <value>1</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>FLLUNLOCKHIS_2</name>
+                  <name>TOO_FAST</name>
                   <description>DCOCLK has been too fast since the bits were cleared.</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>FLLUNLOCKHIS_3</name>
+                  <name>TOO_SLOW_AND_FAST</name>
                   <description>DCOCLK has been both too fast and too slow since the bits were cleared.</description>
                   <value>3</value>
                 </enumeratedValue>
@@ -3663,13 +3590,14 @@
               <bitWidth>1</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>FLLWARNEN</name>
                 <enumeratedValue>
-                  <name>FLLWARNEN_0</name>
+                  <name>DISABLED</name>
                   <description>FLLUNLOCKHIS status cannot set OFIFG.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>FLLWARNEN_1</name>
+                  <name>ENABLED</name>
                   <description>FLLUNLOCKHIS status can set OFIFG.</description>
                   <value>1</value>
                 </enumeratedValue>
@@ -3783,44 +3711,45 @@
               <bitWidth>3</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>NWAITS</name>
                 <enumeratedValue>
-                  <name>NWAITS_0</name>
-                  <description>FRAM wait states: 0</description>
+                  <name>WAIT0</name>
+                  <description>No wait state</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>NWAITS_1</name>
-                  <description>FRAM wait states: 1</description>
+                  <name>WAIT1</name>
+                  <description>1 wait state</description>
                   <value>1</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>NWAITS_2</name>
-                  <description>FRAM wait states: 2</description>
+                  <name>WAIT2</name>
+                  <description>2 wait states</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>NWAITS_3</name>
-                  <description>FRAM wait states: 3</description>
+                  <name>WAIT3</name>
+                  <description>3 wait states</description>
                   <value>3</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>NWAITS_4</name>
-                  <description>FRAM wait states: 4</description>
+                  <name>WAIT4</name>
+                  <description>4 wait states</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>NWAITS_5</name>
-                  <description>FRAM wait states: 5</description>
+                  <name>WAIT5</name>
+                  <description>5 wait states</description>
                   <value>5</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>NWAITS_6</name>
-                  <description>FRAM wait states: 6</description>
+                  <name>WAIT6</name>
+                  <description>6 wait states</description>
                   <value>6</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>NWAITS_7</name>
-                  <description>FRAM wait states: 7</description>
+                  <name>WAIT7</name>
+                  <description>7 wait states</description>
                   <value>7</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -3831,6 +3760,63 @@
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
+              <enumeratedValues>
+                <name>FRCTLPWR</name>
+                <usage>read</usage>
+                <enumeratedValue>
+                  <name>PASSWORD</name>
+                  <description>Value always read from the FRCTL0 password</description>
+                  <value>150</value>
+                </enumeratedValue>
+              </enumeratedValues>
+              <enumeratedValues>
+                <name>FRCTLPWW</name>
+                <usage>write</usage>
+                <enumeratedValue>
+                  <name>PASSWORD</name>
+                  <description>Value which must be written to the FRCTL0 password</description>
+                  <value>165</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>FRCTL0_H</name>
+          <description>FRAM Controller Control Register 0, upper byte</description>
+          <alternateRegister>FRCTL0</alternateRegister>
+          <addressOffset>1</addressOffset>
+          <size>8</size>
+          <fields>
+            <field>
+              <name>FRCTLPW</name>
+              <description>FRAM controller password</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <name>FRCTLPWR</name>
+                <usage>read</usage>
+                <enumeratedValue>
+                  <name>PASSWORD</name>
+                  <description>Value always read from the FRCTL0 password</description>
+                  <value>150</value>
+                </enumeratedValue>
+              </enumeratedValues>
+              <enumeratedValues>
+                <name>FRCTLPWW</name>
+                <usage>write</usage>
+                <enumeratedValue>
+                  <name>LOCK</name>
+                  <description>Locks the FRAM controller registers again</description>
+                  <value>0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>PASSWORD</name>
+                  <description>Unlocks the FRAM controller registers</description>
+                  <value>165</value>
+                </enumeratedValue>
+              </enumeratedValues>
             </field>
           </fields>
         </register>
@@ -3905,14 +3891,15 @@
               <bitWidth>1</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>FRPWR</name>
                 <enumeratedValue>
-                  <name>FRPWR_0</name>
-                  <description>Enable INACTIVE mode.</description>
+                  <name>DISABLED</name>
+                  <description>FRAM power supply disabled</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>FRPWR_1</name>
-                  <description>Enable ACTIVE mode.</description>
+                  <name>ENABLED</name>
+                  <description>FRAM power supply enabled</description>
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -3922,7 +3909,7 @@
               <description>Enables FRAM auto power up after LPM</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-              <access>read-write</access>
+              <access>read-only</access>
               <enumeratedValues>
                 <enumeratedValue>
                   <name>FRLPMPWR_0</name>
@@ -4017,6 +4004,43 @@
           <addressOffset>0</addressOffset>
           <size>16</size>
           <resetMask>65535</resetMask>
+          <fields>
+            <field>
+              <name>CRCDI</name>
+              <description>CRC data in</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-write</access>
+              <writeConstraint>
+                <range>
+                  <minimum>0</minimum>
+                  <maximum>65535</maximum>
+                </range>
+              </writeConstraint>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>CRCDI_L</name>
+          <description>CRC Data In Register, lower byte</description>
+          <alternateRegister>CRCDI</alternateRegister>
+          <addressOffset>0</addressOffset>
+          <size>8</size>
+          <fields>
+            <field>
+              <name>CRCDI</name>
+              <description>CRC data in, one byte</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+              <access>read-write</access>
+              <writeConstraint>
+                <range>
+                  <minimum>0</minimum>
+                  <maximum>255</maximum>
+                </range>
+              </writeConstraint>
+            </field>
+          </fields>
         </register>
         <register>
           <name>CRCDIRB</name>
@@ -4024,6 +4048,43 @@
           <addressOffset>2</addressOffset>
           <size>16</size>
           <resetMask>65535</resetMask>
+          <fields>
+            <field>
+              <name>CRCDIRB</name>
+              <description>CRC data in, bits reversed</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-write</access>
+              <writeConstraint>
+                <range>
+                  <minimum>0</minimum>
+                  <maximum>65535</maximum>
+                </range>
+              </writeConstraint>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>CRCDIRB_L</name>
+          <description>CRC Data In Reverse Byte Register, lower byte</description>
+          <alternateRegister>CRCDIRB</alternateRegister>
+          <addressOffset>2</addressOffset>
+          <size>8</size>
+          <fields>
+            <field>
+              <name>CRCDIRB</name>
+              <description>CRC data in, one byte, bits reversed</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+              <access>read-write</access>
+              <writeConstraint>
+                <range>
+                  <minimum>0</minimum>
+                  <maximum>255</maximum>
+                </range>
+              </writeConstraint>
+            </field>
+          </fields>
         </register>
         <register>
           <name>CRCINIRES</name>
@@ -4031,6 +4092,21 @@
           <addressOffset>4</addressOffset>
           <size>16</size>
           <resetMask>65535</resetMask>
+          <fields>
+            <field>
+              <name>CRCINIRES</name>
+              <description>CRC initialization (on write) and result (on read)</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-write</access>
+              <writeConstraint>
+                <range>
+                  <minimum>0</minimum>
+                  <maximum>65535</maximum>
+                </range>
+              </writeConstraint>
+            </field>
+          </fields>
         </register>
         <register>
           <name>CRCRESR</name>
@@ -4038,6 +4114,15 @@
           <addressOffset>6</addressOffset>
           <size>16</size>
           <resetMask>65535</resetMask>
+          <fields>
+            <field>
+              <name>CRCRESR</name>
+              <description>CRC result, bits reversed</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>16</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
         </register>
       </registers>
     </peripheral>
@@ -4194,6 +4279,24 @@
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
+              <enumeratedValues>
+                <name>WDTPWR</name>
+                <usage>read</usage>
+                <enumeratedValue>
+                  <name>PASSWORD</name>
+                  <description>Value always read from the Watchdog Password field</description>
+                  <value>105</value>
+                </enumeratedValue>
+              </enumeratedValues>
+              <enumeratedValues>
+                <name>WDTPWW</name>
+                <usage>write</usage>
+                <enumeratedValue>
+                  <name>PASSWORD</name>
+                  <description>Value which must be written to the Watchdog Password field</description>
+                  <value>90</value>
+                </enumeratedValue>
+              </enumeratedValues>
             </field>
           </fields>
         </register>
@@ -4387,62 +4490,6 @@
           <name>RTCCNT</name>
           <description>RTC Counter Register</description>
           <addressOffset>12</addressOffset>
-          <size>16</size>
-          <resetMask>65535</resetMask>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
-      <name>PJ</name>
-      <description>PJ</description>
-      <baseAddress>800</baseAddress>
-      <registers>
-        <register>
-          <name>PJIN</name>
-          <description>Port J Input</description>
-          <addressOffset>0</addressOffset>
-          <size>16</size>
-          <resetMask>65535</resetMask>
-        </register>
-        <register>
-          <name>PJOUT</name>
-          <description>Port J Output</description>
-          <addressOffset>2</addressOffset>
-          <size>16</size>
-          <resetMask>65535</resetMask>
-        </register>
-        <register>
-          <name>PJDIR</name>
-          <description>Port J Direction</description>
-          <addressOffset>4</addressOffset>
-          <size>16</size>
-          <resetMask>65535</resetMask>
-        </register>
-        <register>
-          <name>PJREN</name>
-          <description>Port J Resistor Enable</description>
-          <addressOffset>6</addressOffset>
-          <size>16</size>
-          <resetMask>65535</resetMask>
-        </register>
-        <register>
-          <name>PJSEL0</name>
-          <description>Port J Select 0</description>
-          <addressOffset>10</addressOffset>
-          <size>16</size>
-          <resetMask>65535</resetMask>
-        </register>
-        <register>
-          <name>PJSEL1</name>
-          <description>Port J Select 1</description>
-          <addressOffset>12</addressOffset>
-          <size>16</size>
-          <resetMask>65535</resetMask>
-        </register>
-        <register>
-          <name>PJSELC</name>
-          <description>Port J Complement Select</description>
-          <addressOffset>22</addressOffset>
           <size>16</size>
           <resetMask>65535</resetMask>
         </register>
@@ -10900,15 +10947,6 @@
           <addressOffset>30</addressOffset>
           <size>16</size>
           <resetMask>65535</resetMask>
-          <fields>
-            <field>
-              <name>MACS32H</name>
-              <description>32-bit operand 1  signed multiply accumulate  high word</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>8</bitWidth>
-              <access>read-write</access>
-            </field>
-          </fields>
         </register>
         <register>
           <name>OP2L</name>
@@ -17934,8 +17972,8 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>BKMEM</name>
-      <description>BKMEM</description>
+      <name>BAKMEM</name>
+      <description>BAKMEM</description>
       <baseAddress>1632</baseAddress>
       <registers>
         <register>
@@ -18147,85 +18185,71 @@
               <bitWidth>4</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>ADCSHT</name>
                 <enumeratedValue>
-                  <name>ADCSHT_0</name>
+                  <name>CYCLES_4</name>
                   <description>4 ADCCLK cycles</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHT_1</name>
+                  <name>CYCLES_8</name>
                   <description>8 ADCCLK cycles</description>
                   <value>1</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHT_2</name>
+                  <name>CYCLES_16</name>
                   <description>16 ADCCLK cycles</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHT_3</name>
+                  <name>CYCLES_32</name>
                   <description>32 ADCCLK cycles</description>
                   <value>3</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHT_4</name>
+                  <name>CYCLES_64</name>
                   <description>64 ADCCLK cycles</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHT_5</name>
+                  <name>CYCLES_96</name>
                   <description>96 ADCCLK cycles</description>
                   <value>5</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHT_6</name>
+                  <name>CYCLES_128</name>
                   <description>128 ADCCLK cycles</description>
                   <value>6</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHT_7</name>
+                  <name>CYCLES_192</name>
                   <description>192 ADCCLK cycles</description>
                   <value>7</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHT_8</name>
+                  <name>CYCLES_256</name>
                   <description>256 ADCCLK cycles</description>
                   <value>8</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHT_9</name>
+                  <name>CYCLES_384</name>
                   <description>384 ADCCLK cycles</description>
                   <value>9</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHT_10</name>
+                  <name>CYCLES_512</name>
                   <description>512 ADCCLK cycles</description>
                   <value>10</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHT_11</name>
+                  <name>CYCLES_768</name>
                   <description>768 ADCCLK cycles</description>
                   <value>11</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHT_12</name>
+                  <name>CYCLES_1024</name>
                   <description>1024 ADCCLK cycles</description>
                   <value>12</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>ADCSHT_13</name>
-                  <description>1024 ADCCLK cycles</description>
-                  <value>13</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>ADCSHT_14</name>
-                  <description>1024 ADCCLK cycles</description>
-                  <value>14</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>ADCSHT_15</name>
-                  <description>1024 ADCCLK cycles</description>
-                  <value>15</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -18264,24 +18288,25 @@
               <bitWidth>2</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>ADCCONSEQ</name>
                 <enumeratedValue>
-                  <name>ADCCONSEQ_0</name>
-                  <description>Single-channel, single-conversion</description>
+                  <name>SINGLE</name>
+                  <description>Single-channel, single-conversion: a single channel is converted once</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCCONSEQ_1</name>
-                  <description>Sequence-of-channels</description>
+                  <name>SEQUENCE</name>
+                  <description>Sequence-of-channels: a sequence of channels is converted once</description>
                   <value>1</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCCONSEQ_2</name>
-                  <description>Repeat-single-channel</description>
+                  <name>REPEAT_SINGLE</name>
+                  <description>Repeat-single-channel: a single channel is converted repeatedly</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCCONSEQ_3</name>
-                  <description>Repeat-sequence-of-channels</description>
+                  <name>REPEAT_SEQUENCE</name>
+                  <description>Repeat-sequence-of-channels: a sequence of channels is converted repeatedly</description>
                   <value>3</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -18293,25 +18318,21 @@
               <bitWidth>2</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>ADCSSEL</name>
                 <enumeratedValue>
-                  <name>ADCSSEL_0</name>
-                  <description>ADCOSC (MODOSC)</description>
+                  <name>MODCLK</name>
+                  <description>MODCLK</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSSEL_1</name>
+                  <name>ACLK</name>
                   <description>ACLK</description>
                   <value>1</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSSEL_2</name>
-                  <description>MCLK</description>
-                  <value>2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>ADCSSEL_3</name>
+                  <name>SMCLK</name>
                   <description>SMCLK</description>
-                  <value>3</value>
+                  <value>2</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -18322,44 +18343,45 @@
               <bitWidth>3</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>ADCDIV</name>
                 <enumeratedValue>
-                  <name>ADCDIV_0</name>
-                  <description>/1</description>
+                  <name>/1</name>
+                  <description>Divide by 1</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCDIV_1</name>
-                  <description>/2</description>
+                  <name>/2</name>
+                  <description>Divide by 2</description>
                   <value>1</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCDIV_2</name>
-                  <description>/3</description>
+                  <name>/3</name>
+                  <description>Divide by 3</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCDIV_3</name>
-                  <description>/4</description>
+                  <name>/4</name>
+                  <description>Divide by 4</description>
                   <value>3</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCDIV_4</name>
-                  <description>/5</description>
+                  <name>/5</name>
+                  <description>Divide by 5</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCDIV_5</name>
-                  <description>/6</description>
+                  <name>/6</name>
+                  <description>Divide by 6</description>
                   <value>5</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCDIV_6</name>
-                  <description>/7</description>
+                  <name>/7</name>
+                  <description>Divide by 7</description>
                   <value>6</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCDIV_7</name>
-                  <description>/8</description>
+                  <name>/8</name>
+                  <description>Divide by 8</description>
                   <value>7</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -18409,24 +18431,25 @@
               <bitWidth>2</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>ADCSHS</name>
                 <enumeratedValue>
-                  <name>ADCSHS_0</name>
-                  <description>ADCSC bit</description>
+                  <name>SOFTWARE</name>
+                  <description>ADCSC bit (software trigger)</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHS_1</name>
-                  <description>see the device-specific data sheet for source</description>
+                  <name>RTC</name>
+                  <description>RTC event</description>
                   <value>1</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHS_2</name>
-                  <description>see the device-specific data sheet for source</description>
+                  <name>TIMER</name>
+                  <description>TA1.1B</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSHS_3</name>
-                  <description>see the device-specific data sheet for source</description>
+                  <name>COMPARATOR</name>
+                  <description>eCOMP0 COUT</description>
                   <value>3</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -18447,14 +18470,15 @@
               <bitWidth>1</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>ADCDF</name>
                 <enumeratedValue>
-                  <name>ADCDF_0</name>
-                  <description>Binary unsigned. Theoretically the analog input voltage V(REF) results in 0000h, the analog input voltage +V(REF) results in 03FFh.</description>
+                  <name>UNSIGNED</name>
+                  <description>Binary unsigned. Theoretically, the analog input voltage -VREF results in 0000h, and the analog input voltage +VREF results in 03FFh.</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCDF_1</name>
-                  <description>Signed binary (2s complement), left aligned. Theoretically the analog input voltage V(REF) results in 8000h, the analog input voltage +V(REF) results in 7FC0h.</description>
+                  <name>SIGNED</name>
+                  <description>Signed binary (2s complement), left aligned. Theoretically, the analog input voltage -VREF results in 8000h, and the analog input voltage +VREF results in 7FC0h.</description>
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
@@ -18466,25 +18490,21 @@
               <bitWidth>2</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>ADCRES</name>
                 <enumeratedValue>
-                  <name>ADCRES_0</name>
-                  <description>8 bit</description>
+                  <name>BITS_8</name>
+                  <description>8 bit (10 clock cycle conversion time)</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCRES_1</name>
-                  <description>10 bit</description>
+                  <name>BITS_10</name>
+                  <description>10 bit (12 clock cycle conversion time)</description>
                   <value>1</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCRES_2</name>
-                  <description>12 bit</description>
+                  <name>BITS_12</name>
+                  <description>12 bit (14 clock cycle conversion time)</description>
                   <value>2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>ADCRES_3</name>
-                  <description>Reserved</description>
-                  <value>3</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -18494,6 +18514,19 @@
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
+              <enumeratedValues>
+                <name>ADCSR</name>
+                <enumeratedValue>
+                  <name>MAX_200KSPS</name>
+                  <description>ADC buffer supports up to approximately 200 ksps</description>
+                  <value>0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>MAX_50KSPS</name>
+                  <description>ADC buffer supports up to approximately 50 ksps</description>
+                  <value>1</value>
+                </enumeratedValue>
+              </enumeratedValues>
             </field>
             <field>
               <name>ADCPDIV</name>
@@ -18502,25 +18535,21 @@
               <bitWidth>2</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>ADCPDIV</name>
                 <enumeratedValue>
-                  <name>1</name>
+                  <name>/1</name>
                   <description>Predivide by 1</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>4</name>
+                  <name>/4</name>
                   <description>Predivide by 4</description>
                   <value>1</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>64</name>
+                  <name>/64</name>
                   <description>Predivide by 64</description>
                   <value>2</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>ADCPDIV_3</name>
-                  <description>Reserved</description>
-                  <value>3</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -18643,64 +18672,46 @@
               <bitWidth>3</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>ADCSREF</name>
                 <enumeratedValue>
-                  <name>ADCSREF_0</name>
-                  <description>000b = V(R+) = AVCC and V(R-) = AVSS</description>
+                  <name>AVCC_AVSS</name>
+                  <description>VR+ = AVCC and VR- = AVSS</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSREF_1</name>
-                  <description>001b = V(R+) = VREF and V(R-) = AVSS</description>
+                  <name>VREF_AVSS</name>
+                  <description>VR+ = VREF and VR- = AVSS</description>
                   <value>1</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSREF_2</name>
-                  <description>010b = V(R+) = VEREF+ buffered and V(R-) = AVSS</description>
+                  <name>VEREF_PLUS_BUFFERED_AVSS</name>
+                  <description>VR+ = VEREF+ buffered and VR- = AVSS</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSREF_3</name>
-                  <description>011b =V(R+) = VEREF+ and V(R-) = AVSS</description>
+                  <name>VEREF_PLUS_AVSS</name>
+                  <description>VR+ = VEREF+ and VR- = AVSS</description>
                   <value>3</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSREF_4</name>
-                  <description>100b = V(R+) = AVCC and V(R-) = VEREF-</description>
+                  <name>AVCC_VEREF_MINUS</name>
+                  <description>VR+ = AVCC and VR- = VEREF-</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSREF_5</name>
-                  <description>101b = V(R+) = VREF and V(R-) = VEREF-</description>
+                  <name>VREF_VEREF_MINUS</name>
+                  <description>VR+ = VREF and VR- = VEREF-</description>
                   <value>5</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSREF_6</name>
-                  <description>110b = V(R+) = VEREF+ buffered and V(R-) = VEREF-</description>
+                  <name>VEREF_PLUS_BUFFERED_VEREF_MINUS</name>
+                  <description>VR+ = VEREF+ buffered and VR- = VEREF-</description>
                   <value>6</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCSREF_7</name>
-                  <description>111b = V(R+) = VEREF+ and V(R-) = VEREF-</description>
+                  <name>VEREF_PLUS_VEREF_MINUS</name>
+                  <description>VR+ = VEREF+ and VR- = VEREF-</description>
                   <value>7</value>
-                </enumeratedValue>
-              </enumeratedValues>
-            </field>
-            <field>
-              <name>EXPCHEN</name>
-              <description>ADC input channels expanded</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>EXPCHEN_0</name>
-                  <description>ADC channel expanded disable</description>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>EXPCHEN_1</name>
-                  <description>ADC channel expanded enable</description>
-                  <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
             </field>
@@ -18973,38 +18984,39 @@
               <bitWidth>16</bitWidth>
               <access>read-write</access>
               <enumeratedValues>
+                <name>ADCIV</name>
                 <enumeratedValue>
                   <name>NONE</name>
                   <description>No interrupt pending</description>
                   <value>0</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCOVIFG</name>
+                  <name>OVERFLOW</name>
                   <description>Interrupt Source: ADCMEM0 overflow; Interrupt Flag: ADCOVIFG; Interrupt Priority: Highest</description>
                   <value>2</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCTOVIFG</name>
+                  <name>TIME_OVERFLOW</name>
                   <description>Interrupt Source: Conversion time overflow; Interrupt Flag: ADCTOVIFG</description>
                   <value>4</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCHIIFG</name>
+                  <name>ABOVE_WINDOW</name>
                   <description>Interrupt Source: ADCHI Interrupt flag; Interrupt Flag: ADCHIIFG</description>
                   <value>6</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCLOIFG</name>
+                  <name>BELOW_WINDOW</name>
                   <description>Interrupt Source: ADCLO Interrupt flag; Interrupt Flag: ADCLOIFG</description>
                   <value>8</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCINIFG</name>
-                  <description>nterrupt Source: ADCIN Interrupt flag; Interrupt Flag: ADCINIFG</description>
+                  <name>INSIDE_WINDOW</name>
+                  <description>Interrupt Source: ADCIN Interrupt flag; Interrupt Flag: ADCINIFG</description>
                   <value>10</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>ADCIFG0</name>
+                  <name>RESULT_READY</name>
                   <description>Interrupt Source: ADC memory Interrupt flag; Interrupt Flag: ADCIFG0; Interrupt Priority: Lowest</description>
                   <value>12</value>
                 </enumeratedValue>
@@ -20202,6 +20214,191 @@
               </enumeratedValues>
             </field>
           </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>TLV</name>
+      <description>Device descriptors (TLV)</description>
+      <groupName>TLV</groupName>
+      <baseAddress>6656</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>256</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>INFO_LENGTH</name>
+          <description>Info length</description>
+          <addressOffset>0</addressOffset>
+          <size>8</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>CRC_LENGTH</name>
+          <description>CRC length</description>
+          <addressOffset>1</addressOffset>
+          <size>8</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>CRC_VALUE</name>
+          <description>CRC value of the descriptors from 1A04h to 1AF7h (CRC-CCITT)</description>
+          <addressOffset>2</addressOffset>
+          <size>16</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>DEVICE_ID</name>
+          <description>Device ID</description>
+          <addressOffset>4</addressOffset>
+          <size>16</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>HW_REVISION</name>
+          <description>Hardware revision</description>
+          <addressOffset>6</addressOffset>
+          <size>8</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>FW_REVISION</name>
+          <description>Firmware revision</description>
+          <addressOffset>7</addressOffset>
+          <size>8</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>DIE_RECORD_TAG</name>
+          <description>Die record tag</description>
+          <addressOffset>8</addressOffset>
+          <size>8</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>DIE_RECORD_LENGTH</name>
+          <description>Die record length</description>
+          <addressOffset>9</addressOffset>
+          <size>8</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>LOT_WAFER_ID</name>
+          <description>Lot/wafer ID</description>
+          <addressOffset>10</addressOffset>
+          <size>32</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>DIE_X_POSITION</name>
+          <description>Die X position</description>
+          <addressOffset>14</addressOffset>
+          <size>16</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>DIE_Y_POSITION</name>
+          <description>Die Y position</description>
+          <addressOffset>16</addressOffset>
+          <size>16</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>TEST_RESULT</name>
+          <description>Test result</description>
+          <addressOffset>18</addressOffset>
+          <size>16</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>ADC_CAL_TAG</name>
+          <description>ADC calibration tag</description>
+          <addressOffset>20</addressOffset>
+          <size>8</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>ADC_CAL_LENGTH</name>
+          <description>ADC calibration length</description>
+          <addressOffset>21</addressOffset>
+          <size>8</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>ADC_GAIN_FACTOR</name>
+          <description>ADC gain factor</description>
+          <addressOffset>22</addressOffset>
+          <size>16</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>ADC_OFFSET</name>
+          <description>ADC offset</description>
+          <addressOffset>24</addressOffset>
+          <size>16</size>
+          <access>read-only</access>
+        </register>
+        <cluster>
+          <dim>3</dim>
+          <dimIncrement>4</dimIncrement>
+          <name>ADC_TEMP_CAL[%s]</name>
+          <description>Temperature sensor calibration with the 1.5 V, 2.0 V or 2.5 V reference (index 0, 1 or 2)</description>
+          <addressOffset>26</addressOffset>
+          <register>
+            <name>TEMP_30C</name>
+            <description>Temperature sensor ADC result at 30 degrees C</description>
+            <addressOffset>0</addressOffset>
+            <size>16</size>
+            <access>read-only</access>
+          </register>
+          <register>
+            <name>TEMP_HIGH</name>
+            <description>Temperature sensor ADC result at 105 degrees C</description>
+            <addressOffset>2</addressOffset>
+            <size>16</size>
+            <access>read-only</access>
+          </register>
+        </cluster>
+        <register>
+          <name>REF_CAL_TAG</name>
+          <description>REF calibration tag</description>
+          <addressOffset>38</addressOffset>
+          <size>8</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>REF_CAL_LENGTH</name>
+          <description>REF calibration length</description>
+          <addressOffset>39</addressOffset>
+          <size>8</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <dim>3</dim>
+          <dimIncrement>2</dimIncrement>
+          <name>REF_FACTOR[%s]</name>
+          <description>Factor of the 1.5 V, 2.0 V or 2.5 V reference (index 0, 1 or 2)</description>
+          <addressOffset>40</addressOffset>
+          <size>16</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <name>DCO_TAP_16MHZ</name>
+          <description>DCO tap setting for 16 MHz</description>
+          <addressOffset>46</addressOffset>
+          <size>16</size>
+          <access>read-only</access>
+        </register>
+        <register>
+          <dim>244</dim>
+          <dimIncrement>1</dimIncrement>
+          <name>CRC_DATA[%s]</name>
+          <description>Bytes 1A04h to 1AF7h, the range the CRC value covers</description>
+          <addressOffset>4</addressOffset>
+          <size>8</size>
+          <access>read-only</access>
         </register>
       </registers>
     </peripheral>

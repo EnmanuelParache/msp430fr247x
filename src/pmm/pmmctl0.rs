@@ -3,6 +3,7 @@ pub type R = crate::R<Pmmctl0Spec>;
 #[doc = "Register `PMMCTL0` writer"]
 pub type W = crate::W<Pmmctl0Spec>;
 #[doc = "Software brownout reset.\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pmmswbor {
     #[doc = "0: Normal operation"]
@@ -56,6 +57,7 @@ where
     }
 }
 #[doc = "Software POR.\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pmmswpor {
     #[doc = "0: Normal operation"]
@@ -109,6 +111,7 @@ where
     }
 }
 #[doc = "Regulator off\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Pmmregoff {
     #[doc = "0: Regulator remains on when going into LPM3 or LPM4"]
@@ -162,12 +165,13 @@ where
     }
 }
 #[doc = "High-side SVS enable.\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Svshe {
     #[doc = "0: High-side SVS (SVSH) is disabled in LPM2, LPM3, LPM4, LPM3.5, and LPM4.5. SVSH is always enabled in active mode, LPM0, and LPM1."]
-    Svshe0 = 0,
+    Disabled = 0,
     #[doc = "1: SVSH is always enabled."]
-    Svshe1 = 1,
+    Enabled = 1,
 }
 impl From<Svshe> for bool {
     #[inline(always)]
@@ -182,19 +186,19 @@ impl SvsheR {
     #[inline(always)]
     pub const fn variant(&self) -> Svshe {
         match self.bits {
-            false => Svshe::Svshe0,
-            true => Svshe::Svshe1,
+            false => Svshe::Disabled,
+            true => Svshe::Enabled,
         }
     }
     #[doc = "High-side SVS (SVSH) is disabled in LPM2, LPM3, LPM4, LPM3.5, and LPM4.5. SVSH is always enabled in active mode, LPM0, and LPM1."]
     #[inline(always)]
-    pub fn is_svshe_0(&self) -> bool {
-        *self == Svshe::Svshe0
+    pub fn is_disabled(&self) -> bool {
+        *self == Svshe::Disabled
     }
     #[doc = "SVSH is always enabled."]
     #[inline(always)]
-    pub fn is_svshe_1(&self) -> bool {
-        *self == Svshe::Svshe1
+    pub fn is_enabled(&self) -> bool {
+        *self == Svshe::Enabled
     }
 }
 #[doc = "Field `SVSHE` writer - High-side SVS enable."]
@@ -205,16 +209,17 @@ where
 {
     #[doc = "High-side SVS (SVSH) is disabled in LPM2, LPM3, LPM4, LPM3.5, and LPM4.5. SVSH is always enabled in active mode, LPM0, and LPM1."]
     #[inline(always)]
-    pub fn svshe_0(self) -> &'a mut crate::W<REG> {
-        self.variant(Svshe::Svshe0)
+    pub fn disabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Svshe::Disabled)
     }
     #[doc = "SVSH is always enabled."]
     #[inline(always)]
-    pub fn svshe_1(self) -> &'a mut crate::W<REG> {
-        self.variant(Svshe::Svshe1)
+    pub fn enabled(self) -> &'a mut crate::W<REG> {
+        self.variant(Svshe::Enabled)
     }
 }
 #[doc = "PMM password.\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum Pmmpwr {
@@ -249,6 +254,7 @@ impl PmmpwR {
     }
 }
 #[doc = "PMM password.\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum PmmpwwWO {

@@ -3,36 +3,37 @@ pub type R = crate::R<P5ivSpec>;
 #[doc = "Register `P5IV` writer"]
 pub type W = crate::W<P5ivSpec>;
 #[doc = "Port 5 interrupt vector value\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-#[repr(u8)]
+#[repr(u16)]
 pub enum P5iv {
     #[doc = "0: No interrupt pending"]
     None = 0,
-    #[doc = "2: Interrupt Source: Port 5.0 interrupt; Interrupt Flag: P5IFG0; Interrupt Priority: Highest"]
-    P5ifg0 = 2,
-    #[doc = "4: Interrupt Source: Port 5.1 interrupt; Interrupt Flag: P5IFG1"]
-    P5ifg1 = 4,
-    #[doc = "6: Interrupt Source: Port 5.2 interrupt; Interrupt Flag: P5IFG2"]
-    P5ifg2 = 6,
-    #[doc = "8: Interrupt Source: Port 5.3 interrupt; Interrupt Flag: P5IFG3"]
-    P5ifg3 = 8,
-    #[doc = "10: Interrupt Source: Port 5.4 interrupt; Interrupt Flag: P5IFG4"]
-    P5ifg4 = 10,
-    #[doc = "12: Interrupt Source: Port 5.5 interrupt; Interrupt Flag: P5IFG5"]
-    P5ifg5 = 12,
-    #[doc = "14: Interrupt Source: Port 5.6 interrupt; Interrupt Flag: P5IFG6"]
-    P5ifg6 = 14,
-    #[doc = "16: Interrupt Source: Port 5.7 interrupt; Interrupt Flag: P5IFG7; Interrupt Priority: Lowest"]
-    P5ifg7 = 16,
+    #[doc = "2: Interrupt Source: Port x.0 interrupt; Interrupt Flag: PxIFG.0; Interrupt Priority: Highest"]
+    Ifg0 = 2,
+    #[doc = "4: Interrupt Source: Port x.1 interrupt; Interrupt Flag: PxIFG.1"]
+    Ifg1 = 4,
+    #[doc = "6: Interrupt Source: Port x.2 interrupt; Interrupt Flag: PxIFG.2"]
+    Ifg2 = 6,
+    #[doc = "8: Interrupt Source: Port x.3 interrupt; Interrupt Flag: PxIFG.3"]
+    Ifg3 = 8,
+    #[doc = "10: Interrupt Source: Port x.4 interrupt; Interrupt Flag: PxIFG.4"]
+    Ifg4 = 10,
+    #[doc = "12: Interrupt Source: Port x.5 interrupt; Interrupt Flag: PxIFG.5"]
+    Ifg5 = 12,
+    #[doc = "14: Interrupt Source: Port x.6 interrupt; Interrupt Flag: PxIFG.6"]
+    Ifg6 = 14,
+    #[doc = "16: Interrupt Source: Port x.7 interrupt; Interrupt Flag: PxIFG.7; Interrupt Priority: Lowest"]
+    Ifg7 = 16,
 }
-impl From<P5iv> for u8 {
+impl From<P5iv> for u16 {
     #[inline(always)]
     fn from(variant: P5iv) -> Self {
         variant as _
     }
 }
 impl crate::FieldSpec for P5iv {
-    type Ux = u8;
+    type Ux = u16;
 }
 impl crate::IsEnum for P5iv {}
 #[doc = "Field `P5IV` reader - Port 5 interrupt vector value"]
@@ -43,14 +44,14 @@ impl P5ivR {
     pub const fn variant(&self) -> Option<P5iv> {
         match self.bits {
             0 => Some(P5iv::None),
-            2 => Some(P5iv::P5ifg0),
-            4 => Some(P5iv::P5ifg1),
-            6 => Some(P5iv::P5ifg2),
-            8 => Some(P5iv::P5ifg3),
-            10 => Some(P5iv::P5ifg4),
-            12 => Some(P5iv::P5ifg5),
-            14 => Some(P5iv::P5ifg6),
-            16 => Some(P5iv::P5ifg7),
+            2 => Some(P5iv::Ifg0),
+            4 => Some(P5iv::Ifg1),
+            6 => Some(P5iv::Ifg2),
+            8 => Some(P5iv::Ifg3),
+            10 => Some(P5iv::Ifg4),
+            12 => Some(P5iv::Ifg5),
+            14 => Some(P5iv::Ifg6),
+            16 => Some(P5iv::Ifg7),
             _ => None,
         }
     }
@@ -59,52 +60,52 @@ impl P5ivR {
     pub fn is_none(&self) -> bool {
         *self == P5iv::None
     }
-    #[doc = "Interrupt Source: Port 5.0 interrupt; Interrupt Flag: P5IFG0; Interrupt Priority: Highest"]
+    #[doc = "Interrupt Source: Port x.0 interrupt; Interrupt Flag: PxIFG.0; Interrupt Priority: Highest"]
     #[inline(always)]
-    pub fn is_p5ifg0(&self) -> bool {
-        *self == P5iv::P5ifg0
+    pub fn is_ifg0(&self) -> bool {
+        *self == P5iv::Ifg0
     }
-    #[doc = "Interrupt Source: Port 5.1 interrupt; Interrupt Flag: P5IFG1"]
+    #[doc = "Interrupt Source: Port x.1 interrupt; Interrupt Flag: PxIFG.1"]
     #[inline(always)]
-    pub fn is_p5ifg1(&self) -> bool {
-        *self == P5iv::P5ifg1
+    pub fn is_ifg1(&self) -> bool {
+        *self == P5iv::Ifg1
     }
-    #[doc = "Interrupt Source: Port 5.2 interrupt; Interrupt Flag: P5IFG2"]
+    #[doc = "Interrupt Source: Port x.2 interrupt; Interrupt Flag: PxIFG.2"]
     #[inline(always)]
-    pub fn is_p5ifg2(&self) -> bool {
-        *self == P5iv::P5ifg2
+    pub fn is_ifg2(&self) -> bool {
+        *self == P5iv::Ifg2
     }
-    #[doc = "Interrupt Source: Port 5.3 interrupt; Interrupt Flag: P5IFG3"]
+    #[doc = "Interrupt Source: Port x.3 interrupt; Interrupt Flag: PxIFG.3"]
     #[inline(always)]
-    pub fn is_p5ifg3(&self) -> bool {
-        *self == P5iv::P5ifg3
+    pub fn is_ifg3(&self) -> bool {
+        *self == P5iv::Ifg3
     }
-    #[doc = "Interrupt Source: Port 5.4 interrupt; Interrupt Flag: P5IFG4"]
+    #[doc = "Interrupt Source: Port x.4 interrupt; Interrupt Flag: PxIFG.4"]
     #[inline(always)]
-    pub fn is_p5ifg4(&self) -> bool {
-        *self == P5iv::P5ifg4
+    pub fn is_ifg4(&self) -> bool {
+        *self == P5iv::Ifg4
     }
-    #[doc = "Interrupt Source: Port 5.5 interrupt; Interrupt Flag: P5IFG5"]
+    #[doc = "Interrupt Source: Port x.5 interrupt; Interrupt Flag: PxIFG.5"]
     #[inline(always)]
-    pub fn is_p5ifg5(&self) -> bool {
-        *self == P5iv::P5ifg5
+    pub fn is_ifg5(&self) -> bool {
+        *self == P5iv::Ifg5
     }
-    #[doc = "Interrupt Source: Port 5.6 interrupt; Interrupt Flag: P5IFG6"]
+    #[doc = "Interrupt Source: Port x.6 interrupt; Interrupt Flag: PxIFG.6"]
     #[inline(always)]
-    pub fn is_p5ifg6(&self) -> bool {
-        *self == P5iv::P5ifg6
+    pub fn is_ifg6(&self) -> bool {
+        *self == P5iv::Ifg6
     }
-    #[doc = "Interrupt Source: Port 5.7 interrupt; Interrupt Flag: P5IFG7; Interrupt Priority: Lowest"]
+    #[doc = "Interrupt Source: Port x.7 interrupt; Interrupt Flag: PxIFG.7; Interrupt Priority: Lowest"]
     #[inline(always)]
-    pub fn is_p5ifg7(&self) -> bool {
-        *self == P5iv::P5ifg7
+    pub fn is_ifg7(&self) -> bool {
+        *self == P5iv::Ifg7
     }
 }
 impl R {
-    #[doc = "Bits 0:4 - Port 5 interrupt vector value"]
+    #[doc = "Bits 0:15 - Port 5 interrupt vector value"]
     #[inline(always)]
     pub fn p5iv(&self) -> P5ivR {
-        P5ivR::new((self.bits & 0x1f) as u8)
+        P5ivR::new(self.bits)
     }
 }
 impl W {}

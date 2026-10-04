@@ -3,6 +3,7 @@ pub type R = crate::R<Ta0ivSpec>;
 #[doc = "Register `TA0IV` writer"]
 pub type W = crate::W<Ta0ivSpec>;
 #[doc = "TimerA interrupt vector value\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u16)]
 pub enum Taiv {

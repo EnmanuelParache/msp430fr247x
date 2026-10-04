@@ -3,6 +3,7 @@ pub type R = crate::R<Syscfg1Spec>;
 #[doc = "Register `SYSCFG1` writer"]
 pub type W = crate::W<Syscfg1Spec>;
 #[doc = "Infrared enable\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Iren {
     #[doc = "0: Infrared function disabled"]
@@ -56,6 +57,7 @@ where
     }
 }
 #[doc = "Infrared polarity select\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Irpsel {
     #[doc = "0: Normal polarity"]
@@ -109,6 +111,7 @@ where
     }
 }
 #[doc = "Infrared mode select\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Irmsel {
     #[doc = "0: ASK mode"]
@@ -162,6 +165,7 @@ where
     }
 }
 #[doc = "Infrared data source select\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Irdssel {
     #[doc = "0: From hardware peripherals upon device configuration"]
@@ -215,6 +219,7 @@ where
     }
 }
 #[doc = "Infrared data\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Irdata {
     #[doc = "0: Infrared data logic 0"]
@@ -267,92 +272,6 @@ where
         self.variant(Irdata::High)
     }
 }
-#[doc = "Captivate Conversion triggered Source Selection\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq, Eq)]
-#[repr(u8)]
-pub enum Syncsel {
-    #[doc = "0: External source is selected"]
-    Syncsel0 = 0,
-    #[doc = "1: ADC as the source is selected"]
-    Syncsel1 = 1,
-    #[doc = "2: Comparator as the source is selected"]
-    Syncsel2 = 2,
-    #[doc = "3: Reserved"]
-    Syncsel3 = 3,
-}
-impl From<Syncsel> for u8 {
-    #[inline(always)]
-    fn from(variant: Syncsel) -> Self {
-        variant as _
-    }
-}
-impl crate::FieldSpec for Syncsel {
-    type Ux = u8;
-}
-impl crate::IsEnum for Syncsel {}
-#[doc = "Field `SYNCSEL` reader - Captivate Conversion triggered Source Selection"]
-pub type SyncselR = crate::FieldReader<Syncsel>;
-impl SyncselR {
-    #[doc = "Get enumerated values variant"]
-    #[inline(always)]
-    pub const fn variant(&self) -> Syncsel {
-        match self.bits {
-            0 => Syncsel::Syncsel0,
-            1 => Syncsel::Syncsel1,
-            2 => Syncsel::Syncsel2,
-            3 => Syncsel::Syncsel3,
-            _ => unreachable!(),
-        }
-    }
-    #[doc = "External source is selected"]
-    #[inline(always)]
-    pub fn is_syncsel_0(&self) -> bool {
-        *self == Syncsel::Syncsel0
-    }
-    #[doc = "ADC as the source is selected"]
-    #[inline(always)]
-    pub fn is_syncsel_1(&self) -> bool {
-        *self == Syncsel::Syncsel1
-    }
-    #[doc = "Comparator as the source is selected"]
-    #[inline(always)]
-    pub fn is_syncsel_2(&self) -> bool {
-        *self == Syncsel::Syncsel2
-    }
-    #[doc = "Reserved"]
-    #[inline(always)]
-    pub fn is_syncsel_3(&self) -> bool {
-        *self == Syncsel::Syncsel3
-    }
-}
-#[doc = "Field `SYNCSEL` writer - Captivate Conversion triggered Source Selection"]
-pub type SyncselW<'a, REG> = crate::FieldWriter<'a, REG, 2, Syncsel, crate::Safe>;
-impl<'a, REG> SyncselW<'a, REG>
-where
-    REG: crate::Writable + crate::RegisterSpec,
-    REG::Ux: From<u8>,
-{
-    #[doc = "External source is selected"]
-    #[inline(always)]
-    pub fn syncsel_0(self) -> &'a mut crate::W<REG> {
-        self.variant(Syncsel::Syncsel0)
-    }
-    #[doc = "ADC as the source is selected"]
-    #[inline(always)]
-    pub fn syncsel_1(self) -> &'a mut crate::W<REG> {
-        self.variant(Syncsel::Syncsel1)
-    }
-    #[doc = "Comparator as the source is selected"]
-    #[inline(always)]
-    pub fn syncsel_2(self) -> &'a mut crate::W<REG> {
-        self.variant(Syncsel::Syncsel2)
-    }
-    #[doc = "Reserved"]
-    #[inline(always)]
-    pub fn syncsel_3(self) -> &'a mut crate::W<REG> {
-        self.variant(Syncsel::Syncsel3)
-    }
-}
 impl R {
     #[doc = "Bit 0 - Infrared enable"]
     #[inline(always)]
@@ -378,11 +297,6 @@ impl R {
     #[inline(always)]
     pub fn irdata(&self) -> IrdataR {
         IrdataR::new(((self.bits >> 4) & 1) != 0)
-    }
-    #[doc = "Bits 6:7 - Captivate Conversion triggered Source Selection"]
-    #[inline(always)]
-    pub fn syncsel(&self) -> SyncselR {
-        SyncselR::new(((self.bits >> 6) & 3) as u8)
     }
 }
 impl W {
@@ -410,11 +324,6 @@ impl W {
     #[inline(always)]
     pub fn irdata(&mut self) -> IrdataW<'_, Syscfg1Spec> {
         IrdataW::new(self, 4)
-    }
-    #[doc = "Bits 6:7 - Captivate Conversion triggered Source Selection"]
-    #[inline(always)]
-    pub fn syncsel(&mut self) -> SyncselW<'_, Syscfg1Spec> {
-        SyncselW::new(self, 6)
     }
 }
 #[doc = "System Configuration 1\n\nYou can [`read`](crate::Reg::read) this register and get [`syscfg1::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`syscfg1::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

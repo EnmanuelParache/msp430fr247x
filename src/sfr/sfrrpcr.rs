@@ -3,6 +3,7 @@ pub type R = crate::R<SfrrpcrSpec>;
 #[doc = "Register `SFRRPCR` writer"]
 pub type W = crate::W<SfrrpcrSpec>;
 #[doc = "NMI select\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Sysnmi {
     #[doc = "0: Reset function"]
@@ -56,6 +57,7 @@ where
     }
 }
 #[doc = "NMI edge select\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Sysnmiies {
     #[doc = "0: NMI on rising edge"]
@@ -109,6 +111,7 @@ where
     }
 }
 #[doc = "Reset resistor pin pullup or pulldown\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Sysrstup {
     #[doc = "0: Pulldown is selected"]
@@ -162,6 +165,7 @@ where
     }
 }
 #[doc = "Reset pin resistor enable\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Sysrstre {
     #[doc = "0: Pullup or pulldown resistor at the RST/NMI pin is disabled"]
@@ -215,6 +219,7 @@ where
     }
 }
 #[doc = "Reset pin filter enable\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Sysflte {
     #[doc = "0: Digital filter on reset pin is disabled"]

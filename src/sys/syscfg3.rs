@@ -3,6 +3,7 @@ pub type R = crate::R<Syscfg3Spec>;
 #[doc = "Register `SYSCFG3` writer"]
 pub type W = crate::W<Syscfg3Spec>;
 #[doc = "eUSCI_A0 remapping source selection\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Uscia0rmp {
     #[doc = "0: Default function. See the device-specific data sheet for details."]
@@ -56,6 +57,7 @@ where
     }
 }
 #[doc = "Timer2_A3 remapping source selection\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ta2rmp {
     #[doc = "0: Default function. See the device-specific data sheet for details."]
@@ -109,6 +111,7 @@ where
     }
 }
 #[doc = "Timer3_A3 remapping source selection\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Ta3rmp {
     #[doc = "0: Default function. See the device-specific data sheet for details."]
@@ -162,6 +165,7 @@ where
     }
 }
 #[doc = "eUSCI_B1 remapping source selection\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Uscib1rmp {
     #[doc = "0: Default function. See the device-specific data sheet for details."]
