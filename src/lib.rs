@@ -138,6 +138,7 @@ pub static __INTERRUPTS: [Vector; 63] = [
     Vector { _handler: SYSNMI },
 ];
 #[doc = r"Enumeration of all the interrupts. This enum is seldom used in application or library crates. It is present primarily for documenting the device's implemented interrupts."]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Copy, Clone, Debug, PartialEq, Eq)]
 #[repr(u16)]
 pub enum Interrupt {
@@ -320,15 +321,6 @@ impl core::fmt::Debug for Rtc {
 }
 #[doc = "RTC"]
 pub mod rtc;
-#[doc = "PJ"]
-pub type Pj = crate::Periph<pj::RegisterBlock, 0x0320>;
-impl core::fmt::Debug for Pj {
-    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("Pj").finish()
-    }
-}
-#[doc = "PJ"]
-pub mod pj;
 #[doc = "TA0"]
 pub type Ta0 = crate::Periph<ta0::RegisterBlock, 0x0380>;
 impl core::fmt::Debug for Ta0 {
@@ -419,15 +411,15 @@ impl core::fmt::Debug for EUsciB1 {
 }
 #[doc = "eUSCI_B1"]
 pub mod e_usci_b1;
-#[doc = "BKMEM"]
-pub type Bkmem = crate::Periph<bkmem::RegisterBlock, 0x0660>;
-impl core::fmt::Debug for Bkmem {
+#[doc = "BAKMEM"]
+pub type Bakmem = crate::Periph<bakmem::RegisterBlock, 0x0660>;
+impl core::fmt::Debug for Bakmem {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("Bkmem").finish()
+        f.debug_struct("Bakmem").finish()
     }
 }
-#[doc = "BKMEM"]
-pub mod bkmem;
+#[doc = "BAKMEM"]
+pub mod bakmem;
 #[doc = "ADC"]
 pub type Adc = crate::Periph<adc::RegisterBlock, 0x0700>;
 impl core::fmt::Debug for Adc {
@@ -446,6 +438,15 @@ impl core::fmt::Debug for EComp0 {
 }
 #[doc = "eCOMP0"]
 pub mod e_comp0;
+#[doc = "Device descriptors (TLV)"]
+pub type Tlv = crate::Periph<tlv::RegisterBlock, 0x1a00>;
+impl core::fmt::Debug for Tlv {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Tlv").finish()
+    }
+}
+#[doc = "Device descriptors (TLV)"]
+pub mod tlv;
 #[no_mangle]
 static mut DEVICE_PERIPHERALS: bool = false;
 #[doc = r" All the peripherals."]
@@ -479,8 +480,6 @@ pub struct Peripherals {
     pub wdt_a: WdtA,
     #[doc = "RTC"]
     pub rtc: Rtc,
-    #[doc = "PJ"]
-    pub pj: Pj,
     #[doc = "TA0"]
     pub ta0: Ta0,
     #[doc = "TA1"]
@@ -501,12 +500,14 @@ pub struct Peripherals {
     pub e_usci_b0: EUsciB0,
     #[doc = "E_USCI_B1"]
     pub e_usci_b1: EUsciB1,
-    #[doc = "BKMEM"]
-    pub bkmem: Bkmem,
+    #[doc = "BAKMEM"]
+    pub bakmem: Bakmem,
     #[doc = "ADC"]
     pub adc: Adc,
     #[doc = "E_COMP0"]
     pub e_comp0: EComp0,
+    #[doc = "TLV"]
+    pub tlv: Tlv,
 }
 impl Peripherals {
     #[doc = r" Returns all the peripherals *once*."]
@@ -543,7 +544,6 @@ impl Peripherals {
             crc: Crc::steal(),
             wdt_a: WdtA::steal(),
             rtc: Rtc::steal(),
-            pj: Pj::steal(),
             ta0: Ta0::steal(),
             ta1: Ta1::steal(),
             ta2: Ta2::steal(),
@@ -554,9 +554,10 @@ impl Peripherals {
             e_usci_a1: EUsciA1::steal(),
             e_usci_b0: EUsciB0::steal(),
             e_usci_b1: EUsciB1::steal(),
-            bkmem: Bkmem::steal(),
+            bakmem: Bakmem::steal(),
             adc: Adc::steal(),
             e_comp0: EComp0::steal(),
+            tlv: Tlv::steal(),
         }
     }
 }

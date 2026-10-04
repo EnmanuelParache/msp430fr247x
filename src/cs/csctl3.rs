@@ -3,6 +3,7 @@ pub type R = crate::R<Csctl3Spec>;
 #[doc = "Register `CSCTL3` writer"]
 pub type W = crate::W<Csctl3Spec>;
 #[doc = "FLL reference divider. These bits define the divide factor for f(FLLREFCLK). If XT1 supports high frequency input higher than 32 kHz, the divided frequency is used as the FLL reference frequency. If XT1 only supports 32-kHz clock, FLLREFDIV is always read and written as zero, 000b = fFLLREFCLK / 1\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum Fllrefdiv {
@@ -141,6 +142,7 @@ where
     }
 }
 #[doc = "FLL reference select. These bits select the FLL reference clock source.\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum Selref {
@@ -227,6 +229,7 @@ where
     }
 }
 #[doc = "REFO Low Power Enable. This bit turns on REFO low-power mode. During switch, the low-power mode will be invalid until REFOREADY is set.\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Refolp {
     #[doc = "0: REFO Low Power Disabled (High Power Mode)"]

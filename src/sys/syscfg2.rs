@@ -3,6 +3,7 @@ pub type R = crate::R<Syscfg2Spec>;
 #[doc = "Register `SYSCFG2` writer"]
 pub type W = crate::W<Syscfg2Spec>;
 #[doc = "RTC clock selection\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Rtccksel {
     #[doc = "0: SMCLK is selected"]
@@ -56,6 +57,7 @@ where
     }
 }
 #[doc = "eUSCI_B0 remapping source selection\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Uscib0rmp {
     #[doc = "0: Default function. See the device-specific data sheet for details."]
@@ -109,6 +111,7 @@ where
     }
 }
 #[doc = "TB0OUTH trigger source selection\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Tb0trgsel {
     #[doc = "0: Internal source is selected"]

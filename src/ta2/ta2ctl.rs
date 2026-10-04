@@ -3,6 +3,7 @@ pub type R = crate::R<Ta2ctlSpec>;
 #[doc = "Register `TA2CTL` writer"]
 pub type W = crate::W<Ta2ctlSpec>;
 #[doc = "TimerA interrupt flag\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Taifg {
     #[doc = "0: No interrupt pending"]
@@ -56,6 +57,7 @@ where
     }
 }
 #[doc = "TimerA interrupt enable\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Taie {
     #[doc = "0: Interrupt disabled"]
@@ -113,6 +115,7 @@ pub type TaclrR = crate::BitReader;
 #[doc = "Field `TACLR` writer - TimerA clear"]
 pub type TaclrW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Mode control\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum Mc {
@@ -199,6 +202,7 @@ where
     }
 }
 #[doc = "Input divider\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum Id {
@@ -285,6 +289,7 @@ where
     }
 }
 #[doc = "TimerA clock source select\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum Tassel {

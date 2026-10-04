@@ -3,6 +3,7 @@ pub type R = crate::R<SysbslcSpec>;
 #[doc = "Register `SYSBSLC` writer"]
 pub type W = crate::W<SysbslcSpec>;
 #[doc = "RAM assigned to BSL\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Sysbslr {
     #[doc = "0: No RAM assigned to BSL area"]
@@ -56,6 +57,7 @@ where
     }
 }
 #[doc = "Bootstrap loader memory disable for the size covered in SYSBSLSIZE\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Sysbsloff {
     #[doc = "0: BSL memory is addressed when this area is read."]
@@ -109,6 +111,7 @@ where
     }
 }
 #[doc = "Bootstrap loader memory protection enable for the size covered in SYSBSLSIZE. By default, this bit is cleared by hardware with a BOR event (as indicated above); however, the boot code that checks for an available BSL may set this bit in software to protect the BSL. Because devices normally come with a TI BSL preprogrammed and protected, the boot code sets this bit.\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Sysbslpe {
     #[doc = "0: Area not protected. Read, program, and erase of BSL memory is possible."]

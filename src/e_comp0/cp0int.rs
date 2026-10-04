@@ -3,6 +3,7 @@ pub type R = crate::R<Cp0intSpec>;
 #[doc = "Register `CP0INT` writer"]
 pub type W = crate::W<Cp0intSpec>;
 #[doc = "Comparator output interrupt flag\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Cpifg {
     #[doc = "0: No interrupt pending."]
@@ -56,6 +57,7 @@ where
     }
 }
 #[doc = "Comparator output inverted interrupt flag\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Cpiifg {
     #[doc = "0: No interrupt pending."]

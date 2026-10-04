@@ -3,6 +3,7 @@ pub type R = crate::R<Ta0ex0Spec>;
 #[doc = "Register `TA0EX0` writer"]
 pub type W = crate::W<Ta0ex0Spec>;
 #[doc = "Input divider expansion\n\nValue on reset: 0"]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 #[repr(u8)]
 pub enum Taidex {
